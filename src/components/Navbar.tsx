@@ -40,7 +40,7 @@ export default function Navbar({ route, navigate }: NavbarProps) {
           <span className="grid h-9 w-9 place-items-center rounded-lg bg-accent/15 ring-1 ring-accent/40">
             <Waves className="h-5 w-5 text-accent" strokeWidth={2} />
           </span>
-          <span className="font-display text-lg font-bold tracking-tight">Deep Line Diving</span>
+          <span className="font-display text-lg font-bold tracking-tight">JVC Technical</span>
         </button>
 
         <nav className="hidden items-center gap-1 lg:flex">
