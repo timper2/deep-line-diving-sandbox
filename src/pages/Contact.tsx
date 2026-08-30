@@ -31,7 +31,7 @@ export default function Contact() {
     
     formData.append("_captcha", "false");
     formData.append("_template", "box");
-    formData.append("_subject", "New Contact Submission from JVC Technical");
+    formData.append("_subject", "New Contact Submission from O2 On Diving");
 
     try {
       const response = await fetch(form.action, {

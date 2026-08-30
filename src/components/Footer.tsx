@@ -18,7 +18,7 @@ export default function Footer({ navigate }: FooterProps) {
               <span className="grid h-9 w-9 place-items-center rounded-lg bg-accent/15 ring-1 ring-accent/40">
                 <Waves className="h-5 w-5 text-accent" strokeWidth={2} />
               </span>
-              <span className="font-display text-lg font-bold tracking-tight">JVC Technical</span>
+              <span className="font-display text-lg font-bold tracking-tight">O2 On Diving</span>
             </div>
             <p className="mt-4 max-w-sm text-sm leading-relaxed text-slate-400">
               Cave and closed-circuit rebreather instruction on the KISS Sidewinder. Careful,
@@ -68,7 +68,7 @@ export default function Footer({ navigate }: FooterProps) {
         </div>
 
         <div className="mt-12 flex flex-col items-center justify-between gap-3 border-t border-white/10 pt-6 text-xs text-slate-500 sm:flex-row">
-          <p>&copy; {new Date().getFullYear()} JVC Technical. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} O2 On Diving. All rights reserved.</p>
           <p>Train deliberately. Dive safely.</p>
         </div>
       </div>
