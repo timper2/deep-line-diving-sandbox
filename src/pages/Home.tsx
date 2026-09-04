@@ -81,7 +81,7 @@ export default function Home({ navigate }: HomeProps) {
             </span>
           </div>
           <h1 className="mt-6 max-w-3xl animate-fade-up font-display text-4xl font-bold leading-[1.05] tracking-tight text-white sm:text-6xl lg:text-7xl">
-            Explore beyond the light.
+            There&apos;s always a way up. We teach you to find it.
           </h1>
           <p className="mt-6 max-w-2xl animate-fade-up text-lg leading-relaxed text-slate-300 sm:text-xl">
             I am an active cave diver and closed-circuit rebreather instructor. I dive the KISS
