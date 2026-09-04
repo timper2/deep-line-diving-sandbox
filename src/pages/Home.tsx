@@ -81,12 +81,10 @@ export default function Home({ navigate }: HomeProps) {
             </span>
           </div>
           <h1 className="mt-6 max-w-3xl animate-fade-up font-display text-4xl font-bold leading-[1.05] tracking-tight text-white sm:text-6xl lg:text-7xl">
-            There&apos;s always a way up. We teach you to find it.
+            Cave, CCR & Technical Diving Instruction — Fort White, Florida
           </h1>
           <p className="mt-6 max-w-2xl animate-fade-up text-lg leading-relaxed text-slate-300 sm:text-xl">
-            I am an active cave diver and closed-circuit rebreather instructor. I dive the KISS
-            Sidewinder and AP Inspiration rebreathers as well as open circuit, and I teach divers to
-            move through overhead and technical environments with precision, redundancy and calm.
+            Precision training for water that doesn&apos;t forgive guesswork.
           </p>
           <div className="mt-9 flex animate-fade-up flex-wrap gap-4">
             <button
@@ -153,9 +151,7 @@ export default function Home({ navigate }: HomeProps) {
             </h2>
             <div className="mt-6 space-y-5 text-base leading-relaxed text-slate-300">
               <p>
-                I dive the KISS Sidewinder and the AP Inspiration rebreathers as well as open
-                circuit, and I teach across all three. That means you train on the unit you actually
-                want to dive, with an instructor who is in the water on the same gear.
+                There&apos;s always a way up. We teach you to find it.
               </p>
               <p>
                 Whether you are starting sidemount, pushing into cave, or stepping across to
