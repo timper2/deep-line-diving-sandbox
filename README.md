@@ -1,1 +1,1 @@
-# Shoal Technical Diving
+# Rimstone Technical Diving

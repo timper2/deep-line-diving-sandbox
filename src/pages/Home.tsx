@@ -84,7 +84,7 @@ export default function Home({ navigate }: HomeProps) {
             Cave, CCR & Technical Diving Instruction — Fort White, Florida
           </h1>
           <p className="mt-6 max-w-2xl animate-fade-up text-lg leading-relaxed text-slate-300 sm:text-xl">
-            Precision training for water that doesn&apos;t forgive guesswork.
+            The cave never rushes. Neither do we.
           </p>
           <div className="mt-9 flex animate-fade-up flex-wrap gap-4">
             <button
@@ -151,7 +151,7 @@ export default function Home({ navigate }: HomeProps) {
             </h2>
             <div className="mt-6 space-y-5 text-base leading-relaxed text-slate-300">
               <p>
-                There&apos;s always a way up. We teach you to find it.
+                Built the way the cave builds — deposit by deposit, dive by dive.
               </p>
               <p>
                 Whether you are starting sidemount, pushing into cave, or stepping across to
