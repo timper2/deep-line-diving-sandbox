@@ -1,1 +1,1 @@
-# deep-line-diving
+# Shoal Technical Diving

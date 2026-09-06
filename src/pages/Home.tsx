@@ -81,12 +81,10 @@ export default function Home({ navigate }: HomeProps) {
             </span>
           </div>
           <h1 className="mt-6 max-w-3xl animate-fade-up font-display text-4xl font-bold leading-[1.05] tracking-tight text-white sm:text-6xl lg:text-7xl">
-            Explore beyond the light.
+            Cave, CCR & Technical Diving Instruction — Fort White, Florida
           </h1>
           <p className="mt-6 max-w-2xl animate-fade-up text-lg leading-relaxed text-slate-300 sm:text-xl">
-            I am an active cave diver and closed-circuit rebreather instructor. I dive the KISS
-            Sidewinder and AP Inspiration rebreathers as well as open circuit, and I teach divers to
-            move through overhead and technical environments with precision, redundancy and calm.
+            Precision training for water that doesn&apos;t forgive guesswork.
           </p>
           <div className="mt-9 flex animate-fade-up flex-wrap gap-4">
             <button
@@ -101,6 +99,32 @@ export default function Home({ navigate }: HomeProps) {
               className="inline-flex items-center gap-2 rounded-full border border-white/20 px-6 py-3 text-sm font-semibold text-white transition-colors hover:border-accent hover:text-accent"
             >
               Explore courses
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section className="border-b border-white/10 bg-slate-900/40">
+        <div className="mx-auto max-w-7xl container-px py-16 sm:py-20">
+          <div className="max-w-3xl">
+            <p className="font-display text-sm font-semibold uppercase tracking-[0.25em] text-accent">
+              About the instructor
+            </p>
+            <h2 className="mt-4 font-display text-3xl font-bold tracking-tight text-white sm:text-4xl">
+              Training built in Florida&apos;s cave country.
+            </h2>
+            <p className="mt-5 text-base leading-relaxed text-slate-300 sm:text-lg">
+              Tim is a PADI Course Director and TDI Instructor based in Fort White, teaching cave,
+              sidemount, and closed-circuit rebreather disciplines with a focus on the KISS Sidewinder.
+              Every course builds practical skill one dive at a time, from nitrox and trimix through
+              full cave and advanced mixed-gas training.
+            </p>
+            <button
+              onClick={() => navigate('about')}
+              className="mt-7 inline-flex items-center gap-2 text-sm font-semibold text-accent transition-colors hover:text-accent-soft"
+            >
+              Meet Tim
+              <ArrowRight className="h-4 w-4" />
             </button>
           </div>
         </div>
@@ -153,9 +177,7 @@ export default function Home({ navigate }: HomeProps) {
             </h2>
             <div className="mt-6 space-y-5 text-base leading-relaxed text-slate-300">
               <p>
-                I dive the KISS Sidewinder and the AP Inspiration rebreathers as well as open
-                circuit, and I teach across all three. That means you train on the unit you actually
-                want to dive, with an instructor who is in the water on the same gear.
+                There&apos;s always a way up. We teach you to find it.
               </p>
               <p>
                 Whether you are starting sidemount, pushing into cave, or stepping across to

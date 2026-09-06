@@ -5,6 +5,7 @@ import Home from '@/pages/Home';
 import Services from '@/pages/Services';
 import TryOut from '@/pages/TryOut';
 import Contact from '@/pages/Contact';
+import About from '@/pages/About';
 import { COURSES } from '@/data/courses';
 import { useRouter } from '@/lib/useRouter';
 
@@ -27,6 +28,8 @@ function App() {
         return <Services navigate={navigate} />;
       case 'contact':
         return <Contact />;
+      case 'about':
+        return <About navigate={navigate} />;
       default:
         return <Home navigate={navigate} />;
     }
