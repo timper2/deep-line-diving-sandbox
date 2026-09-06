@@ -105,6 +105,32 @@ export default function Home({ navigate }: HomeProps) {
       </section>
 
       <section className="border-b border-white/10 bg-slate-900/40">
+        <div className="mx-auto max-w-7xl container-px py-16 sm:py-20">
+          <div className="max-w-3xl">
+            <p className="font-display text-sm font-semibold uppercase tracking-[0.25em] text-accent">
+              About the instructor
+            </p>
+            <h2 className="mt-4 font-display text-3xl font-bold tracking-tight text-white sm:text-4xl">
+              Training built in Florida&apos;s cave country.
+            </h2>
+            <p className="mt-5 text-base leading-relaxed text-slate-300 sm:text-lg">
+              Tim is a PADI Course Director and TDI Instructor based in Fort White, teaching cave,
+              sidemount, and closed-circuit rebreather disciplines with a focus on the KISS Sidewinder.
+              Every course builds practical skill one dive at a time, from nitrox and trimix through
+              full cave and advanced mixed-gas training.
+            </p>
+            <button
+              onClick={() => navigate('about')}
+              className="mt-7 inline-flex items-center gap-2 text-sm font-semibold text-accent transition-colors hover:text-accent-soft"
+            >
+              Meet Tim
+              <ArrowRight className="h-4 w-4" />
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section className="border-b border-white/10 bg-slate-900/40">
         <div className="mx-auto grid max-w-7xl grid-cols-2 gap-y-8 container-px py-10 sm:grid-cols-4">
           {[
             { value: 'KISS · AP · OC', label: 'Three platforms' },
