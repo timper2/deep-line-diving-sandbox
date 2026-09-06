@@ -84,7 +84,7 @@ export default function Home({ navigate }: HomeProps) {
             Cave, CCR & Technical Diving Instruction — Fort White, Florida
           </h1>
           <p className="mt-6 max-w-2xl animate-fade-up text-lg leading-relaxed text-slate-300 sm:text-xl">
-            The cave never rushes. Neither do we.
+            Built one dive at a time.
           </p>
           <div className="mt-9 flex animate-fade-up flex-wrap gap-4">
             <button
@@ -100,6 +100,22 @@ export default function Home({ navigate }: HomeProps) {
             >
               Explore courses
             </button>
+          </div>
+        </div>
+      </section>
+
+      <section className="border-b border-white/10 bg-slate-900/40">
+        <div className="mx-auto max-w-7xl container-px py-12 sm:py-14">
+          <div className="max-w-3xl">
+            <p className="font-display text-sm font-semibold uppercase tracking-[0.25em] text-accent">
+              About Rimstone
+            </p>
+            <p className="mt-4 text-lg leading-relaxed text-slate-300 sm:text-xl">
+              Led by Tim, a PADI Course Director and TDI Instructor in Fort White, Rimstone teaches
+              cave, sidemount, and CCR diving from nitrox and trimix through full cave and advanced
+              mixed-gas training. Every course is built around deliberate practice, KISS Sidewinder
+              expertise, and the belief that skill is built one dive at a time.
+            </p>
           </div>
         </div>
       </section>
