@@ -18,7 +18,7 @@ export default function Footer({ navigate }: FooterProps) {
               <span className="grid h-9 w-9 place-items-center rounded-lg bg-accent/15 ring-1 ring-accent/40">
                 <Waves className="h-5 w-5 text-accent" strokeWidth={2} />
               </span>
-              <span className="font-display text-lg font-bold tracking-tight">Shoal Technical Diving</span>
+              <span className="font-display text-lg font-bold tracking-tight">Rimstone Technical Diving</span>
             </div>
             <p className="mt-4 max-w-sm text-sm leading-relaxed text-slate-400">
               A technical diving company. Cave, tec, and rebreather. Fort White, Florida.
@@ -67,7 +67,7 @@ export default function Footer({ navigate }: FooterProps) {
         </div>
 
         <div className="mt-12 flex flex-col items-center justify-between gap-3 border-t border-white/10 pt-6 text-xs text-slate-500 sm:flex-row">
-          <p>&copy; {new Date().getFullYear()} Shoal Technical Diving. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Rimstone Technical Diving. All rights reserved.</p>
           <p>Train deliberately. Dive safely.</p>
         </div>
       </div>

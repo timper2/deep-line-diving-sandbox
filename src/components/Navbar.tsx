@@ -41,7 +41,7 @@ export default function Navbar({ route, navigate }: NavbarProps) {
             <Waves className="h-5 w-5 text-accent" strokeWidth={2} />
           </span>
           <span className="flex flex-col items-start font-display tracking-tight">
-            <span className="text-lg font-bold">Shoal Technical Diving</span>
+            <span className="text-lg font-bold">Rimstone Technical Diving</span>
             <span className="text-[0.65rem] font-medium tracking-wide text-accent">Water that rewards precision.</span>
           </span>
         </button>
