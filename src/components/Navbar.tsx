@@ -42,7 +42,7 @@ export default function Navbar({ route, navigate }: NavbarProps) {
           </span>
           <span className="flex flex-col items-start font-display tracking-tight">
             <span className="text-lg font-bold">Rimstone Technical Diving</span>
-            <span className="text-[0.65rem] font-medium tracking-wide text-accent">Water that rewards precision.</span>
+            <span className="text-[0.65rem] font-medium tracking-wide text-accent">Built one dive at a time.</span>
           </span>
         </button>
 
