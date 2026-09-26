@@ -204,6 +204,24 @@ export const COURSES: Record<'sidemount' | 'cave' | 'technical' | 'rebreather', 
         description: 'Add helium to manage narcosis and oxygen exposure on deeper dives.',
         points: ['Helium-based gas planning', 'Managing narcosis and oxygen exposure', 'Multiple deco gases', 'Deep dive logistics'],
       },
+      {
+        name: 'Nitrox Certification',
+        meta: 'Foundation · 2 days',
+        description: 'Learn to plan and use enriched air nitrox to extend no-decompression limits and manage oxygen exposure.',
+        points: ['Nitrox theory and analysis', 'Oxygen exposure management', 'Gas planning and marking', 'Dive computer setup'],
+      },
+      {
+        name: 'Trimix Certification',
+        meta: 'Advanced · 4 - 5 days',
+        description: 'Build the knowledge and skills to plan and execute deeper dives using helium-based breathing gases.',
+        points: ['Trimix theory and analysis', 'Helium-based gas planning', 'Narcosis and oxygen management', 'Deep dive procedures'],
+      },
+      {
+        name: 'Extended Range Certification',
+        meta: 'Progression · 3 - 4 days',
+        description: 'Extend your depth and bottom time with staged decompression, multiple gases and disciplined team procedures.',
+        points: ['Extended-range dive planning', 'Stage and decompression gas handling', 'Decompression procedures', 'Failure management'],
+      },
     ],
     gallery: [
       {
