@@ -15,12 +15,12 @@ export default function About() {
             <Waves className="h-6 w-6" />
             <div>
               <p className="font-display text-sm font-semibold text-white">Tim</p>
-              <p className="text-xs text-slate-400">PADI Course Director · TDI Instructor</p>
+              <p className="text-xs text-slate-400">PADI Course Director · TDI Instructor Trainer</p>
             </div>
           </div>
           <div className="space-y-6 text-base leading-relaxed text-slate-300 sm:text-lg">
             <p>
-              Rimstone Technical Diving is led by Tim, a PADI Course Director and TDI Instructor
+              Rimstone is led by Tim, a PADI Course Director and TDI Instructor Trainer
               based in Fort White, Florida — in the heart of Florida&apos;s cave country.
             </p>
             <p>
