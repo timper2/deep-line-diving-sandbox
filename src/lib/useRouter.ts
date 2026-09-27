@@ -3,7 +3,13 @@ import { pathToRoute, routeToPath, type RouteId } from '@/lib/routes';
 
 function currentPath(): string {
   const hash = window.location.hash.replace(/^#/, '');
-  return hash || '/';
+  if (!hash) return '/';
+
+  try {
+    return decodeURIComponent(hash) || '/';
+  } catch {
+    return '/';
+  }
 }
 
 export function useRouter() {
@@ -18,7 +24,7 @@ export function useRouter() {
   const navigate = useCallback((id: RouteId) => {
     const path = routeToPath(id);
     if (currentPath() !== path) {
-      window.location.hash = path;
+      window.location.hash = encodeURIComponent(path);
     }
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }, []);

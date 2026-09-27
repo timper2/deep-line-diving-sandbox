@@ -48,8 +48,9 @@ export default function Services({ navigate }: ServicesProps) {
 
             <p className="max-w-2xl text-lg leading-relaxed text-slate-300 sm:text-xl">
               Whether you need an experienced guide or personalized technical
-              mentorship, I offer tailored services for divers pursuing
-              excellence in North Florida&apos;s premier cave systems.
+              mentorship, these are services delivered by Tim directly, not
+              delegated to staff. Tailored for divers pursuing excellence in
+              North Florida&apos;s premier cave systems.
             </p>
           </div>
         </div>
