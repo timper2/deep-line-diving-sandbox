@@ -24,7 +24,7 @@ export function useRouter() {
   const navigate = useCallback((id: RouteId) => {
     const path = routeToPath(id);
     if (currentPath() !== path) {
-      window.location.hash = encodeURIComponent(path);
+      window.location.hash = path;
     }
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }, []);
