@@ -41,7 +41,7 @@ export const COURSES: Record<'sidemount' | 'cave' | 'technical' | 'rebreather', 
       'https://images.pexels.com/photos/31493483/pexels-photo-31493483.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
     intro: [
       'Sidemount transforms how you move through the water. By carrying your cylinders alongside your body rather than on your back, you gain a lower profile, superb trim and independent access to every gas source you carry.',
-      'These courses build the fine motor skills and mindset that make sidemount feel effortless: valve drills, bungee routing, precise buoyancy and a fully redundant approach to gas management that carries directly into overhead and technical environments.',
+      'These courses build the fine motor skills and mindset that make sidemount feel effortless: valve drills, bungee routing, precise buoyancy and a fully redundant approach to gas management. Because sidemount and cave diving are taught by the same instructor here, the configuration you learn is built specifically to carry directly into overhead and technical environments, not adapted after the fact.',
     ],
     stats: [
       { label: 'Format', value: 'Recreational to technical' },
@@ -64,6 +64,18 @@ export const COURSES: Record<'sidemount' | 'cave' | 'technical' | 'rebreather', 
       },
     ],
     levels: [
+      {
+        name: 'Sidemount Fundamentals',
+        meta: 'Foundation · 2 days',
+        description: 'Master trim, propulsion and gas switching in open water before any overhead work begins.',
+        points: ['Harness and bungee setup', 'Trim and propulsion refinement', 'Gas switching fundamentals', 'Open-water drills'],
+      },
+      {
+        name: 'Cave-Ready Sidemount',
+        meta: 'Progression · 2 - 3 days',
+        description: 'Refine valve drills, bungee management and team positioning to the standard required for cave training.',
+        points: ['Valve and shutdown drills', 'Bungee management', 'Team positioning', 'Cave preparation'],
+      },
       {
         name: 'Recreational Sidemount',
         meta: 'Entry level · 2 days',
@@ -95,12 +107,12 @@ export const COURSES: Record<'sidemount' | 'cave' | 'technical' | 'rebreather', 
     id: 'cave',
     eyebrow: 'The overhead environment',
     title: 'Cave Diving',
-    subtitle: 'Explore the flooded passages beyond the light with disciplined training and unshakeable procedures.',
+    subtitle: 'There is no direct route to the surface. Every skill, every piece of gear, every decision has to be deliberate and redundant.',
     heroImage:
       'https://images.pexels.com/photos/10519073/pexels-photo-10519073.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
     intro: [
-      'Cave diving is the most demanding and most rewarding form of diving. There is no direct route to the surface, so every skill, every piece of gear and every decision must be deliberate and redundant.',
-      'Training progresses in careful stages. You build line-handling, navigation, gas planning and failure management until moving calmly through an overhead environment becomes second nature.',
+      'Training here is taught by a TDI cave and CCR cave instructor working the same North Florida systems this course takes place in, not a traveling instructor passing through. The line you learn to follow is one Tim has followed himself, thousands of times, in these springs.',
+      'Training progresses in careful stages: line-handling, navigation, gas planning and failure management, drilled until moving calmly through an overhead environment becomes second nature, under direct supervision at every stage.',
     ],
     stats: [
       { label: 'Environment', value: 'Full overhead' },
@@ -158,12 +170,12 @@ export const COURSES: Record<'sidemount' | 'cave' | 'technical' | 'rebreather', 
     id: 'technical',
     eyebrow: 'Beyond recreational limits',
     title: 'Technical Diving',
-    subtitle: 'Extend your range with decompression, mixed gases and the discipline that makes deep dives repeatable.',
+    subtitle: "Once you're committed to a decompression obligation, the surface stops being the answer to every problem.",
     heroImage:
       'https://images.pexels.com/photos/32293259/pexels-photo-32293259.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
     intro: [
       'Technical diving opens up depths, wrecks and durations that lie beyond recreational limits. It demands planned decompression, multiple gases and a team that operates with precision.',
-      'These courses build the planning, gas management and problem-solving skills that let you treat a demanding dive as a series of controlled, rehearsed steps rather than a gamble.',
+      'These courses build the planning, gas management and problem-solving skills that let you treat a demanding dive as a series of controlled, rehearsed steps: gas switches, staged ascents, and contingencies rehearsed until they\'re automatic, rather than a gamble.',
     ],
     stats: [
       { label: 'Range', value: 'Extended depth' },
@@ -207,19 +219,19 @@ export const COURSES: Record<'sidemount' | 'cave' | 'technical' | 'rebreather', 
       {
         name: 'Nitrox Certification',
         meta: 'Foundation · 2 days',
-        description: 'Learn to plan and use enriched air nitrox to extend no-decompression limits and manage oxygen exposure.',
+        description: 'Extend no-decompression limits and reduce fatigue with enriched air fundamentals.',
         points: ['Nitrox theory and analysis', 'Oxygen exposure management', 'Gas planning and marking', 'Dive computer setup'],
       },
       {
         name: 'Trimix Certification',
         meta: 'Advanced · 4 - 5 days',
-        description: 'Build the knowledge and skills to plan and execute deeper dives using helium-based breathing gases.',
+        description: 'Add helium to the mix to manage narcosis and oxygen toxicity on deeper dives.',
         points: ['Trimix theory and analysis', 'Helium-based gas planning', 'Narcosis and oxygen management', 'Deep dive procedures'],
       },
       {
         name: 'Extended Range Certification',
         meta: 'Progression · 3 - 4 days',
-        description: 'Extend your depth and bottom time with staged decompression, multiple gases and disciplined team procedures.',
+        description: 'Plan and execute staged decompression dives beyond standard recreational limits.',
         points: ['Extended-range dive planning', 'Stage and decompression gas handling', 'Decompression procedures', 'Failure management'],
       },
     ],
@@ -243,8 +255,8 @@ export const COURSES: Record<'sidemount' | 'cave' | 'technical' | 'rebreather', 
     heroImage:
       'https://images.pexels.com/photos/2408692/pexels-photo-2408692.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
     intro: [
-      'A closed-circuit rebreather recycles your breathing gas, removing carbon dioxide and adding oxygen so almost nothing is wasted. The result is dramatically longer dives, warm moist gas and near-silent, bubble-free presence in the water.',
-      'Rebreather training is a progression in its own right, independent of any overhead environment. You start with the fundamentals of the loop and build through decompression and mixed-gas diving, with cave-specific CCR work as an later specialism for those who want it. I teach on both the KISS Sidewinder and the AP Inspiration, so you train on the unit you intend to dive.',
+      'Instruction here isn\'t generic. Tim is a factory-approved instructor on both the KISS Sidewinder and the AP Inspiration, so unit-specific handling, not a workaround, is what you\'re actually taught. The result for you: dramatically longer dives, warm moist gas, and a near-silent, bubble-free presence in the water.',
+      'Rebreather training is a progression in its own right, independent of any overhead environment. You start with the fundamentals of the loop and build through decompression and mixed-gas diving, with cave-specific CCR work available as a later specialism for those who want it.',
     ],
     stats: [
       { label: 'Circuit', value: 'Closed / CCR' },
