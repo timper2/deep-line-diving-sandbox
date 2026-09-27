@@ -76,20 +76,6 @@ export const COURSES: Record<'sidemount' | 'cave' | 'technical' | 'rebreather', 
         description: 'Refine valve drills, bungee management and team positioning to the standard required for cave training.',
         points: ['Valve and shutdown drills', 'Bungee management', 'Team positioning', 'Cave preparation'],
       },
-      {
-        name: 'Recreational Sidemount',
-        meta: 'Entry level · 2 days',
-        description:
-          'Your introduction to the configuration in open water, focused on comfort, balance and cylinder handling.',
-        points: ['Harness and bungee setup', 'Trim and buoyancy refinement', 'S-drills and gas switching', 'Cylinder handling at the surface and at depth'],
-      },
-      {
-        name: 'Advanced Sidemount',
-        meta: 'Progression · 2 - 3 days',
-        description:
-          'Refine the system for demanding dives, adding stages and preparing for overhead and technical progression.',
-        points: ['Stage and deco cylinder handling', 'Failure and shutdown drills', 'Restriction and no-mount practice', 'Team protocols and awareness'],
-      },
     ],
     gallery: [
       {
@@ -199,24 +185,6 @@ export const COURSES: Record<'sidemount' | 'cave' | 'technical' | 'rebreather', 
     ],
     levels: [
       {
-        name: 'Intro to Tech',
-        meta: 'Foundation · 2 days',
-        description: 'Master the doubles or sidemount platform, trim and drills before adding decompression.',
-        points: ['Twinset or sidemount handling', 'Valve and shutdown drills', 'Refined trim and propulsion', 'Team awareness'],
-      },
-      {
-        name: 'Decompression Diver',
-        meta: 'Certification · 3 - 4 days',
-        description: 'Plan and execute staged decompression dives with a single decompression gas.',
-        points: ['Decompression theory and planning', 'Deco gas switching', 'Extended-range dive planning', 'Failure management with deco obligation'],
-      },
-      {
-        name: 'Trimix',
-        meta: 'Advanced · 4 - 5 days',
-        description: 'Add helium to manage narcosis and oxygen exposure on deeper dives.',
-        points: ['Helium-based gas planning', 'Managing narcosis and oxygen exposure', 'Multiple deco gases', 'Deep dive logistics'],
-      },
-      {
         name: 'Nitrox Certification',
         meta: 'Foundation · 2 days',
         description: 'Extend no-decompression limits and reduce fatigue with enriched air fundamentals.',
@@ -251,7 +219,7 @@ export const COURSES: Record<'sidemount' | 'cave' | 'technical' | 'rebreather', 
     id: 'rebreather',
     eyebrow: 'Closed-circuit diving',
     title: 'Rebreather Courses',
-    subtitle: 'Closed-circuit training from your first loop dive to mixed-gas exploration, on the KISS Sidewinder and AP Inspiration.',
+    subtitle: 'A closed-circuit rebreather recycles your breathing gas, removing carbon dioxide and adding oxygen so almost nothing is wasted.',
     heroImage:
       'https://images.pexels.com/photos/2408692/pexels-photo-2408692.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
     intro: [
