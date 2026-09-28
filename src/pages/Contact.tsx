@@ -202,6 +202,16 @@ export default function Contact() {
               </form>
             )}
           </div>
+
+          <aside>
+            <h2 className="font-display text-2xl font-bold tracking-tight text-white">
+              Business Hours
+            </h2>
+            <p className="mt-4 text-sm leading-relaxed text-slate-300">
+              Mon - Fri: 9:00 AM - 5:00 PM<br />
+              Sat - Sun: Closed
+            </p>
+          </aside>
         </div>
       </section>
     </div>
