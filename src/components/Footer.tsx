@@ -45,14 +45,14 @@ export default function Footer({ navigate }: FooterProps) {
 
           <div>
             <h4 className="font-display text-sm font-semibold uppercase tracking-widest text-slate-500">
-              Business Hours
+              Hours
             </h4>
             <ul className="mt-4 space-y-3 text-sm text-slate-300">
               <li className="flex items-start gap-2.5">
                 <Clock3 className="mt-0.5 h-4 w-4 flex-shrink-0 text-accent" />
                 <span>
                   <span className="block">Mon - Fri</span>
-                  <span className="text-slate-400">9:00 AM - 5:00 PM</span>
+                  <span className="text-slate-400">9:00 - 5:00</span>
                 </span>
               </li>
               <li className="flex items-start gap-2.5">
