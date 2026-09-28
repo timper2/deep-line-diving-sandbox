@@ -63,6 +63,15 @@ export default function Footer({ navigate }: FooterProps) {
                 <span>High Springs, Florida</span>
               </li>
             </ul>
+            <div className="mt-6">
+              <h5 className="font-display text-sm font-semibold uppercase tracking-widest text-slate-500">
+                Business Hours
+              </h5>
+              <p className="mt-3 text-sm leading-relaxed text-slate-300">
+                Mon - Fri: 9:00 AM - 5:00 PM<br />
+                Sat - Sun: Closed
+              </p>
+            </div>
           </div>
         </div>
 
