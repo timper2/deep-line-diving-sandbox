@@ -1,4 +1,4 @@
-import { Mail, MapPin, Phone, Waves } from 'lucide-react';
+import { Clock3, Mail, MapPin, Phone, Waves } from 'lucide-react';
 import { ROUTES, type RouteId } from '@/lib/routes';
 import type { NavigateFn } from '@/lib/useRouter';
 
@@ -12,7 +12,7 @@ export default function Footer({ navigate }: FooterProps) {
   return (
     <footer className="border-t border-white/10 bg-slate-950">
       <div className="mx-auto max-w-7xl container-px py-14">
-        <div className="grid gap-10 md:grid-cols-4">
+        <div className="grid gap-10 md:grid-cols-5">
           <div className="md:col-span-2">
             <div className="flex items-center gap-2.5 text-white">
               <span className="grid h-9 w-9 place-items-center rounded-lg bg-accent/15 ring-1 ring-accent/40">
@@ -40,6 +40,28 @@ export default function Footer({ navigate }: FooterProps) {
                   </button>
                 </li>
               ))}
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="font-display text-sm font-semibold uppercase tracking-widest text-slate-500">
+              Hours
+            </h4>
+            <ul className="mt-4 space-y-3 text-sm text-slate-300">
+              <li className="flex items-start gap-2.5">
+                <Clock3 className="mt-0.5 h-4 w-4 flex-shrink-0 text-accent" />
+                <span>
+                  <span className="block">Mon - Fri</span>
+                  <span className="text-slate-400">9:00 - 5:00</span>
+                </span>
+              </li>
+              <li className="flex items-start gap-2.5">
+                <Clock3 className="mt-0.5 h-4 w-4 flex-shrink-0 text-accent" />
+                <span>
+                  <span className="block">Sat - Sun</span>
+                  <span className="text-slate-400">Closed</span>
+                </span>
+              </li>
             </ul>
           </div>
 
