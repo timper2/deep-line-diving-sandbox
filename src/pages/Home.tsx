@@ -1,241 +1,31 @@
-import { ArrowRight, Compass, Gauge, LifeBuoy, Waves, Wind } from 'lucide-react';
-import { COURSES } from '@/data/courses';
+import { ArrowRight, Compass, Gauge, LifeBuoy, Waves } from 'lucide-react';
 import type { RouteId } from '@/lib/routes';
 import type { NavigateFn } from '@/lib/useRouter';
+import { COURSES } from '@/data/courses';
 import CtaBanner from '@/components/CtaBanner';
 
-interface HomeProps {
-  navigate: NavigateFn;
-}
-
-const FEATURED: { id: RouteId; title: string; blurb: string; image: string }[] = [
-  {
-    id: 'sidemount',
-    title: 'Sidemount',
-    blurb: 'Streamlined, balanced diving with independent side-mounted cylinders.',
-    image: COURSES.sidemount.heroImage,
-  },
-  {
-    id: 'cave',
-    title: 'Cave Diving',
-    blurb: 'Disciplined training for the flooded passages beyond the light.',
-    image: COURSES.cave.heroImage,
-  },
-  {
-    id: 'technical',
-    title: 'Technical Diving',
-    blurb: 'Decompression, mixed gases and extended-range dive planning.',
-    image: COURSES.technical.heroImage,
-  },
-  {
-    id: 'rebreather',
-    title: 'Rebreather',
-    blurb: 'Closed-circuit training on the KISS Sidewinder and AP Inspiration.',
-    image: COURSES.rebreather.heroImage,
-  },
+interface HomeProps { navigate: NavigateFn }
+const featured: { id: RouteId; title: string; blurb: string; image: string }[] = [
+  { id: 'sidemount', title: 'Sidemount', blurb: 'Streamlined, balanced diving with independent side-mounted cylinders.', image: COURSES.sidemount.heroImage },
+  { id: 'cave', title: 'Cave Diving', blurb: 'Disciplined training for flooded passages beyond the light.', image: COURSES.cave.heroImage },
+  { id: 'technical', title: 'Technical Diving', blurb: 'Decompression, mixed gases and extended-range dive planning.', image: COURSES.technical.heroImage },
+  { id: 'rebreather', title: 'Rebreather', blurb: 'Closed-circuit training on the KISS Sidewinder and AP Inspiration.', image: COURSES.rebreather.heroImage },
 ];
-
-const APPROACH = [
-  {
-    icon: Compass,
-    title: 'Procedure first',
-    text: 'Every skill is drilled until it is calm and automatic, long before it is ever needed.',
-  },
-  {
-    icon: LifeBuoy,
-    title: 'Full redundancy',
-    text: 'Gas, lights and team protocols are built so a single failure is never a crisis.',
-  },
-  {
-    icon: Gauge,
-    title: 'Small teams',
-    text: 'Low student ratios mean real water time and detailed, personal feedback.',
-  },
-];
+const approach = [[Compass, 'Procedure first', 'Every skill is drilled until it is calm and automatic.'], [LifeBuoy, 'Full redundancy', 'Gas, lights and team protocols are built for failure.'], [Gauge, 'Small teams', 'Low student ratios mean real water time and feedback.']] as const;
+const sites = ['Ginnie Springs Network', 'Peacock Springs State Park', 'Little River Marine Unit', 'Manatee Springs Network'];
 
 export default function Home({ navigate }: HomeProps) {
-  return (
-    <div className="animate-fade-in">
-      <section className="relative flex min-h-screen items-center overflow-hidden">
-        <img
-          src="https://images.pexels.com/photos/10519070/pexels-photo-10519070.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
-          alt="Diver exploring an underwater cave"
-          className="absolute inset-0 h-full w-full object-cover"
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/85 to-slate-950/40" />
-        <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-slate-950/60" />
-
-        <div className="relative mx-auto w-full max-w-7xl container-px pt-28">
-          <div className="flex animate-fade-up flex-wrap gap-2">
-            <span className="inline-flex items-center gap-2 rounded-full border border-accent/30 bg-accent/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-accent">
-              <Wind className="h-3.5 w-3.5" />
-              KISS Sidewinder CCR
-            </span>
-            <span className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-slate-300">
-              <Wind className="h-3.5 w-3.5" />
-              AP Inspiration CCR
-            </span>
-            <span className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-slate-300">
-              <Wind className="h-3.5 w-3.5" />
-              Open Circuit
-            </span>
-          </div>
-          <h1 className="mt-6 max-w-3xl animate-fade-up font-display text-4xl font-bold leading-[1.05] tracking-tight text-white sm:text-6xl lg:text-7xl">
-            Cave, CCR & Technical Diving Instruction — Fort White, Florida
-          </h1>
-          <p className="mt-6 max-w-2xl animate-fade-up text-lg leading-relaxed text-slate-300 sm:text-xl">
-            Built one dive at a time.
-          </p>
-          <div className="mt-9 flex animate-fade-up flex-wrap gap-4">
-            <button
-              onClick={() => navigate('tryout')}
-              className="group inline-flex items-center gap-2 rounded-full bg-accent px-6 py-3 text-sm font-semibold text-slate-950 transition-colors hover:bg-accent-soft"
-            >
-              Try a 1-day tech taster
-              <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
-            </button>
-            <button
-              onClick={() => navigate('cave')}
-              className="inline-flex items-center gap-2 rounded-full border border-white/20 px-6 py-3 text-sm font-semibold text-white transition-colors hover:border-accent hover:text-accent"
-            >
-              Explore courses
-            </button>
-          </div>
-        </div>
-      </section>
-
-      <section className="border-b border-white/10 bg-slate-900/40">
-        <div className="mx-auto max-w-7xl container-px py-12 sm:py-14">
-          <div className="max-w-3xl">
-            <p className="font-display text-sm font-semibold uppercase tracking-[0.25em] text-accent">
-              About Rimstone
-            </p>
-            <p className="mt-4 text-lg leading-relaxed text-slate-300 sm:text-xl">
-              Led by Tim, a PADI Course Director and TDI Instructor in Fort White, Rimstone teaches
-              cave, sidemount, and CCR diving from nitrox and trimix through full cave and advanced
-              mixed-gas training. Every course is built around deliberate practice, KISS Sidewinder
-              expertise, and the belief that skill is built one dive at a time.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section className="border-b border-white/10 bg-slate-900/40">
-        <div className="mx-auto grid max-w-7xl grid-cols-2 gap-y-8 container-px py-10 sm:grid-cols-4">
-          {[
-            { value: 'KISS · AP · OC', label: 'Three platforms' },
-            { value: 'Active', label: 'Still in the water' },
-            { value: 'Full Cave', label: 'Certified explorer' },
-            { value: '1:2', label: 'Instructor ratio' },
-          ].map((s) => (
-            <div key={s.label} className="text-center">
-              <p className="font-display text-2xl font-bold text-white">{s.value}</p>
-              <p className="mt-1 text-xs uppercase tracking-widest text-slate-500">{s.label}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      <section className="mx-auto max-w-7xl container-px py-20 sm:py-24">
-        <div className="grid items-center gap-12 lg:grid-cols-2">
-          <div className="relative">
-            <div className="overflow-hidden rounded-3xl border border-white/10">
-              <img
-                src="https://images.pexels.com/photos/35508959/pexels-photo-35508959.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
-                alt="Rebreather diver underwater"
-                className="h-[30rem] w-full object-cover"
-              />
-            </div>
-            <div className="absolute -bottom-6 -right-4 hidden rounded-2xl border border-white/10 bg-slate-900 p-5 shadow-xl sm:block">
-              <div className="flex items-center gap-3">
-                <span className="grid h-11 w-11 place-items-center rounded-xl bg-accent/15 ring-1 ring-accent/40">
-                  <Waves className="h-5 w-5 text-accent" />
-                </span>
-                <div>
-                  <p className="font-display text-sm font-semibold text-white">Silent running</p>
-                  <p className="text-xs text-slate-400">Bubble-free on the loop</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div>
-            <p className="font-display text-sm font-semibold uppercase tracking-[0.25em] text-accent">
-              The diver behind the training
-            </p>
-            <h2 className="mt-4 font-display text-3xl font-bold tracking-tight text-white sm:text-4xl">
-              Active diver. Obsessively prepared instructor.
-            </h2>
-            <div className="mt-6 space-y-5 text-base leading-relaxed text-slate-300">
-              <p>
-                Built the way the cave builds — deposit by deposit, dive by dive.
-              </p>
-              <p>
-                Whether you are starting sidemount, pushing into cave, or stepping across to
-                closed-circuit, we build every skill deliberately until it holds up under pressure.
-              </p>
-            </div>
-            <div className="mt-8 grid gap-4 sm:grid-cols-3">
-              {APPROACH.map((a) => (
-                <div key={a.title} className="rounded-2xl border border-white/10 bg-slate-900/40 p-4">
-                  <a.icon className="h-5 w-5 text-accent" />
-                  <h3 className="mt-3 font-display text-sm font-semibold text-white">{a.title}</h3>
-                  <p className="mt-1.5 text-xs leading-relaxed text-slate-400">{a.text}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="border-t border-white/10 bg-slate-900/30">
-        <div className="mx-auto max-w-7xl container-px py-20 sm:py-24">
-          <div className="flex flex-col justify-between gap-4 sm:flex-row sm:items-end">
-            <div>
-              <p className="font-display text-sm font-semibold uppercase tracking-[0.25em] text-accent">
-                Training paths
-              </p>
-              <h2 className="mt-4 font-display text-3xl font-bold tracking-tight text-white sm:text-4xl">
-                Choose your next descent.
-              </h2>
-            </div>
-            <p className="max-w-md text-sm leading-relaxed text-slate-400">
-              From your first streamlined sidemount dive to closed-circuit exploration, each path is
-              built to move you forward safely.
-            </p>
-          </div>
-
-          <div className="mt-12 grid gap-6 sm:grid-cols-2">
-            {FEATURED.map((f) => (
-              <button
-                key={f.id}
-                onClick={() => navigate(f.id)}
-                className="group relative overflow-hidden rounded-2xl border border-white/10 text-left transition-colors hover:border-accent/50"
-              >
-                <img
-                  src={f.image}
-                  alt={f.title}
-                  className="h-64 w-full object-cover transition-transform duration-700 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/50 to-transparent" />
-                <div className="absolute inset-x-0 bottom-0 p-6">
-                  <h3 className="font-display text-xl font-bold text-white">{f.title}</h3>
-                  <p className="mt-1.5 text-sm text-slate-300">{f.blurb}</p>
-                  <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-accent">
-                    View course
-                    <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-                  </span>
-                </div>
-              </button>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <CtaBanner
-        navigate={navigate}
-        title="Not sure where to start?"
-        text="Book a 1-day technical try-out and get hands-on with sidemount, doubles and closed-circuit configurations before you commit to a full course."
-      />
-    </div>
-  );
+  return <main className="animate-fade-in bg-obsidian">
+    <section className="relative flex min-h-[88vh] items-end overflow-hidden border-b border-zinc-line">
+      <img src="https://images.pexels.com/photos/10519070/pexels-photo-10519070.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1800" alt="Diver exploring an underwater cave" className="absolute inset-0 h-full w-full object-cover opacity-55" />
+      <div className="absolute inset-0 bg-gradient-to-r from-obsidian via-obsidian/85 to-obsidian/25" /><div className="absolute inset-0 bg-gradient-to-t from-obsidian via-transparent to-obsidian/30" />
+      <div className="relative mx-auto w-full max-w-7xl container-px pb-20 pt-36"><p className="flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.28em] text-spring"><span className="h-px w-10 bg-spring" /> Fort White, Florida · Technical Diving</p><h1 className="mt-7 max-w-5xl font-display text-5xl font-bold uppercase leading-[0.95] tracking-tight text-white sm:text-7xl lg:text-8xl">Performance<br />in the overhead.</h1><p className="mt-8 max-w-xl text-lg leading-relaxed text-zinc-300">Cave, CCR and technical diving instruction built around deliberate practice, peer-level coaching and long-term confidence.</p><div className="mt-9 flex flex-wrap gap-4"><button onClick={() => navigate('tryout')} className="group inline-flex items-center gap-2 bg-spring px-6 py-3 text-sm font-semibold text-obsidian hover:bg-white">Try a 1-day tech taster <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" /></button><button onClick={() => navigate('cave')} className="border border-zinc-400 px-6 py-3 text-sm font-semibold text-white hover:border-spring hover:text-spring">Explore courses</button></div></div>
+    </section>
+    <section className="border-b border-zinc-line"><div className="mx-auto grid max-w-7xl grid-cols-2 divide-x divide-zinc-line container-px py-8 sm:grid-cols-4">{['KISS · AP · OC|Three platforms', '1:2|Instructor ratio', 'Full Cave|Certified explorer', 'Active|Still in the water'].map((item) => { const [value, label] = item.split('|'); return <div key={value} className="px-4 first:pl-0"><p className="font-display text-xl font-bold text-white">{value}</p><p className="mt-2 text-[10px] uppercase tracking-widest text-zinc-500">{label}</p></div> })}</div></section>
+    <section className="mx-auto max-w-7xl container-px py-24 sm:py-32"><div className="grid items-start gap-12 lg:grid-cols-[0.8fr_1.2fr]"><div><p className="text-xs font-semibold uppercase tracking-[0.3em] text-spring">01 // The approach</p><h2 className="mt-5 font-display text-4xl font-bold uppercase leading-tight text-white sm:text-5xl">Train for the dive you actually want to do.</h2></div><div><p className="max-w-2xl text-lg leading-relaxed text-zinc-300">Rimstone is led by active divers who teach the way they dive: methodically, honestly, and with respect for the environment.</p><div className="mt-12 grid gap-8 border-t border-zinc-line pt-8 sm:grid-cols-3">{approach.map(([Icon, title, text]) => <div key={title}><Icon className="h-5 w-5 text-spring" /><h3 className="mt-5 font-display text-sm font-semibold uppercase tracking-widest text-white">{title}</h3><p className="mt-3 text-sm leading-relaxed text-zinc-400">{text}</p></div>)}</div></div></div></section>
+    <section className="border-y border-zinc-line bg-zinc-950/50"><div className="mx-auto max-w-7xl container-px py-24 sm:py-32"><p className="text-xs font-semibold uppercase tracking-[0.3em] text-spring">05 // Mentoring</p><h2 className="mt-5 max-w-4xl font-display text-4xl font-bold uppercase leading-tight text-white sm:text-6xl">No check-the-box timelines.</h2><p className="mt-7 max-w-3xl text-lg leading-relaxed text-zinc-300">Technical diving is performance engineering built through honest repetition, peer-to-peer coaching and a clear-eyed understanding of what happens when conditions change.</p></div></section>
+    <section className="mx-auto max-w-7xl container-px py-24 sm:py-32"><div className="flex items-end justify-between gap-6 border-b border-zinc-line pb-8"><div><p className="text-xs font-semibold uppercase tracking-[0.3em] text-spring">06 // Local logistics</p><h2 className="mt-4 font-display text-4xl font-bold uppercase text-white sm:text-5xl">Know the water.</h2></div><p className="max-w-sm text-sm leading-relaxed text-zinc-400">North Florida rewards preparation. Plan around the operational variables before every descent.</p></div><div className="mt-10 grid gap-6 md:grid-cols-2">{sites.map((site, index) => <article key={site} className="border border-zinc-line p-7 hover:border-spring/60"><div className="flex justify-between"><span className="font-mono text-xs text-spring">0{index + 1}</span><Waves className="h-5 w-5 text-zinc-500" /></div><h3 className="mt-8 font-display text-2xl font-bold uppercase text-white">{site}</h3><p className="mt-4 border-t border-zinc-line pt-5 text-sm leading-relaxed text-zinc-400">Flow characteristics, navigation risks and gas planning are reviewed on the ground before entering the water.</p></article>)}</div></section>
+    <section className="border-t border-zinc-line"><div className="mx-auto max-w-7xl container-px py-20"><h2 className="font-display text-4xl font-bold uppercase text-white">Choose your next descent.</h2><div className="mt-12 grid gap-6 sm:grid-cols-2">{featured.map((course) => <button key={course.id} onClick={() => navigate(course.id)} className="group relative overflow-hidden border border-zinc-line text-left hover:border-spring/60"><img src={course.image} alt={course.title} className="h-64 w-full object-cover opacity-70 transition-transform duration-700 group-hover:scale-105" /><div className="absolute inset-0 bg-gradient-to-t from-obsidian via-obsidian/50 to-transparent" /><div className="absolute inset-x-0 bottom-0 p-6"><h3 className="font-display text-2xl font-bold uppercase text-white">{course.title}</h3><p className="mt-2 text-sm text-zinc-300">{course.blurb}</p><span className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-spring">View course <ArrowRight className="h-4 w-4" /></span></div></button>)}</div></div></section>
+    <CtaBanner navigate={navigate} title="Not sure where to start?" text="Book a 1-day technical try-out and get hands-on with sidemount, doubles and closed-circuit configurations." />
+  </main>;
 }
