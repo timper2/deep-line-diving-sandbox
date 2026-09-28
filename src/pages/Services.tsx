@@ -1,169 +1,101 @@
-import { ArrowRight, Compass, LifeBuoy } from 'lucide-react';
+import { useState, type FormEvent } from 'react';
 
 type ServicesProps = {
   navigate: (page: 'contact') => void;
 };
 
-const services = [
-  {
-    icon: Compass,
-    title: 'Cave Guiding',
-    items: [
-      "Guided cave diving excursions tailored to your comfort level across North Florida's springs, including Peacock, Ginnie, and Cow Springs.",
-      'Full logistics coordination, site briefing, and gas planning support.',
-    ],
-  },
-  {
-    icon: LifeBuoy,
-    title: 'Mentoring',
-    items: [
-      'One-on-one technical diving mentorship focusing on skill mastery, situational awareness, and overhead environment progression.',
-      'Personalized video review, gear configuration optimization, and posture workshops.',
-    ],
-  },
+const sites = [
+  ['Ginnie Springs Network', 'High-flow siphon management, high-consequence run modeling, gas matching parameters, and heavy-flow entry mechanics.'],
+  ['Peacock Springs State Park', 'Complex navigation matrices, circuit line planning, gap/jump spool execution, and cognitive orientation management.'],
+  ['Little River Marine Unit', 'Deep penetration strategies, structural water flow management, and emergency protocol drilling in variable visibility.'],
+  ['Manatee Springs Network', 'Severe high-flow management, critical system failure mitigation parameters, and high-consequence gas planning.'],
 ];
 
 export default function Services({ navigate }: ServicesProps) {
+  const [submitted, setSubmitted] = useState(false);
+
+  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    setSubmitted(true);
+  };
+
   return (
-    <div className="animate-fade-in">
-      <section className="relative flex min-h-screen items-center overflow-hidden">
-        <img
-          src="https://images.pexels.com/photos/10519070/pexels-photo-10519070.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
-          alt="Professional diving services"
-          className="absolute inset-0 h-full w-full object-cover"
-        />
+    <div className="animate-fade-in bg-slate-950">
+      <div className="mx-auto max-w-7xl container-px pb-24 pt-36 sm:pt-40">
+        <p className="mb-12 font-mono text-sm uppercase tracking-widest text-slate-400">
+          Fort White, Florida // High-Consequence Overhead &amp; Mixed-Gas Education
+        </p>
 
-        <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/85 to-slate-950/40" />
-        <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-slate-950/60" />
+        <p className="mb-24 max-w-3xl text-xl leading-relaxed text-slate-200">
+          Based out of the North Florida Spring Matrix, our focus is uncompromising operational proficiency over bare-minimum agency standards. We eliminate commercial marketing fluff to deliver rigorous, performance-driven mentoring for analytical divers who demand results, safety, and absolute environmental conservation.
+        </p>
 
-        <div className="relative mx-auto w-full max-w-7xl container-px pt-28">
-          <div className="flex animate-fade-up flex-col gap-6">
-            <p className="font-display text-sm font-semibold uppercase tracking-[0.25em] text-accent">
-              Professional Services
-            </p>
-
-            <h1 className="max-w-3xl font-display text-4xl font-bold leading-[1.05] tracking-tight text-white sm:text-6xl lg:text-7xl">
-              Guidance for every depth.
-            </h1>
-
-            <p className="max-w-2xl text-lg leading-relaxed text-slate-300 sm:text-xl">
-              Whether you need an experienced guide or personalized technical
-              mentorship, these are services delivered by Tim directly, not
-              delegated to staff. Tailored for divers pursuing excellence in
-              North Florida&apos;s premier cave systems.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section className="mx-auto max-w-7xl container-px py-20 sm:py-24">
-        <div className="grid gap-8 md:grid-cols-2">
-          {services.map((service) => {
-            const Icon = service.icon;
-
-            return (
-              <article
-                key={service.title}
-                className="group rounded-2xl border border-white/10 bg-slate-900/40 p-8 transition-all duration-300 hover:border-accent/50 hover:bg-slate-900/60"
-              >
-                <div className="flex items-start gap-4">
-                  <div className="grid h-12 w-12 shrink-0 place-items-center rounded-xl bg-accent/15 ring-1 ring-accent/40 transition-all group-hover:bg-accent/25">
-                    <Icon className="h-6 w-6 text-accent" aria-hidden="true" />
-                  </div>
-
-                  <div className="flex-1">
-                    <h2 className="font-display text-2xl font-bold tracking-tight text-white">
-                      {service.title}
-                    </h2>
-
-                    <ul className="mt-6 space-y-4">
-                      {service.items.map((item) => (
-                        <li
-                          key={item}
-                          className="flex gap-3 text-sm leading-relaxed text-slate-300"
-                        >
-                          <span
-                            className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-accent"
-                            aria-hidden="true"
-                          />
-                          <span>{item}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
-              </article>
-            );
-          })}
-        </div>
-      </section>
-
-      <section className="border-t border-white/10 bg-slate-900/30">
-        <div className="mx-auto max-w-7xl container-px py-20 sm:py-24">
-          <div className="flex flex-col justify-between gap-4 sm:flex-row sm:items-end">
-            <div>
-              <p className="font-display text-sm font-semibold uppercase tracking-[0.25em] text-accent">
-                Next Steps
-              </p>
-
-              <h2 className="mt-4 font-display text-3xl font-bold tracking-tight text-white sm:text-4xl">
-                Ready to dive deeper?
-              </h2>
+        <section className="mb-24" aria-labelledby="operational-scope">
+          <h1 id="operational-scope" className="mb-8 text-2xl font-bold uppercase tracking-wider text-white">
+            01 // Operational Scope
+          </h1>
+          <div className="max-w-4xl space-y-12 font-mono text-sm text-slate-300">
+            <div className="border-l-2 border-slate-700 pl-6">
+              <h2 className="mb-2 font-bold uppercase text-white">01 // Foundational Doubles &amp; Sidemount Parameters</h2>
+              <p>Focus: Hydrostatic trim optimization, valve drill isolation mechanics, buoyancy control, and propulsion efficiency on Open Circuit platforms.</p>
             </div>
-
-            <p className="max-w-md text-sm leading-relaxed text-slate-400">
-              Contact me to discuss your goals and book your service. Let&apos;s
-              design an experience tailored to your needs.
-            </p>
+            <div className="border-l-2 border-slate-700 pl-6">
+              <h2 className="mb-2 font-bold uppercase text-white">02 // Technical Cave Instruction</h2>
+              <p className="mb-2"><span className="text-white">Prerequisites:</span> Minimum Technical Decompression Procedures (or agency equivalent). 100 logged dives, with at least 30 utilizing double cylinders or sidemount configurations deeper than 100 fsw.</p>
+              <p className="mb-2"><span className="text-white">Hardware Limits:</span> Manifolded doubles or independent sidemount cylinders (minimum 160 cu. ft. total volume). Dual accessible valves, 7-foot primary low-pressure hose on right post, streamlined technical wing with zero automatic failure points (no bungees, no pull-dumps).</p>
+              <p className="mb-2"><span className="text-white">Rigging Rules:</span> Backup hardware and secondary lighting must be secured using small, low-profile manual loops to allow immediate attachment and detachment of double-ended bolt snaps without snag hazards.</p>
+              <p><span className="text-white">Performance Baseline:</span> Static horizontal hover maintained at +/- 3 inches of depth for 5 continuous minutes without hand or foot corrections. Absolute mastery of modified frog, modified flutter, helicopter turn, and backward propulsion with zero sediment disturbance or silting. Instant Rule of Thirds and Rule of Fourths gas math.</p>
+            </div>
+            <div className="border-l-2 border-slate-700 pl-6">
+              <h2 className="mb-2 font-bold uppercase text-white">03 // Decompression Procedures &amp; Mixed Gas</h2>
+              <p>Focus: Accelerated decompression profiles, hyperoxic/hypoxic Trimix gas planning, management of isobaric counter-diffusion, and physiological gas density depth penalties.</p>
+            </div>
+            <div className="border-l-2 border-slate-700 pl-6">
+              <h2 className="mb-2 font-bold uppercase text-white">04 // Closed Circuit Rebreather (CCR) Integration</h2>
+              <p className="mb-2"><span className="text-white">Platform:</span> KISS Sidewinder specific. Achieving complete configuration mastery and failure management within overhead environments.</p>
+              <p className="mb-2"><span className="text-white">Focus:</span> Dual MAV (Manual Addition Valve) optimization, side-mount scrubber routing mechanics, counterlung streamlining, and passive/manual loop gas density tracking.</p>
+              <p><span className="text-white">Rigging Rules:</span> Small equipment loops configured tightly for double-ended bolt snap clipping to eliminate line entrapment points in tight cave restrictions.</p>
+            </div>
+            <div className="border-l-2 border-slate-700 pl-6">
+              <h2 className="mb-2 font-bold uppercase text-white">05 // Long-Term Technical Mentoring</h2>
+              <p>Focus: Customized peer-to-peer team development, custom physical fitness metrics, and ongoing skill retention audits. We reject linear, check-the-box timelines to foster true diving confidence through long-term skill progression.</p>
+            </div>
+            <div className="border-l-2 border-slate-700 pl-6">
+              <h2 className="mb-2 font-bold uppercase text-white">06 // North Florida Cave Guiding</h2>
+              <p>Focus: Logistical management, spring/siphon structural orientation, and strict underwater safety monitoring through complex cave passages for fully certified, qualified technical teams.</p>
+            </div>
           </div>
+        </section>
 
-          <div className="mt-12 grid gap-6 sm:grid-cols-2">
-            <button
-              type="button"
-              onClick={() => navigate('contact')}
-              className="group relative w-full overflow-hidden rounded-2xl border border-white/10 bg-slate-900/40 p-8 text-left transition-all hover:border-accent/50 hover:bg-slate-900/60"
-            >
-              <h3 className="font-display text-xl font-bold text-white">
-                Get in touch
-              </h3>
-
-              <p className="mt-2 text-sm text-slate-300">
-                Discuss your goals and customize your service.
-              </p>
-
-              <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-accent">
-                Send an email
-                <ArrowRight
-                  className="h-4 w-4 transition-transform group-hover:translate-x-1"
-                  aria-hidden="true"
-                />
-              </span>
-            </button>
-
-            <button
-              type="button"
-              onClick={() => navigate('contact')}
-              className="group relative w-full overflow-hidden rounded-2xl border border-accent/30 bg-accent/10 p-8 text-left transition-all hover:bg-accent/20"
-            >
-              <h3 className="font-display text-xl font-bold text-white">
-                Explore your options
-              </h3>
-
-              <p className="mt-2 text-sm text-slate-200">
-                Start a conversation about your diving goals.
-              </p>
-
-              <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-accent">
-                Contact me
-                <ArrowRight
-                  className="h-4 w-4 transition-transform group-hover:translate-x-1"
-                  aria-hidden="true"
-                />
-              </span>
-            </button>
+        <section className="mb-24" aria-labelledby="regional-logistics">
+          <h2 id="regional-logistics" className="mb-8 text-2xl font-bold uppercase tracking-wider text-white">02 // Regional Site Logistics</h2>
+          <div className="grid max-w-4xl grid-cols-1 gap-8 font-mono text-sm text-slate-300 md:grid-cols-2">
+            {sites.map(([name, description]) => (
+              <article key={name} className="rounded border border-slate-800 bg-slate-900/40 p-4">
+                <h3 className="mb-2 font-bold uppercase text-white">{name}</h3>
+                <p>{description}</p>
+              </article>
+            ))}
           </div>
-        </div>
-      </section>
+        </section>
+
+        <section className="max-w-xl" aria-labelledby="candidate-vetting">
+          <h2 id="candidate-vetting" className="mb-4 text-2xl font-bold uppercase tracking-wider text-white">03 // Candidate Vetting</h2>
+          <p className="mb-6 font-mono text-sm text-slate-400">Submit your active logging metrics to request an instructional slot or guiding window.</p>
+          <form onSubmit={handleSubmit} className="space-y-4 font-mono text-sm">
+            <label className="block"><span className="mb-1 block text-xs uppercase text-slate-400">Full Name</span><input required type="text" className="w-full border border-slate-800 bg-slate-900 p-2 text-white focus:border-slate-600 focus:outline-none" /></label>
+            <label className="block"><span className="mb-1 block text-xs uppercase text-slate-400">Current Certifications &amp; Agency</span><input required type="text" className="w-full border border-slate-800 bg-slate-900 p-2 text-white focus:border-slate-600 focus:outline-none" /></label>
+            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+              <label className="block"><span className="mb-1 block text-xs uppercase text-slate-400">Total Logged Dives</span><input required min="0" type="number" className="w-full border border-slate-800 bg-slate-900 p-2 text-white focus:border-slate-600 focus:outline-none" /></label>
+              <label className="block"><span className="mb-1 block text-xs uppercase text-slate-400">Primary Configuration</span><select className="w-full border border-slate-800 bg-slate-900 p-2 text-white focus:border-slate-600 focus:outline-none"><option>Open Circuit (Doubles/Sidemount)</option><option>Closed Circuit Rebreather (CCR)</option></select></label>
+            </div>
+            <label className="block"><span className="mb-1 block text-xs uppercase text-slate-400">Operational Objectives</span><textarea required rows={4} className="w-full border border-slate-800 bg-slate-900 p-2 text-white focus:border-slate-600 focus:outline-none" /></label>
+            <button type="submit" className="w-full bg-white p-3 font-bold uppercase text-black transition-colors hover:bg-slate-200">Submit Application File</button>
+            {submitted && <p role="status" className="border border-slate-800 bg-slate-900 p-3 text-slate-300">Application file received. We will follow up with next steps.</p>}
+          </form>
+          <button type="button" onClick={() => navigate('contact')} className="mt-6 text-sm font-semibold uppercase tracking-wider text-slate-400 underline underline-offset-4 transition-colors hover:text-white">Prefer direct contact?</button>
+        </section>
+      </div>
     </div>
   );
 }
