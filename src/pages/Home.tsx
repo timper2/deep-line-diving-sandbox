@@ -1,12 +1,16 @@
 import { ArrowRight, Compass, Gauge, LifeBuoy, Waves, Wind } from 'lucide-react';
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 import { COURSES } from '@/data/courses';
 =======
 >>>>>>> parent of ac78adc (Complete editorial diving layout)
 =======
 import { COURSES } from '@/data/courses';
 >>>>>>> parent of 5885c1a (Merge pull request #13 from timper2/v0/preview-site-8da9cecf)
+=======
+import { COURSES } from '@/data/courses';
+>>>>>>> parent of f8fe324 (feat: revamp Home page layout and content structure)
 import type { RouteId } from '@/lib/routes';
 import type { NavigateFn } from '@/lib/useRouter';
 import CtaBanner from '@/components/CtaBanner';
@@ -145,8 +149,11 @@ export default function Home({ navigate }: HomeProps) {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> parent of 5885c1a (Merge pull request #13 from timper2/v0/preview-site-8da9cecf)
+=======
+>>>>>>> parent of f8fe324 (feat: revamp Home page layout and content structure)
       <section className="mx-auto max-w-7xl container-px py-20 sm:py-24">
         <div className="grid items-center gap-12 lg:grid-cols-2">
           <div className="relative">
@@ -198,11 +205,14 @@ export default function Home({ navigate }: HomeProps) {
         </div>
       </section>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
       <section className="border-b border-white/10"><div className="mx-auto max-w-7xl container-px py-16 sm:py-20"><div className="max-w-2xl"><p className="text-xs font-semibold uppercase tracking-[0.3em] text-accent">03 / Mentoring</p><h2 className="mt-4 font-display text-3xl font-bold uppercase leading-tight text-white sm:text-5xl">No check-the-box timelines.</h2><p className="mt-6 text-lg leading-relaxed text-slate-300">Technical diving is not a syllabus you rush through. It is performance engineering built through honest repetition, peer-to-peer coaching and a clear-eyed understanding of what happens when conditions change.</p></div><div className="mt-12 grid gap-8 border-t border-white/10 pt-8 md:grid-cols-2"><div><p className="font-display text-sm font-semibold uppercase tracking-widest text-white">The philosophy</p><p className="mt-3 max-w-md text-sm leading-relaxed text-slate-400">We work toward long-term diving confidence: the kind that comes from understanding your equipment, your team and your decisions in the water.</p></div><div><p className="font-display text-sm font-semibold uppercase tracking-widest text-white">The practice</p><p className="mt-3 max-w-md text-sm leading-relaxed text-slate-400">One-on-one skill review, configuration refinement, video feedback and deliberate progression across overhead environments.</p></div></div></div></section>
 >>>>>>> parent of ac78adc (Complete editorial diving layout)
 =======
 >>>>>>> parent of 5885c1a (Merge pull request #13 from timper2/v0/preview-site-8da9cecf)
+=======
+>>>>>>> parent of f8fe324 (feat: revamp Home page layout and content structure)
 
       <section className="border-t border-white/10 bg-slate-900/30">
         <div className="mx-auto max-w-7xl container-px py-20 sm:py-24">
