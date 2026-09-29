@@ -231,6 +231,50 @@ export default function Home({ navigate }: HomeProps) {
         </div>
       </section>
 
+      <section className="border-t border-zinc-800 bg-[#09090B]">
+        <div className="mx-auto max-w-7xl container-px py-20 sm:py-24">
+          <p className="font-mono text-xs font-semibold uppercase tracking-[0.2em] text-[#00A3E0]">
+            Fort White, Florida // High-consequence overhead & mixed-gas education
+          </p>
+          <div className="mt-10 grid gap-10 lg:grid-cols-2">
+            <div>
+              <p className="font-mono text-xs uppercase tracking-[0.2em] text-zinc-500">Service parameters</p>
+              <div className="mt-6 flex flex-col gap-6">
+                {[
+                  ['01 // Foundational Doubles & Sidemount', 'Trim optimization, valve isolation drills, propulsion mechanics.'],
+                  ['02 // Technical Cave Instruction', 'Prerequisites: Technical Deco, 100 logged dives. Hardware: Manifolded doubles/sidemount min 160 cu ft, dual accessible valves, 7ft primary hose. Rigging: Backup gear secured with small manual loops for double-ended bolt snap clipping. Skills: 5-minute static hover at ±3 inches, total frog/flutter/helicopter/back-kick mastery with zero silting, instant gas math.'],
+                  ['03 // Decompression Procedures & Mixed Gas', 'Accelerated deco profiles, Trimix gas planning, isobaric counter-diffusion tracking.'],
+                  ['04 // CCR Integration', 'Platform: KISS Sidewinder specific. Focus: Dual MAV mechanics, side-mount scrubber paths, counterlung streamlining, manual loop density monitoring. Rigging: Small manual loops for bolt snaps.'],
+                  ['05 // Long-Term Technical Mentoring', 'Peer-to-peer team development, customized fitness tracking, ongoing retention audits. Rejecting corporate check-the-box timelines.'],
+                  ['06 // North Florida Cave Guiding', 'Logistical coordination and safety monitoring through Ginnie, Peacock, Little River, and Manatee networks.'],
+                ].map(([title, description]) => (
+                  <article key={title} className="border-l-2 border-[#00A3E0] pl-5">
+                    <h3 className="font-display text-base font-semibold text-white">{title}</h3>
+                    <p className="mt-2 text-sm leading-relaxed text-zinc-400">{description}</p>
+                  </article>
+                ))}
+              </div>
+            </div>
+            <div>
+              <p className="font-mono text-xs uppercase tracking-[0.2em] text-zinc-500">Local site profiles</p>
+              <div className="mt-6 grid gap-6 sm:grid-cols-2">
+                {[
+                  ['Ginnie', 'Flow: variable spring flow. Navigation: line-led cavern and cave passages.'],
+                  ['Peacock', 'Flow: low to moderate spring flow. Navigation: extensive upstream cave systems.'],
+                  ['Little River', 'Flow: current-dependent river entrance. Navigation: overhead passages with changing visibility.'],
+                  ['Manatee', 'Flow: low spring flow. Navigation: layered passage networks and restrictive sections.'],
+                ].map(([site, detail]) => (
+                  <article key={site} className="border border-zinc-800 p-5">
+                    <h3 className="font-display text-lg font-semibold text-white">{site}</h3>
+                    <p className="mt-3 text-sm leading-relaxed text-zinc-400">{detail}</p>
+                  </article>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <CtaBanner
         navigate={navigate}
         title="Not sure where to start?"

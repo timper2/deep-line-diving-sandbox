@@ -51,8 +51,7 @@ export default function Footer({ navigate }: FooterProps) {
               <li className="flex items-start gap-2.5">
                 <Clock3 className="mt-0.5 h-4 w-4 flex-shrink-0 text-accent" />
                 <span>
-                  <span className="block">Mon - Fri</span>
-                  <span className="text-slate-400">9:00 - 5:00</span>
+                  <span className="block">Mon - Fri: 9:00 AM - 5:00 PM</span>
                 </span>
               </li>
               <li className="flex items-start gap-2.5">
