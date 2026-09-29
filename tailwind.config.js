@@ -8,10 +8,18 @@ export default {
         display: ['"Space Grotesk"', 'Inter', 'sans-serif'],
       },
       colors: {
+        slate: {
+          200: '#e7e0d5',
+          300: '#cfc4b5',
+          400: '#aa9d8d',
+          500: '#827567',
+          900: '#3f3932',
+          950: '#28241f',
+        },
         accent: {
-          DEFAULT: '#38bdf8',
-          soft: '#7dd3fc',
-          deep: '#0ea5e9',
+          DEFAULT: '#c49a68',
+          soft: '#d8b88d',
+          deep: '#9c7448',
         },
       },
       keyframes: {

@@ -3,7 +3,13 @@ import { pathToRoute, routeToPath, type RouteId } from '@/lib/routes';
 
 function currentPath(): string {
   const hash = window.location.hash.replace(/^#/, '');
-  return hash || '/';
+  if (!hash) return '/';
+
+  try {
+    return decodeURIComponent(hash) || '/';
+  } catch {
+    return '/';
+  }
 }
 
 export function useRouter() {

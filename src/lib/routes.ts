@@ -6,7 +6,8 @@ export type RouteId =
   | 'rebreather'
   | 'tryout'
   | 'contact'
-  | 'services';
+  | 'services'
+  | 'about';
 
 export interface RouteDef {
   id: RouteId;
@@ -24,6 +25,7 @@ export const ROUTES: RouteDef[] = [
   { id: 'rebreather', path: '/rebreather', label: 'Rebreather', short: 'CCR' },
   { id: 'tryout', path: '/tryout', label: 'Tryout', short: 'Tryout' },
   { id: 'services', path: '/services', label: 'Services', short: 'Services' },
+  { id: 'about', path: '/about', label: 'About', short: 'About' },
   { id: 'contact', path: '/contact', label: 'Contact', short: 'Contact' },
 ];
 

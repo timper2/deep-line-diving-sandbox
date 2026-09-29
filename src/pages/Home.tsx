@@ -81,12 +81,10 @@ export default function Home({ navigate }: HomeProps) {
             </span>
           </div>
           <h1 className="mt-6 max-w-3xl animate-fade-up font-display text-4xl font-bold leading-[1.05] tracking-tight text-white sm:text-6xl lg:text-7xl">
-            Explore beyond the light.
+            Cave, CCR & Technical Diving Instruction — Fort White, Florida
           </h1>
           <p className="mt-6 max-w-2xl animate-fade-up text-lg leading-relaxed text-slate-300 sm:text-xl">
-            I am an active cave diver and closed-circuit rebreather instructor. I dive the KISS
-            Sidewinder and AP Inspiration rebreathers as well as open circuit, and I teach divers to
-            move through overhead and technical environments with precision, redundancy and calm.
+            Built one dive at a time.
           </p>
           <div className="mt-9 flex animate-fade-up flex-wrap gap-4">
             <button
@@ -102,6 +100,22 @@ export default function Home({ navigate }: HomeProps) {
             >
               Explore courses
             </button>
+          </div>
+        </div>
+      </section>
+
+      <section className="border-b border-white/10 bg-slate-900/40">
+        <div className="mx-auto max-w-7xl container-px py-12 sm:py-14">
+          <div className="max-w-3xl">
+            <p className="font-display text-sm font-semibold uppercase tracking-[0.25em] text-accent">
+              About Rimstone
+            </p>
+            <p className="mt-4 text-lg leading-relaxed text-slate-300 sm:text-xl">
+              Led by Tim, a PADI Course Director and TDI Instructor in Fort White, Rimstone teaches
+              cave, sidemount, and CCR diving from nitrox and trimix through full cave and advanced
+              mixed-gas training. Every course is built around deliberate practice, KISS Sidewinder
+              expertise, and the belief that skill is built one dive at a time.
+            </p>
           </div>
         </div>
       </section>
@@ -153,9 +167,7 @@ export default function Home({ navigate }: HomeProps) {
             </h2>
             <div className="mt-6 space-y-5 text-base leading-relaxed text-slate-300">
               <p>
-                I dive the KISS Sidewinder and the AP Inspiration rebreathers as well as open
-                circuit, and I teach across all three. That means you train on the unit you actually
-                want to dive, with an instructor who is in the water on the same gear.
+                Built the way the cave builds — deposit by deposit, dive by dive.
               </p>
               <p>
                 Whether you are starting sidemount, pushing into cave, or stepping across to
