@@ -66,9 +66,13 @@ export default function Footer({ navigate }: FooterProps) {
           </div>
         </div>
 
-        <div className="mt-12 flex flex-col items-center justify-between gap-3 border-t border-white/10 pt-6 text-xs text-slate-500 sm:flex-row">
+        <div className="mt-12 flex flex-col items-start justify-between gap-6 border-t border-white/10 pt-6 text-xs text-slate-500 sm:flex-row sm:items-end">
           <p>&copy; {new Date().getFullYear()} Rimstone Technical Diving. All rights reserved.</p>
-          <p>Train deliberately. Dive safely.</p>
+          <div>
+            <p className="font-mono uppercase tracking-[0.16em] text-slate-400">Business Hours</p>
+            <p className="mt-2">Mon - Fri: 9:00 AM - 5:00 PM</p>
+            <p>Sat - Sun: Closed</p>
+          </div>
         </div>
       </div>
     </footer>
