@@ -7,7 +7,7 @@
     scroll-behavior: smooth;
   }
   body {
-    @apply bg-obsidian text-zinc-100 font-sans antialiased;
+    @apply bg-slate-950 text-slate-200 font-sans antialiased;
   }
   ::selection {
     @apply bg-accent/30 text-white;
@@ -15,15 +15,6 @@
 }
 
 @layer utilities {
-  .bg-obsidian {
-    background-color: #09090B;
-  }
-  .text-spring-water {
-    color: #00A3E0;
-  }
-  .border-spring-water {
-    border-color: #00A3E0;
-  }
   .container-px {
     @apply px-5 sm:px-8 lg:px-12;
   }

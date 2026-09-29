@@ -10,7 +10,7 @@ export default function Footer({ navigate }: FooterProps) {
   const courseLinks: RouteId[] = ['sidemount', 'cave', 'technical', 'rebreather', 'tryout'];
 
   return (
-    <footer className="border-t border-zinc-800 bg-obsidian">
+    <footer className="border-t border-white/10 bg-slate-950">
       <div className="mx-auto max-w-7xl container-px py-14">
         <div className="grid gap-10 md:grid-cols-4">
           <div className="md:col-span-2">
