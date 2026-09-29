@@ -12,7 +12,7 @@ export default function Footer({ navigate }: FooterProps) {
   return (
     <footer className="border-t border-white/10 bg-slate-950">
       <div className="mx-auto max-w-7xl container-px py-14">
-        <div className="grid gap-10 md:grid-cols-5">
+        <div className="grid gap-10 md:grid-cols-4">
           <div className="md:col-span-2">
             <div className="flex items-center gap-2.5 text-white">
               <span className="grid h-9 w-9 place-items-center rounded-lg bg-accent/15 ring-1 ring-accent/40">
