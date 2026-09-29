@@ -7,8 +7,7 @@
     scroll-behavior: smooth;
   }
   body {
-    @apply text-slate-200 font-sans antialiased;
-    background: #09090B;
+    @apply bg-slate-950 text-slate-200 font-sans antialiased;
   }
   ::selection {
     @apply bg-accent/30 text-white;

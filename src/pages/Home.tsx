@@ -104,7 +104,7 @@ export default function Home({ navigate }: HomeProps) {
         </div>
       </section>
 
-      <section className="border-b border-white/10">
+      <section className="border-b border-white/10 bg-slate-900/40">
         <div className="mx-auto max-w-7xl container-px py-12 sm:py-14">
           <div className="max-w-3xl">
             <p className="font-display text-sm font-semibold uppercase tracking-[0.25em] text-accent">
@@ -120,7 +120,7 @@ export default function Home({ navigate }: HomeProps) {
         </div>
       </section>
 
-      <section className="border-b border-white/10">
+      <section className="border-b border-white/10 bg-slate-900/40">
         <div className="mx-auto grid max-w-7xl grid-cols-2 gap-y-8 container-px py-10 sm:grid-cols-4">
           {[
             { value: 'KISS · AP · OC', label: 'Three platforms' },
@@ -146,7 +146,7 @@ export default function Home({ navigate }: HomeProps) {
                 className="h-[30rem] w-full object-cover"
               />
             </div>
-            <div className="absolute -bottom-6 -right-4 hidden border-l border-accent/40 bg-transparent p-5 sm:block">
+            <div className="absolute -bottom-6 -right-4 hidden rounded-2xl border border-white/10 bg-slate-900 p-5 shadow-xl sm:block">
               <div className="flex items-center gap-3">
                 <span className="grid h-11 w-11 place-items-center rounded-xl bg-accent/15 ring-1 ring-accent/40">
                   <Waves className="h-5 w-5 text-accent" />
@@ -174,9 +174,9 @@ export default function Home({ navigate }: HomeProps) {
                 closed-circuit, we build every skill deliberately until it holds up under pressure.
               </p>
             </div>
-            <div className="mt-8 flex flex-col gap-6 sm:grid sm:grid-cols-3 sm:gap-4">
+            <div className="mt-8 grid gap-4 sm:grid-cols-3">
               {APPROACH.map((a) => (
-                <div key={a.title} className="border-l border-white/15 pl-4">
+                <div key={a.title} className="rounded-2xl border border-white/10 bg-slate-900/40 p-4">
                   <a.icon className="h-5 w-5 text-accent" />
                   <h3 className="mt-3 font-display text-sm font-semibold text-white">{a.title}</h3>
                   <p className="mt-1.5 text-xs leading-relaxed text-slate-400">{a.text}</p>
@@ -187,7 +187,7 @@ export default function Home({ navigate }: HomeProps) {
         </div>
       </section>
 
-      <section className="border-t border-white/10">
+      <section className="border-t border-white/10 bg-slate-900/30">
         <div className="mx-auto max-w-7xl container-px py-20 sm:py-24">
           <div className="flex flex-col justify-between gap-4 sm:flex-row sm:items-end">
             <div>
@@ -227,50 +227,6 @@ export default function Home({ navigate }: HomeProps) {
                 </div>
               </button>
             ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="border-t border-white/10">
-        <div className="mx-auto max-w-7xl container-px py-20 sm:py-24">
-          <p className="font-mono text-xs font-semibold uppercase tracking-[0.2em] text-[#00A3E0]">
-            Fort White, Florida // High-consequence overhead & mixed-gas education
-          </p>
-          <div className="mt-10 grid gap-10 lg:grid-cols-2">
-            <div>
-              <p className="font-mono text-xs uppercase tracking-[0.2em] text-zinc-500">Service parameters</p>
-              <div className="mt-6 flex flex-col gap-6">
-                {[
-                  ['01 // Foundational Doubles & Sidemount', 'Trim optimization, valve isolation drills, propulsion mechanics.'],
-                  ['02 // Technical Cave Instruction', 'Prerequisites: Technical Deco, 100 logged dives. Hardware: Manifolded doubles/sidemount min 160 cu ft, dual accessible valves, 7ft primary hose. Rigging: Backup gear secured with small manual loops for double-ended bolt snap clipping. Skills: 5-minute static hover at ±3 inches, total frog/flutter/helicopter/back-kick mastery with zero silting, instant gas math.'],
-                  ['03 // Decompression Procedures & Mixed Gas', 'Accelerated deco profiles, Trimix gas planning, isobaric counter-diffusion tracking.'],
-                  ['04 // CCR Integration', 'Platform: KISS Sidewinder specific. Focus: Dual MAV mechanics, side-mount scrubber paths, counterlung streamlining, manual loop density monitoring. Rigging: Small manual loops for bolt snaps.'],
-                  ['05 // Long-Term Technical Mentoring', 'Peer-to-peer team development, customized fitness tracking, ongoing retention audits. Rejecting corporate check-the-box timelines.'],
-                  ['06 // North Florida Cave Guiding', 'Logistical coordination and safety monitoring through Ginnie, Peacock, Little River, and Manatee networks.'],
-                ].map(([title, description]) => (
-                  <article key={title} className="border-l-2 border-[#00A3E0] pl-5">
-                    <h3 className="font-display text-base font-semibold text-white">{title}</h3>
-                    <p className="mt-2 text-sm leading-relaxed text-zinc-400">{description}</p>
-                  </article>
-                ))}
-              </div>
-            </div>
-            <div>
-              <p className="font-mono text-xs uppercase tracking-[0.2em] text-zinc-500">Local site profiles</p>
-              <div className="mt-6 flex flex-col gap-6">
-                {[
-                  ['Ginnie', 'Flow: variable spring flow. Navigation: line-led cavern and cave passages.'],
-                  ['Peacock', 'Flow: low to moderate spring flow. Navigation: extensive upstream cave systems.'],
-                  ['Little River', 'Flow: current-dependent river entrance. Navigation: overhead passages with changing visibility.'],
-                  ['Manatee', 'Flow: low spring flow. Navigation: layered passage networks and restrictive sections.'],
-                ].map(([site, detail]) => (
-                  <article key={site} className="border-l border-white/15 pl-5">
-                    <h3 className="font-display text-lg font-semibold text-white">{site}</h3>
-                    <p className="mt-3 text-sm leading-relaxed text-zinc-400">{detail}</p>
-                  </article>
-                ))}
-              </div>
-            </div>
           </div>
         </div>
       </section>
