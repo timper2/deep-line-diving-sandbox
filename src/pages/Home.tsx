@@ -64,9 +64,9 @@ export default function Home({ navigate }: HomeProps) {
         <div className="mb-10 border-b border-zinc-800 pb-4">
           <p className="font-mono text-xs uppercase tracking-[0.24em] text-zinc-500">Operational specifications</p>
         </div>
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
           {specifications.map((specification) => (
-            <article key={specification.title} className="border border-zinc-800 bg-zinc-900/40 p-6">
+            <article key={specification.title} className="flex h-full flex-col border border-zinc-800 bg-zinc-900/40 p-6">
               <h2 className="font-mono text-sm uppercase tracking-[0.16em] text-white">{specification.title}</h2>
               <p className="mt-4 text-base leading-8 text-zinc-300">{specification.text}</p>
             </article>
