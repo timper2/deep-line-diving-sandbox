@@ -370,51 +370,59 @@ export default function Home({ navigate }: HomeProps) {
           </header>
 
           <ul className="mt-16 grid gap-8 sm:grid-cols-2">
-            <li>
+            <li className="row-span-8 grid grid-rows-subgrid gap-y-0">
               <article
                 itemScope
                 itemType="https://schema.org/Course"
-                className="group flex h-full flex-col gap-3 rounded-2xl border border-white/10 bg-slate-900/40 p-8 transition-colors hover:border-accent/50"
+                className="group row-span-8 grid grid-rows-subgrid gap-y-0 rounded-2xl border border-white/10 bg-slate-900/40 p-8 transition-colors hover:border-accent/50"
               >
                 <h3 itemProp="name" className="font-display text-xl font-bold text-white">
                   Sidemount Diving
                 </h3>
-                <p className="text-xs font-semibold uppercase tracking-widest text-slate-500">
+                <p className="mt-3 text-xs font-semibold uppercase tracking-widest text-slate-500">
                   Focus: trim, balance and gas redundancy
                 </p>
-                <p itemProp="description" className="text-sm leading-relaxed text-slate-300">
+                <p itemProp="description" className="mt-3 text-sm leading-relaxed text-slate-300">
                   Streamlined, balanced diving with independent side-mounted cylinders, from
                   Sidemount Fundamentals through Cave-Ready Sidemount.
                 </p>
-                <div className="mt-3 divide-y divide-white/15 border border-white/15 font-mono text-xs">
-                  <div className="px-4 py-3">
-                    <p className="font-semibold uppercase tracking-[0.2em] text-accent">[Course configuration]</p>
-                    <p className="mt-2 leading-relaxed text-slate-200">Sidemount · 2x AL80 independent cylinders · long-hose primary</p>
+                <div className="contents font-mono text-xs">
+                  <div className="mt-6 border-x border-t border-white/15 px-5 py-4 font-mono text-xs">
+                    <p className="font-semibold uppercase tracking-[0.2em] text-accent">[Rig configuration]</p>
+                    <ul className="mt-3 flex flex-col gap-1.5 leading-relaxed text-slate-200">
+                      <li>Sidemount</li>
+                      <li>2x AL80 independent cylinders</li>
+                      <li>Long-hose primary · bungeed backup</li>
+                    </ul>
                   </div>
-                  <div className="px-4 py-3">
-                    <p className="font-semibold uppercase tracking-[0.2em] text-accent">[Environmental protocols]</p>
-                    <p className="mt-2 leading-relaxed text-slate-200">Strict Thirds · Daylight Zone Limit · Continuous Guideline</p>
-                  </div>
-                  <div className="px-4 py-3">
-                    <p className="font-semibold uppercase tracking-[0.2em] text-accent">[Core execution flight]</p>
-                    <p className="mt-2 leading-relaxed text-slate-200">Valve Shutdowns · Regulator Swaps · Team Gas Sharing · Frog &amp; Back Kick</p>
-                  </div>
-                  <div className="px-4 py-3">
-                    <p className="font-semibold uppercase tracking-[0.2em] text-accent">[Operational params]</p>
-                    <dl className="mt-2 flex flex-col gap-1.5">
-                      <div className="grid grid-cols-3 gap-4">
-                        <dt className="uppercase tracking-widest text-slate-500">Max depth</dt>
-                        <dd className="col-span-2 text-slate-200">100 fsw</dd>
-                      </div>
-                      <div className="grid grid-cols-3 gap-4">
-                        <dt className="uppercase tracking-widest text-slate-500">Gas mix</dt>
-                        <dd className="col-span-2 text-slate-200">Air / Nitrox</dd>
-                      </div>
-                      <div className="grid grid-cols-3 gap-4">
-                        <dt className="uppercase tracking-widest text-slate-500">Deco</dt>
-                        <dd className="col-span-2 text-slate-200">No-stop limits only</dd>
-                      </div>
+                  <div className="border-x border-t border-white/15 px-5 py-4 font-mono text-xs">
+                    <p className="font-semibold uppercase tracking-[0.2em] text-accent">[Gas &amp; depth parameters]</p>
+                    <dl className="mt-3 grid grid-cols-[7rem_1fr] gap-x-4 gap-y-1.5 leading-relaxed">
+                      <dt className="uppercase tracking-widest text-slate-500">Max depth</dt>
+                      <dd className="text-slate-200">100 fsw</dd>
+                      <dt className="uppercase tracking-widest text-slate-500">Gas mixes</dt>
+                      <dd className="text-slate-200">Air / EAN32</dd>
+                      <dt className="uppercase tracking-widest text-slate-500">EANx limit</dt>
+                      <dd className="text-slate-200">PO2 1.4 working</dd>
                     </dl>
+                  </div>
+                  <div className="border-x border-t border-white/15 px-5 py-4 font-mono text-xs">
+                    <p className="font-semibold uppercase tracking-[0.2em] text-accent">[Environmental protocols]</p>
+                    <ul className="mt-3 flex flex-col gap-1.5 leading-relaxed text-slate-200">
+                      <li>Gas Matching</li>
+                      <li>Rule of Thirds</li>
+                      <li>Daylight Zone Limit</li>
+                      <li>Continuous Guideline</li>
+                    </ul>
+                  </div>
+                  <div className="border border-white/15 px-5 py-4 font-mono text-xs">
+                    <p className="font-semibold uppercase tracking-[0.2em] text-accent">[Critical in-water drills]</p>
+                    <ul className="mt-3 flex flex-col gap-1.5 leading-relaxed text-slate-200">
+                      <li>Valve Shutdowns</li>
+                      <li>Regulator Swaps</li>
+                      <li>Team Gas Sharing</li>
+                      <li>Frog &amp; Back Kick</li>
+                    </ul>
                   </div>
                 </div>
                 <a
@@ -424,7 +432,7 @@ export default function Home({ navigate }: HomeProps) {
                     e.preventDefault();
                     navigate('sidemount');
                   }}
-                  className="mt-auto inline-flex items-center gap-1.5 pt-4 text-sm font-semibold text-accent"
+                  className="inline-flex items-center gap-1.5 self-end justify-self-start pt-6 text-sm font-semibold text-accent"
                 >
                   Explore sidemount diving classes
                   <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" aria-hidden="true" />
@@ -432,51 +440,59 @@ export default function Home({ navigate }: HomeProps) {
               </article>
             </li>
 
-            <li>
+            <li className="row-span-8 grid grid-rows-subgrid gap-y-0">
               <article
                 itemScope
                 itemType="https://schema.org/Course"
-                className="group flex h-full flex-col gap-3 rounded-2xl border border-white/10 bg-slate-900/40 p-8 transition-colors hover:border-accent/50"
+                className="group row-span-8 grid grid-rows-subgrid gap-y-0 rounded-2xl border border-white/10 bg-slate-900/40 p-8 transition-colors hover:border-accent/50"
               >
                 <h3 itemProp="name" className="font-display text-xl font-bold text-white">
                   Cave Diving
                 </h3>
-                <p className="text-xs font-semibold uppercase tracking-widest text-slate-500">
+                <p className="mt-3 text-xs font-semibold uppercase tracking-widest text-slate-500">
                   Focus: guideline, failure management and conservation
                 </p>
-                <p itemProp="description" className="text-sm leading-relaxed text-slate-300">
+                <p itemProp="description" className="mt-3 text-sm leading-relaxed text-slate-300">
                   Disciplined overhead training in North Florida&apos;s springs, progressing from
                   Cavern and Intro to Cave to Full Cave certification.
                 </p>
-                <div className="mt-3 divide-y divide-white/15 border border-white/15 font-mono text-xs">
-                  <div className="px-4 py-3">
-                    <p className="font-semibold uppercase tracking-[0.2em] text-accent">[Course configuration]</p>
-                    <p className="mt-2 leading-relaxed text-slate-200">Backmount Doubles or Sidemount · primary reel · spools &amp; cookies</p>
+                <div className="contents font-mono text-xs">
+                  <div className="mt-6 border-x border-t border-white/15 px-5 py-4 font-mono text-xs">
+                    <p className="font-semibold uppercase tracking-[0.2em] text-accent">[Rig configuration]</p>
+                    <ul className="mt-3 flex flex-col gap-1.5 leading-relaxed text-slate-200">
+                      <li>Backmount Doubles or Sidemount</li>
+                      <li>Primary reel · safety spool</li>
+                      <li>Line arrows &amp; cookies</li>
+                    </ul>
                   </div>
-                  <div className="px-4 py-3">
-                    <p className="font-semibold uppercase tracking-[0.2em] text-accent">[Environmental protocols]</p>
-                    <p className="mt-2 leading-relaxed text-slate-200">Strict Thirds · Continuous Guideline · Turn on First Diver</p>
-                  </div>
-                  <div className="px-4 py-3">
-                    <p className="font-semibold uppercase tracking-[0.2em] text-accent">[Core execution flight]</p>
-                    <p className="mt-2 leading-relaxed text-slate-200">Silt-Out Navigation · Lost Line Search · Lights-Out Exits · Team Gas Sharing</p>
-                  </div>
-                  <div className="px-4 py-3">
-                    <p className="font-semibold uppercase tracking-[0.2em] text-accent">[Operational params]</p>
-                    <dl className="mt-2 flex flex-col gap-1.5">
-                      <div className="grid grid-cols-3 gap-4">
-                        <dt className="uppercase tracking-widest text-slate-500">Max depth</dt>
-                        <dd className="col-span-2 text-slate-200">130 fsw</dd>
-                      </div>
-                      <div className="grid grid-cols-3 gap-4">
-                        <dt className="uppercase tracking-widest text-slate-500">Gas mix</dt>
-                        <dd className="col-span-2 text-slate-200">Air / Nitrox</dd>
-                      </div>
-                      <div className="grid grid-cols-3 gap-4">
-                        <dt className="uppercase tracking-widest text-slate-500">Deco</dt>
-                        <dd className="col-span-2 text-slate-200">EANx Switch</dd>
-                      </div>
+                  <div className="border-x border-t border-white/15 px-5 py-4 font-mono text-xs">
+                    <p className="font-semibold uppercase tracking-[0.2em] text-accent">[Gas &amp; depth parameters]</p>
+                    <dl className="mt-3 grid grid-cols-[7rem_1fr] gap-x-4 gap-y-1.5 leading-relaxed">
+                      <dt className="uppercase tracking-widest text-slate-500">Max depth</dt>
+                      <dd className="text-slate-200">130 fsw</dd>
+                      <dt className="uppercase tracking-widest text-slate-500">Gas mixes</dt>
+                      <dd className="text-slate-200">Air / EAN32</dd>
+                      <dt className="uppercase tracking-widest text-slate-500">EANx limit</dt>
+                      <dd className="text-slate-200">PO2 1.4 working · 1.6 deco</dd>
                     </dl>
+                  </div>
+                  <div className="border-x border-t border-white/15 px-5 py-4 font-mono text-xs">
+                    <p className="font-semibold uppercase tracking-[0.2em] text-accent">[Environmental protocols]</p>
+                    <ul className="mt-3 flex flex-col gap-1.5 leading-relaxed text-slate-200">
+                      <li>Gas Matching</li>
+                      <li>Rule of Thirds</li>
+                      <li>Continuous Guideline</li>
+                      <li>Turn on First Diver</li>
+                    </ul>
+                  </div>
+                  <div className="border border-white/15 px-5 py-4 font-mono text-xs">
+                    <p className="font-semibold uppercase tracking-[0.2em] text-accent">[Critical in-water drills]</p>
+                    <ul className="mt-3 flex flex-col gap-1.5 leading-relaxed text-slate-200">
+                      <li>Silt-Out Navigation</li>
+                      <li>Lost Line Search</li>
+                      <li>Lights-Out Exits</li>
+                      <li>Team Gas Sharing</li>
+                    </ul>
                   </div>
                 </div>
                 <a
@@ -486,7 +502,7 @@ export default function Home({ navigate }: HomeProps) {
                     e.preventDefault();
                     navigate('cave');
                   }}
-                  className="mt-auto inline-flex items-center gap-1.5 pt-4 text-sm font-semibold text-accent"
+                  className="inline-flex items-center gap-1.5 self-end justify-self-start pt-6 text-sm font-semibold text-accent"
                 >
                   Explore cave diving classes
                   <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" aria-hidden="true" />
@@ -494,51 +510,59 @@ export default function Home({ navigate }: HomeProps) {
               </article>
             </li>
 
-            <li>
+            <li className="row-span-8 grid grid-rows-subgrid gap-y-0">
               <article
                 itemScope
                 itemType="https://schema.org/Course"
-                className="group flex h-full flex-col gap-3 rounded-2xl border border-white/10 bg-slate-900/40 p-8 transition-colors hover:border-accent/50"
+                className="group row-span-8 grid grid-rows-subgrid gap-y-0 rounded-2xl border border-white/10 bg-slate-900/40 p-8 transition-colors hover:border-accent/50"
               >
                 <h3 itemProp="name" className="font-display text-xl font-bold text-white">
                   Technical Diving
                 </h3>
-                <p className="text-xs font-semibold uppercase tracking-widest text-slate-500">
+                <p className="mt-3 text-xs font-semibold uppercase tracking-widest text-slate-500">
                   Focus: decompression, mixed gas and team discipline
                 </p>
-                <p itemProp="description" className="text-sm leading-relaxed text-slate-300">
+                <p itemProp="description" className="mt-3 text-sm leading-relaxed text-slate-300">
                   Decompression procedures, gas management and extended-range planning across
                   Nitrox, Trimix and Extended Range certifications.
                 </p>
-                <div className="mt-3 divide-y divide-white/15 border border-white/15 font-mono text-xs">
-                  <div className="px-4 py-3">
-                    <p className="font-semibold uppercase tracking-[0.2em] text-accent">[Course configuration]</p>
-                    <p className="mt-2 leading-relaxed text-slate-200">Backmount Doubles · isolator manifold · slung stage &amp; deco bottles</p>
+                <div className="contents font-mono text-xs">
+                  <div className="mt-6 border-x border-t border-white/15 px-5 py-4 font-mono text-xs">
+                    <p className="font-semibold uppercase tracking-[0.2em] text-accent">[Rig configuration]</p>
+                    <ul className="mt-3 flex flex-col gap-1.5 leading-relaxed text-slate-200">
+                      <li>Backmount Doubles</li>
+                      <li>Isolator manifold</li>
+                      <li>Slung stage &amp; deco bottles</li>
+                    </ul>
                   </div>
-                  <div className="px-4 py-3">
-                    <p className="font-semibold uppercase tracking-[0.2em] text-accent">[Environmental protocols]</p>
-                    <p className="mt-2 leading-relaxed text-slate-200">Minimum Gas Reserve · Analyzed &amp; Labeled Bottles · Switch at MOD</p>
-                  </div>
-                  <div className="px-4 py-3">
-                    <p className="font-semibold uppercase tracking-[0.2em] text-accent">[Core execution flight]</p>
-                    <p className="mt-2 leading-relaxed text-slate-200">Gas Switch Protocol · Stage Handling · Lost Deco Gas · Air-Share Ascents</p>
-                  </div>
-                  <div className="px-4 py-3">
-                    <p className="font-semibold uppercase tracking-[0.2em] text-accent">[Operational params]</p>
-                    <dl className="mt-2 flex flex-col gap-1.5">
-                      <div className="grid grid-cols-3 gap-4">
-                        <dt className="uppercase tracking-widest text-slate-500">Max depth</dt>
-                        <dd className="col-span-2 text-slate-200">330 fsw</dd>
-                      </div>
-                      <div className="grid grid-cols-3 gap-4">
-                        <dt className="uppercase tracking-widest text-slate-500">Gas mix</dt>
-                        <dd className="col-span-2 text-slate-200">Nitrox / Normoxic &amp; Hypoxic Trimix</dd>
-                      </div>
-                      <div className="grid grid-cols-3 gap-4">
-                        <dt className="uppercase tracking-widest text-slate-500">Deco</dt>
-                        <dd className="col-span-2 text-slate-200">EAN50 @ 70 fsw · O2 @ 20 fsw</dd>
-                      </div>
+                  <div className="border-x border-t border-white/15 px-5 py-4 font-mono text-xs">
+                    <p className="font-semibold uppercase tracking-[0.2em] text-accent">[Gas &amp; depth parameters]</p>
+                    <dl className="mt-3 grid grid-cols-[7rem_1fr] gap-x-4 gap-y-1.5 leading-relaxed">
+                      <dt className="uppercase tracking-widest text-slate-500">Max depth</dt>
+                      <dd className="text-slate-200">330 fsw</dd>
+                      <dt className="uppercase tracking-widest text-slate-500">Gas mixes</dt>
+                      <dd className="text-slate-200">Normoxic &amp; Hypoxic Trimix</dd>
+                      <dt className="uppercase tracking-widest text-slate-500">Deco gas</dt>
+                      <dd className="text-slate-200">EAN50 @ 70 fsw · O2 @ 20 fsw</dd>
                     </dl>
+                  </div>
+                  <div className="border-x border-t border-white/15 px-5 py-4 font-mono text-xs">
+                    <p className="font-semibold uppercase tracking-[0.2em] text-accent">[Environmental protocols]</p>
+                    <ul className="mt-3 flex flex-col gap-1.5 leading-relaxed text-slate-200">
+                      <li>Gas Matching</li>
+                      <li>Minimum Gas Reserve</li>
+                      <li>Analyzed &amp; Labeled Bottles</li>
+                      <li>Switch at MOD</li>
+                    </ul>
+                  </div>
+                  <div className="border border-white/15 px-5 py-4 font-mono text-xs">
+                    <p className="font-semibold uppercase tracking-[0.2em] text-accent">[Critical in-water drills]</p>
+                    <ul className="mt-3 flex flex-col gap-1.5 leading-relaxed text-slate-200">
+                      <li>Gas Switch Protocol</li>
+                      <li>Stage Handling</li>
+                      <li>Lost Deco Gas</li>
+                      <li>Air-Share Ascents</li>
+                    </ul>
                   </div>
                 </div>
                 <a
@@ -548,7 +572,7 @@ export default function Home({ navigate }: HomeProps) {
                     e.preventDefault();
                     navigate('technical');
                   }}
-                  className="mt-auto inline-flex items-center gap-1.5 pt-4 text-sm font-semibold text-accent"
+                  className="inline-flex items-center gap-1.5 self-end justify-self-start pt-6 text-sm font-semibold text-accent"
                 >
                   Explore technical diving classes
                   <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" aria-hidden="true" />
@@ -556,51 +580,59 @@ export default function Home({ navigate }: HomeProps) {
               </article>
             </li>
 
-            <li>
+            <li className="row-span-8 grid grid-rows-subgrid gap-y-0">
               <article
                 itemScope
                 itemType="https://schema.org/Course"
-                className="group flex h-full flex-col gap-3 rounded-2xl border border-white/10 bg-slate-900/40 p-8 transition-colors hover:border-accent/50"
+                className="group row-span-8 grid grid-rows-subgrid gap-y-0 rounded-2xl border border-white/10 bg-slate-900/40 p-8 transition-colors hover:border-accent/50"
               >
                 <h3 itemProp="name" className="font-display text-xl font-bold text-white">
                   Rebreather (CCR) Diving
                 </h3>
-                <p className="text-xs font-semibold uppercase tracking-widest text-slate-500">
+                <p className="mt-3 text-xs font-semibold uppercase tracking-widest text-slate-500">
                   Focus: loop control, PO2 monitoring and bailout
                 </p>
-                <p itemProp="description" className="text-sm leading-relaxed text-slate-300">
+                <p itemProp="description" className="mt-3 text-sm leading-relaxed text-slate-300">
                   Closed-circuit training on the KISS Sidewinder and AP Inspiration, from CCR Air
                   Diluent through CCR Mixed Gas and CCR Cave.
                 </p>
-                <div className="mt-3 divide-y divide-white/15 border border-white/15 font-mono text-xs">
-                  <div className="px-4 py-3">
-                    <p className="font-semibold uppercase tracking-[0.2em] text-accent">[Course configuration]</p>
-                    <p className="mt-2 leading-relaxed text-slate-200">CCR Platform · KISS Sidewinder mCCR / AP Inspiration eCCR · OC bailout</p>
+                <div className="contents font-mono text-xs">
+                  <div className="mt-6 border-x border-t border-white/15 px-5 py-4 font-mono text-xs">
+                    <p className="font-semibold uppercase tracking-[0.2em] text-accent">[Rig configuration]</p>
+                    <ul className="mt-3 flex flex-col gap-1.5 leading-relaxed text-slate-200">
+                      <li>CCR Platform</li>
+                      <li>KISS Sidewinder mCCR / AP Inspiration eCCR</li>
+                      <li>Slung OC bailout cylinders</li>
+                    </ul>
                   </div>
-                  <div className="px-4 py-3">
-                    <p className="font-semibold uppercase tracking-[0.2em] text-accent">[Environmental protocols]</p>
-                    <p className="mt-2 leading-relaxed text-slate-200">Bailout Gas to Surface · Strict Thirds on Bailout · Continuous Guideline</p>
-                  </div>
-                  <div className="px-4 py-3">
-                    <p className="font-semibold uppercase tracking-[0.2em] text-accent">[Core execution flight]</p>
-                    <p className="mt-2 leading-relaxed text-slate-200">Catastrophic Loop Failures · Diluent Flush · Hypoxia &amp; Hyperoxia Drills · OC Bailout Ascents</p>
-                  </div>
-                  <div className="px-4 py-3">
-                    <p className="font-semibold uppercase tracking-[0.2em] text-accent">[Operational params]</p>
-                    <dl className="mt-2 flex flex-col gap-1.5">
-                      <div className="grid grid-cols-3 gap-4">
-                        <dt className="uppercase tracking-widest text-slate-500">Max depth</dt>
-                        <dd className="col-span-2 text-slate-200">130 fsw air dil · 330 fsw trimix dil</dd>
-                      </div>
-                      <div className="grid grid-cols-3 gap-4">
-                        <dt className="uppercase tracking-widest text-slate-500">Gas mix</dt>
-                        <dd className="col-span-2 text-slate-200">Air / Trimix Diluent · O2</dd>
-                      </div>
-                      <div className="grid grid-cols-3 gap-4">
-                        <dt className="uppercase tracking-widest text-slate-500">Deco</dt>
-                        <dd className="col-span-2 text-slate-200">Setpoint 0.7 / 1.3 · OC Bailout</dd>
-                      </div>
+                  <div className="border-x border-t border-white/15 px-5 py-4 font-mono text-xs">
+                    <p className="font-semibold uppercase tracking-[0.2em] text-accent">[Gas &amp; depth parameters]</p>
+                    <dl className="mt-3 grid grid-cols-[7rem_1fr] gap-x-4 gap-y-1.5 leading-relaxed">
+                      <dt className="uppercase tracking-widest text-slate-500">Max depth</dt>
+                      <dd className="text-slate-200">130 fsw air dil · 330 fsw trimix dil</dd>
+                      <dt className="uppercase tracking-widest text-slate-500">Gas mixes</dt>
+                      <dd className="text-slate-200">Air / Trimix Diluent · O2</dd>
+                      <dt className="uppercase tracking-widest text-slate-500">Setpoints</dt>
+                      <dd className="text-slate-200">0.7 low · 1.3 high</dd>
                     </dl>
+                  </div>
+                  <div className="border-x border-t border-white/15 px-5 py-4 font-mono text-xs">
+                    <p className="font-semibold uppercase tracking-[0.2em] text-accent">[Environmental protocols]</p>
+                    <ul className="mt-3 flex flex-col gap-1.5 leading-relaxed text-slate-200">
+                      <li>Bailout Gas to Surface</li>
+                      <li>Gas Matching on Bailout</li>
+                      <li>Rule of Thirds on Bailout</li>
+                      <li>Continuous Guideline</li>
+                    </ul>
+                  </div>
+                  <div className="border border-white/15 px-5 py-4 font-mono text-xs">
+                    <p className="font-semibold uppercase tracking-[0.2em] text-accent">[Critical in-water drills]</p>
+                    <ul className="mt-3 flex flex-col gap-1.5 leading-relaxed text-slate-200">
+                      <li>Catastrophic Loop Failures</li>
+                      <li>Diluent Flush</li>
+                      <li>Hypoxia &amp; Hyperoxia Drills</li>
+                      <li>OC Bailout Ascents</li>
+                    </ul>
                   </div>
                 </div>
                 <a
@@ -610,7 +642,7 @@ export default function Home({ navigate }: HomeProps) {
                     e.preventDefault();
                     navigate('rebreather');
                   }}
-                  className="mt-auto inline-flex items-center gap-1.5 pt-4 text-sm font-semibold text-accent"
+                  className="inline-flex items-center gap-1.5 self-end justify-self-start pt-6 text-sm font-semibold text-accent"
                 >
                   Explore rebreather diving classes
                   <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" aria-hidden="true" />
