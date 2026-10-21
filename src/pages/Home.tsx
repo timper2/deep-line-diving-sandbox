@@ -386,28 +386,36 @@ export default function Home({ navigate }: HomeProps) {
                   Streamlined, balanced diving with independent side-mounted cylinders, from
                   Sidemount Fundamentals through Cave-Ready Sidemount.
                 </p>
-                <div className="mt-3 border border-white/15">
-                  <p className="border-b border-white/15 px-4 py-2 font-mono text-xs font-semibold uppercase tracking-[0.2em] text-accent">
-                    [Operational spec matrix]
-                  </p>
-                  <dl className="divide-y divide-white/10 font-mono text-xs">
-                    <div className="grid grid-cols-3 gap-4 px-4 py-2.5">
-                      <dt className="uppercase tracking-widest text-slate-500">MOD</dt>
-                      <dd className="col-span-2 text-slate-200">30 m / 100 ft · air · PO2 1.4</dd>
-                    </div>
-                    <div className="grid grid-cols-3 gap-4 px-4 py-2.5">
-                      <dt className="uppercase tracking-widest text-slate-500">Gas rules</dt>
-                      <dd className="col-span-2 text-slate-200">Rule of thirds · independent cylinders</dd>
-                    </div>
-                    <div className="grid grid-cols-3 gap-4 px-4 py-2.5">
-                      <dt className="uppercase tracking-widest text-slate-500">Loop type</dt>
-                      <dd className="col-span-2 text-slate-200">Open circuit · 2x sidemount</dd>
-                    </div>
-                    <div className="grid grid-cols-3 gap-4 px-4 py-2.5">
-                      <dt className="uppercase tracking-widest text-slate-500">Syllabus</dt>
-                      <dd className="col-span-2 text-slate-200">Trim · valve drills · regulator swaps</dd>
-                    </div>
-                  </dl>
+                <div className="mt-3 divide-y divide-white/15 border border-white/15 font-mono text-xs">
+                  <div className="px-4 py-3">
+                    <p className="font-semibold uppercase tracking-[0.2em] text-accent">[Course configuration]</p>
+                    <p className="mt-2 leading-relaxed text-slate-200">Sidemount · 2x AL80 independent cylinders · long-hose primary</p>
+                  </div>
+                  <div className="px-4 py-3">
+                    <p className="font-semibold uppercase tracking-[0.2em] text-accent">[Environmental protocols]</p>
+                    <p className="mt-2 leading-relaxed text-slate-200">Strict Thirds · Daylight Zone Limit · Continuous Guideline</p>
+                  </div>
+                  <div className="px-4 py-3">
+                    <p className="font-semibold uppercase tracking-[0.2em] text-accent">[Core execution flight]</p>
+                    <p className="mt-2 leading-relaxed text-slate-200">Valve Shutdowns · Regulator Swaps · Team Gas Sharing · Frog &amp; Back Kick</p>
+                  </div>
+                  <div className="px-4 py-3">
+                    <p className="font-semibold uppercase tracking-[0.2em] text-accent">[Operational params]</p>
+                    <dl className="mt-2 flex flex-col gap-1.5">
+                      <div className="grid grid-cols-3 gap-4">
+                        <dt className="uppercase tracking-widest text-slate-500">Max depth</dt>
+                        <dd className="col-span-2 text-slate-200">100 fsw</dd>
+                      </div>
+                      <div className="grid grid-cols-3 gap-4">
+                        <dt className="uppercase tracking-widest text-slate-500">Gas mix</dt>
+                        <dd className="col-span-2 text-slate-200">Air / Nitrox</dd>
+                      </div>
+                      <div className="grid grid-cols-3 gap-4">
+                        <dt className="uppercase tracking-widest text-slate-500">Deco</dt>
+                        <dd className="col-span-2 text-slate-200">No-stop limits only</dd>
+                      </div>
+                    </dl>
+                  </div>
                 </div>
                 <a
                   href="/sidemount"
@@ -440,28 +448,36 @@ export default function Home({ navigate }: HomeProps) {
                   Disciplined overhead training in North Florida&apos;s springs, progressing from
                   Cavern and Intro to Cave to Full Cave certification.
                 </p>
-                <div className="mt-3 border border-white/15">
-                  <p className="border-b border-white/15 px-4 py-2 font-mono text-xs font-semibold uppercase tracking-[0.2em] text-accent">
-                    [Operational spec matrix]
-                  </p>
-                  <dl className="divide-y divide-white/10 font-mono text-xs">
-                    <div className="grid grid-cols-3 gap-4 px-4 py-2.5">
-                      <dt className="uppercase tracking-widest text-slate-500">MOD</dt>
-                      <dd className="col-span-2 text-slate-200">30 m / 100 ft · EAN32 · PO2 1.4</dd>
-                    </div>
-                    <div className="grid grid-cols-3 gap-4 px-4 py-2.5">
-                      <dt className="uppercase tracking-widest text-slate-500">Gas rules</dt>
-                      <dd className="col-span-2 text-slate-200">Thirds · turn on first diver</dd>
-                    </div>
-                    <div className="grid grid-cols-3 gap-4 px-4 py-2.5">
-                      <dt className="uppercase tracking-widest text-slate-500">Loop type</dt>
-                      <dd className="col-span-2 text-slate-200">Open circuit · backmount or sidemount</dd>
-                    </div>
-                    <div className="grid grid-cols-3 gap-4 px-4 py-2.5">
-                      <dt className="uppercase tracking-widest text-slate-500">Syllabus</dt>
-                      <dd className="col-span-2 text-slate-200">Line laying · lost line · lights out</dd>
-                    </div>
-                  </dl>
+                <div className="mt-3 divide-y divide-white/15 border border-white/15 font-mono text-xs">
+                  <div className="px-4 py-3">
+                    <p className="font-semibold uppercase tracking-[0.2em] text-accent">[Course configuration]</p>
+                    <p className="mt-2 leading-relaxed text-slate-200">Backmount Doubles or Sidemount · primary reel · spools &amp; cookies</p>
+                  </div>
+                  <div className="px-4 py-3">
+                    <p className="font-semibold uppercase tracking-[0.2em] text-accent">[Environmental protocols]</p>
+                    <p className="mt-2 leading-relaxed text-slate-200">Strict Thirds · Continuous Guideline · Turn on First Diver</p>
+                  </div>
+                  <div className="px-4 py-3">
+                    <p className="font-semibold uppercase tracking-[0.2em] text-accent">[Core execution flight]</p>
+                    <p className="mt-2 leading-relaxed text-slate-200">Silt-Out Navigation · Lost Line Search · Lights-Out Exits · Team Gas Sharing</p>
+                  </div>
+                  <div className="px-4 py-3">
+                    <p className="font-semibold uppercase tracking-[0.2em] text-accent">[Operational params]</p>
+                    <dl className="mt-2 flex flex-col gap-1.5">
+                      <div className="grid grid-cols-3 gap-4">
+                        <dt className="uppercase tracking-widest text-slate-500">Max depth</dt>
+                        <dd className="col-span-2 text-slate-200">130 fsw</dd>
+                      </div>
+                      <div className="grid grid-cols-3 gap-4">
+                        <dt className="uppercase tracking-widest text-slate-500">Gas mix</dt>
+                        <dd className="col-span-2 text-slate-200">Air / Nitrox</dd>
+                      </div>
+                      <div className="grid grid-cols-3 gap-4">
+                        <dt className="uppercase tracking-widest text-slate-500">Deco</dt>
+                        <dd className="col-span-2 text-slate-200">EANx Switch</dd>
+                      </div>
+                    </dl>
+                  </div>
                 </div>
                 <a
                   href="/cave"
@@ -494,28 +510,36 @@ export default function Home({ navigate }: HomeProps) {
                   Decompression procedures, gas management and extended-range planning across
                   Nitrox, Trimix and Extended Range certifications.
                 </p>
-                <div className="mt-3 border border-white/15">
-                  <p className="border-b border-white/15 px-4 py-2 font-mono text-xs font-semibold uppercase tracking-[0.2em] text-accent">
-                    [Operational spec matrix]
-                  </p>
-                  <dl className="divide-y divide-white/10 font-mono text-xs">
-                    <div className="grid grid-cols-3 gap-4 px-4 py-2.5">
-                      <dt className="uppercase tracking-widest text-slate-500">MOD</dt>
-                      <dd className="col-span-2 text-slate-200">45–100 m · trimix · PO2 1.4 bottom</dd>
-                    </div>
-                    <div className="grid grid-cols-3 gap-4 px-4 py-2.5">
-                      <dt className="uppercase tracking-widest text-slate-500">Gas rules</dt>
-                      <dd className="col-span-2 text-slate-200">EAN50 / O2 deco · PO2 1.6 max</dd>
-                    </div>
-                    <div className="grid grid-cols-3 gap-4 px-4 py-2.5">
-                      <dt className="uppercase tracking-widest text-slate-500">Loop type</dt>
-                      <dd className="col-span-2 text-slate-200">Open circuit · doubles + stages</dd>
-                    </div>
-                    <div className="grid grid-cols-3 gap-4 px-4 py-2.5">
-                      <dt className="uppercase tracking-widest text-slate-500">Syllabus</dt>
-                      <dd className="col-span-2 text-slate-200">Deco planning · gas switches · ascents</dd>
-                    </div>
-                  </dl>
+                <div className="mt-3 divide-y divide-white/15 border border-white/15 font-mono text-xs">
+                  <div className="px-4 py-3">
+                    <p className="font-semibold uppercase tracking-[0.2em] text-accent">[Course configuration]</p>
+                    <p className="mt-2 leading-relaxed text-slate-200">Backmount Doubles · isolator manifold · slung stage &amp; deco bottles</p>
+                  </div>
+                  <div className="px-4 py-3">
+                    <p className="font-semibold uppercase tracking-[0.2em] text-accent">[Environmental protocols]</p>
+                    <p className="mt-2 leading-relaxed text-slate-200">Minimum Gas Reserve · Analyzed &amp; Labeled Bottles · Switch at MOD</p>
+                  </div>
+                  <div className="px-4 py-3">
+                    <p className="font-semibold uppercase tracking-[0.2em] text-accent">[Core execution flight]</p>
+                    <p className="mt-2 leading-relaxed text-slate-200">Gas Switch Protocol · Stage Handling · Lost Deco Gas · Air-Share Ascents</p>
+                  </div>
+                  <div className="px-4 py-3">
+                    <p className="font-semibold uppercase tracking-[0.2em] text-accent">[Operational params]</p>
+                    <dl className="mt-2 flex flex-col gap-1.5">
+                      <div className="grid grid-cols-3 gap-4">
+                        <dt className="uppercase tracking-widest text-slate-500">Max depth</dt>
+                        <dd className="col-span-2 text-slate-200">330 fsw</dd>
+                      </div>
+                      <div className="grid grid-cols-3 gap-4">
+                        <dt className="uppercase tracking-widest text-slate-500">Gas mix</dt>
+                        <dd className="col-span-2 text-slate-200">Nitrox / Normoxic &amp; Hypoxic Trimix</dd>
+                      </div>
+                      <div className="grid grid-cols-3 gap-4">
+                        <dt className="uppercase tracking-widest text-slate-500">Deco</dt>
+                        <dd className="col-span-2 text-slate-200">EAN50 @ 70 fsw · O2 @ 20 fsw</dd>
+                      </div>
+                    </dl>
+                  </div>
                 </div>
                 <a
                   href="/technical"
@@ -548,28 +572,36 @@ export default function Home({ navigate }: HomeProps) {
                   Closed-circuit training on the KISS Sidewinder and AP Inspiration, from CCR Air
                   Diluent through CCR Mixed Gas and CCR Cave.
                 </p>
-                <div className="mt-3 border border-white/15">
-                  <p className="border-b border-white/15 px-4 py-2 font-mono text-xs font-semibold uppercase tracking-[0.2em] text-accent">
-                    [Operational spec matrix]
-                  </p>
-                  <dl className="divide-y divide-white/10 font-mono text-xs">
-                    <div className="grid grid-cols-3 gap-4 px-4 py-2.5">
-                      <dt className="uppercase tracking-widest text-slate-500">MOD</dt>
-                      <dd className="col-span-2 text-slate-200">40 m air dil · 100 m trimix dil</dd>
-                    </div>
-                    <div className="grid grid-cols-3 gap-4 px-4 py-2.5">
-                      <dt className="uppercase tracking-widest text-slate-500">Gas rules</dt>
-                      <dd className="col-span-2 text-slate-200">Setpoint 0.7 / 1.3 · OC bailout to surface</dd>
-                    </div>
-                    <div className="grid grid-cols-3 gap-4 px-4 py-2.5">
-                      <dt className="uppercase tracking-widest text-slate-500">Loop type</dt>
-                      <dd className="col-span-2 text-slate-200">KISS Sidewinder mCCR · AP Inspiration eCCR</dd>
-                    </div>
-                    <div className="grid grid-cols-3 gap-4 px-4 py-2.5">
-                      <dt className="uppercase tracking-widest text-slate-500">Syllabus</dt>
-                      <dd className="col-span-2 text-slate-200">Loop checks · PO2 control · bailout drills</dd>
-                    </div>
-                  </dl>
+                <div className="mt-3 divide-y divide-white/15 border border-white/15 font-mono text-xs">
+                  <div className="px-4 py-3">
+                    <p className="font-semibold uppercase tracking-[0.2em] text-accent">[Course configuration]</p>
+                    <p className="mt-2 leading-relaxed text-slate-200">CCR Platform · KISS Sidewinder mCCR / AP Inspiration eCCR · OC bailout</p>
+                  </div>
+                  <div className="px-4 py-3">
+                    <p className="font-semibold uppercase tracking-[0.2em] text-accent">[Environmental protocols]</p>
+                    <p className="mt-2 leading-relaxed text-slate-200">Bailout Gas to Surface · Strict Thirds on Bailout · Continuous Guideline</p>
+                  </div>
+                  <div className="px-4 py-3">
+                    <p className="font-semibold uppercase tracking-[0.2em] text-accent">[Core execution flight]</p>
+                    <p className="mt-2 leading-relaxed text-slate-200">Catastrophic Loop Failures · Diluent Flush · Hypoxia &amp; Hyperoxia Drills · OC Bailout Ascents</p>
+                  </div>
+                  <div className="px-4 py-3">
+                    <p className="font-semibold uppercase tracking-[0.2em] text-accent">[Operational params]</p>
+                    <dl className="mt-2 flex flex-col gap-1.5">
+                      <div className="grid grid-cols-3 gap-4">
+                        <dt className="uppercase tracking-widest text-slate-500">Max depth</dt>
+                        <dd className="col-span-2 text-slate-200">130 fsw air dil · 330 fsw trimix dil</dd>
+                      </div>
+                      <div className="grid grid-cols-3 gap-4">
+                        <dt className="uppercase tracking-widest text-slate-500">Gas mix</dt>
+                        <dd className="col-span-2 text-slate-200">Air / Trimix Diluent · O2</dd>
+                      </div>
+                      <div className="grid grid-cols-3 gap-4">
+                        <dt className="uppercase tracking-widest text-slate-500">Deco</dt>
+                        <dd className="col-span-2 text-slate-200">Setpoint 0.7 / 1.3 · OC Bailout</dd>
+                      </div>
+                    </dl>
+                  </div>
                 </div>
                 <a
                   href="/rebreather"
