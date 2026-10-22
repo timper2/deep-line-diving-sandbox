@@ -388,24 +388,24 @@ export default function Home({ navigate }: HomeProps) {
                 </p>
                 <div className="mt-3 border border-white/15">
                   <p className="border-b border-white/15 px-4 py-2 font-mono text-xs font-semibold uppercase tracking-[0.2em] text-accent">
-                    [Operational spec matrix]
+                    [Dive profile]
                   </p>
-                  <dl className="divide-y divide-white/10 font-mono text-xs">
-                    <div className="grid grid-cols-3 gap-4 px-4 py-2.5">
-                      <dt className="uppercase tracking-widest text-slate-500">MOD</dt>
-                      <dd className="col-span-2 text-slate-200">30 m / 100 ft · air · PO2 1.4</dd>
+                  <dl className="font-mono text-xs">
+                    <div className="grid grid-cols-[8.5rem_minmax(0,1fr)] items-baseline gap-x-4 border-b border-zinc-800 px-4 py-3 text-left">
+                      <dt className="uppercase tracking-wider text-slate-500">Configuration</dt>
+                      <dd className="text-slate-200">Sidemount or Backmount Doubles</dd>
                     </div>
-                    <div className="grid grid-cols-3 gap-4 px-4 py-2.5">
-                      <dt className="uppercase tracking-widest text-slate-500">Gas rules</dt>
-                      <dd className="col-span-2 text-slate-200">Rule of thirds · independent cylinders</dd>
+                    <div className="grid grid-cols-[8.5rem_minmax(0,1fr)] items-baseline gap-x-4 border-b border-zinc-800 px-4 py-3 text-left">
+                      <dt className="uppercase tracking-wider text-slate-500">Operational Gas</dt>
+                      <dd className="text-slate-200">Strict Thirds / EANx Management</dd>
                     </div>
-                    <div className="grid grid-cols-3 gap-4 px-4 py-2.5">
-                      <dt className="uppercase tracking-widest text-slate-500">Loop type</dt>
-                      <dd className="col-span-2 text-slate-200">Open circuit · 2x sidemount</dd>
+                    <div className="grid grid-cols-[8.5rem_minmax(0,1fr)] items-baseline gap-x-4 border-b border-zinc-800 px-4 py-3 text-left">
+                      <dt className="uppercase tracking-wider text-slate-500">Core Protocols</dt>
+                      <dd className="text-slate-200">Continuous Guideline / Team Cross-Checks</dd>
                     </div>
-                    <div className="grid grid-cols-3 gap-4 px-4 py-2.5">
-                      <dt className="uppercase tracking-widest text-slate-500">Syllabus</dt>
-                      <dd className="col-span-2 text-slate-200">Trim · valve drills · regulator swaps</dd>
+                    <div className="grid grid-cols-[8.5rem_minmax(0,1fr)] items-baseline gap-x-4 border-b border-zinc-800 px-4 py-3 text-left">
+                      <dt className="uppercase tracking-wider text-slate-500">Critical Drills</dt>
+                      <dd className="text-slate-200">Silt Navigation / Valve &amp; Regulator Swaps</dd>
                     </div>
                   </dl>
                 </div>
@@ -442,24 +442,24 @@ export default function Home({ navigate }: HomeProps) {
                 </p>
                 <div className="mt-3 border border-white/15">
                   <p className="border-b border-white/15 px-4 py-2 font-mono text-xs font-semibold uppercase tracking-[0.2em] text-accent">
-                    [Operational spec matrix]
+                    [Dive profile]
                   </p>
-                  <dl className="divide-y divide-white/10 font-mono text-xs">
-                    <div className="grid grid-cols-3 gap-4 px-4 py-2.5">
-                      <dt className="uppercase tracking-widest text-slate-500">MOD</dt>
-                      <dd className="col-span-2 text-slate-200">30 m / 100 ft · EAN32 · PO2 1.4</dd>
+                  <dl className="font-mono text-xs">
+                    <div className="grid grid-cols-[8.5rem_minmax(0,1fr)] items-baseline gap-x-4 border-b border-zinc-800 px-4 py-3 text-left">
+                      <dt className="uppercase tracking-wider text-slate-500">Configuration</dt>
+                      <dd className="text-slate-200">Sidemount or Backmount Doubles</dd>
                     </div>
-                    <div className="grid grid-cols-3 gap-4 px-4 py-2.5">
-                      <dt className="uppercase tracking-widest text-slate-500">Gas rules</dt>
-                      <dd className="col-span-2 text-slate-200">Thirds · turn on first diver</dd>
+                    <div className="grid grid-cols-[8.5rem_minmax(0,1fr)] items-baseline gap-x-4 border-b border-zinc-800 px-4 py-3 text-left">
+                      <dt className="uppercase tracking-wider text-slate-500">Operational Gas</dt>
+                      <dd className="text-slate-200">Strict Thirds / EANx Management</dd>
                     </div>
-                    <div className="grid grid-cols-3 gap-4 px-4 py-2.5">
-                      <dt className="uppercase tracking-widest text-slate-500">Loop type</dt>
-                      <dd className="col-span-2 text-slate-200">Open circuit · backmount or sidemount</dd>
+                    <div className="grid grid-cols-[8.5rem_minmax(0,1fr)] items-baseline gap-x-4 border-b border-zinc-800 px-4 py-3 text-left">
+                      <dt className="uppercase tracking-wider text-slate-500">Core Protocols</dt>
+                      <dd className="text-slate-200">Continuous Guideline / Team Cross-Checks</dd>
                     </div>
-                    <div className="grid grid-cols-3 gap-4 px-4 py-2.5">
-                      <dt className="uppercase tracking-widest text-slate-500">Syllabus</dt>
-                      <dd className="col-span-2 text-slate-200">Line laying · lost line · lights out</dd>
+                    <div className="grid grid-cols-[8.5rem_minmax(0,1fr)] items-baseline gap-x-4 border-b border-zinc-800 px-4 py-3 text-left">
+                      <dt className="uppercase tracking-wider text-slate-500">Critical Drills</dt>
+                      <dd className="text-slate-200">Silt Navigation / Valve &amp; Regulator Swaps</dd>
                     </div>
                   </dl>
                 </div>
@@ -496,24 +496,24 @@ export default function Home({ navigate }: HomeProps) {
                 </p>
                 <div className="mt-3 border border-white/15">
                   <p className="border-b border-white/15 px-4 py-2 font-mono text-xs font-semibold uppercase tracking-[0.2em] text-accent">
-                    [Operational spec matrix]
+                    [Dive profile]
                   </p>
-                  <dl className="divide-y divide-white/10 font-mono text-xs">
-                    <div className="grid grid-cols-3 gap-4 px-4 py-2.5">
-                      <dt className="uppercase tracking-widest text-slate-500">MOD</dt>
-                      <dd className="col-span-2 text-slate-200">45–100 m · trimix · PO2 1.4 bottom</dd>
+                  <dl className="font-mono text-xs">
+                    <div className="grid grid-cols-[8.5rem_minmax(0,1fr)] items-baseline gap-x-4 border-b border-zinc-800 px-4 py-3 text-left">
+                      <dt className="uppercase tracking-wider text-slate-500">Configuration</dt>
+                      <dd className="text-slate-200">Sidemount or Backmount Doubles</dd>
                     </div>
-                    <div className="grid grid-cols-3 gap-4 px-4 py-2.5">
-                      <dt className="uppercase tracking-widest text-slate-500">Gas rules</dt>
-                      <dd className="col-span-2 text-slate-200">EAN50 / O2 deco · PO2 1.6 max</dd>
+                    <div className="grid grid-cols-[8.5rem_minmax(0,1fr)] items-baseline gap-x-4 border-b border-zinc-800 px-4 py-3 text-left">
+                      <dt className="uppercase tracking-wider text-slate-500">Operational Gas</dt>
+                      <dd className="text-slate-200">Strict Thirds / EANx Management</dd>
                     </div>
-                    <div className="grid grid-cols-3 gap-4 px-4 py-2.5">
-                      <dt className="uppercase tracking-widest text-slate-500">Loop type</dt>
-                      <dd className="col-span-2 text-slate-200">Open circuit · doubles + stages</dd>
+                    <div className="grid grid-cols-[8.5rem_minmax(0,1fr)] items-baseline gap-x-4 border-b border-zinc-800 px-4 py-3 text-left">
+                      <dt className="uppercase tracking-wider text-slate-500">Core Protocols</dt>
+                      <dd className="text-slate-200">Continuous Guideline / Team Cross-Checks</dd>
                     </div>
-                    <div className="grid grid-cols-3 gap-4 px-4 py-2.5">
-                      <dt className="uppercase tracking-widest text-slate-500">Syllabus</dt>
-                      <dd className="col-span-2 text-slate-200">Deco planning · gas switches · ascents</dd>
+                    <div className="grid grid-cols-[8.5rem_minmax(0,1fr)] items-baseline gap-x-4 border-b border-zinc-800 px-4 py-3 text-left">
+                      <dt className="uppercase tracking-wider text-slate-500">Critical Drills</dt>
+                      <dd className="text-slate-200">Silt Navigation / Valve &amp; Regulator Swaps</dd>
                     </div>
                   </dl>
                 </div>
@@ -550,24 +550,24 @@ export default function Home({ navigate }: HomeProps) {
                 </p>
                 <div className="mt-3 border border-white/15">
                   <p className="border-b border-white/15 px-4 py-2 font-mono text-xs font-semibold uppercase tracking-[0.2em] text-accent">
-                    [Operational spec matrix]
+                    [Dive profile]
                   </p>
-                  <dl className="divide-y divide-white/10 font-mono text-xs">
-                    <div className="grid grid-cols-3 gap-4 px-4 py-2.5">
-                      <dt className="uppercase tracking-widest text-slate-500">MOD</dt>
-                      <dd className="col-span-2 text-slate-200">40 m air dil · 100 m trimix dil</dd>
+                  <dl className="font-mono text-xs">
+                    <div className="grid grid-cols-[8.5rem_minmax(0,1fr)] items-baseline gap-x-4 border-b border-zinc-800 px-4 py-3 text-left">
+                      <dt className="uppercase tracking-wider text-slate-500">Configuration</dt>
+                      <dd className="text-slate-200">Sidemount or Backmount Doubles</dd>
                     </div>
-                    <div className="grid grid-cols-3 gap-4 px-4 py-2.5">
-                      <dt className="uppercase tracking-widest text-slate-500">Gas rules</dt>
-                      <dd className="col-span-2 text-slate-200">Setpoint 0.7 / 1.3 · OC bailout to surface</dd>
+                    <div className="grid grid-cols-[8.5rem_minmax(0,1fr)] items-baseline gap-x-4 border-b border-zinc-800 px-4 py-3 text-left">
+                      <dt className="uppercase tracking-wider text-slate-500">Operational Gas</dt>
+                      <dd className="text-slate-200">Strict Thirds / EANx Management</dd>
                     </div>
-                    <div className="grid grid-cols-3 gap-4 px-4 py-2.5">
-                      <dt className="uppercase tracking-widest text-slate-500">Loop type</dt>
-                      <dd className="col-span-2 text-slate-200">KISS Sidewinder mCCR · AP Inspiration eCCR</dd>
+                    <div className="grid grid-cols-[8.5rem_minmax(0,1fr)] items-baseline gap-x-4 border-b border-zinc-800 px-4 py-3 text-left">
+                      <dt className="uppercase tracking-wider text-slate-500">Core Protocols</dt>
+                      <dd className="text-slate-200">Continuous Guideline / Team Cross-Checks</dd>
                     </div>
-                    <div className="grid grid-cols-3 gap-4 px-4 py-2.5">
-                      <dt className="uppercase tracking-widest text-slate-500">Syllabus</dt>
-                      <dd className="col-span-2 text-slate-200">Loop checks · PO2 control · bailout drills</dd>
+                    <div className="grid grid-cols-[8.5rem_minmax(0,1fr)] items-baseline gap-x-4 border-b border-zinc-800 px-4 py-3 text-left">
+                      <dt className="uppercase tracking-wider text-slate-500">Critical Drills</dt>
+                      <dd className="text-slate-200">Silt Navigation / Valve &amp; Regulator Swaps</dd>
                     </div>
                   </dl>
                 </div>
