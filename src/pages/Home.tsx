@@ -556,16 +556,16 @@ export default function Home({ navigate }: HomeProps) {
                   Sidemount Diving
                 </h3>
                 <p className="text-left text-sm leading-relaxed text-slate-400">
-                  Streamlined equipment configuration paths from foundational sidemount setup through complex multi-tank cave and technical adjustments.
+                  Optimizing the platform for clean profile tracking and system integration from initial setup through multi-tank configurations.
                 </p>
                 <ul itemProp="description" className="flex flex-col gap-2 text-sm leading-relaxed text-slate-300">
                   <li className="flex gap-3 text-left">
                     <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 bg-accent" />
-                    <p><span className="font-semibold text-white">In-Water Skill:</span> Perfecting stable horizontal trim and precise buoyancy control within a streamlined harness platform.</p>
+                    <p><span className="font-semibold text-white">In-Water Skill:</span> Perfecting stable horizontal trim and precise buoyancy control while managing side-mounted cylinders.</p>
                   </li>
                   <li className="flex gap-3 text-left">
                     <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 bg-accent" />
-                    <p><span className="font-semibold text-white">Analytical Focus:</span> Developing clean system fluency and smooth independent tank management before moving into restrictive river and spring environments.</p>
+                    <p><span className="font-semibold text-white">Analytical Focus:</span> Developing clear equipment fluency and smooth independent tank management across deep and complex environments.</p>
                   </li>
                 </ul>
                 <a
@@ -593,7 +593,7 @@ export default function Home({ navigate }: HomeProps) {
                   Cave Diving
                 </h3>
                 <p className="text-left text-sm leading-relaxed text-slate-400">
-                  Overhead training progressions covering Cavern, Intro to Cave, and Full Cave certification boundaries across North Florida&apos;s local spring networks.
+                  Overhead training progressions covering Cavern, Intro to Cave, and Full Cave certification boundaries across premier international cave networks.
                 </p>
                 <ul itemProp="description" className="flex flex-col gap-2 text-sm leading-relaxed text-slate-300">
                   <li className="flex gap-3 text-left">
@@ -602,7 +602,7 @@ export default function Home({ navigate }: HomeProps) {
                   </li>
                   <li className="flex gap-3 text-left">
                     <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 bg-accent" />
-                    <p><span className="font-semibold text-white">Analytical Focus:</span> Relying on strict team cross-checks, continuous guideline awareness, and sharp situational judgment inside the unforgiving systems of Florida Cave Country.</p>
+                    <p><span className="font-semibold text-white">Analytical Focus:</span> Relying on strict team cross-checks, continuous guideline awareness, and sharp situational judgment with primary training in Florida Cave Country and the Riviera Maya.</p>
                   </li>
                 </ul>
                 <a
@@ -630,7 +630,7 @@ export default function Home({ navigate }: HomeProps) {
                   Technical Diving
                 </h3>
                 <p className="text-left text-sm leading-relaxed text-slate-400">
-                  Extended-range, technical, and deep mixed-gas training tracks designed for managing increased physiological exposure safely.
+                  Extended-range, technical, and deep helium-based Trimix training tracks designed for managing increased physiological exposure safely.
                 </p>
                 <ul itemProp="description" className="flex flex-col gap-2 text-sm leading-relaxed text-slate-300">
                   <li className="flex gap-3 text-left">
@@ -672,7 +672,7 @@ export default function Home({ navigate }: HomeProps) {
                 <ul itemProp="description" className="flex flex-col gap-2 text-sm leading-relaxed text-slate-300">
                   <li className="flex gap-3 text-left">
                     <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 bg-accent" />
-                    <p><span className="font-semibold text-white">In-Water Skill:</span> Mastering precise, hands-free depth control without relying on lung volume shifts for buoyancy.</p>
+                    <p><span className="font-semibold text-white">In-Water Skill:</span> Mastering precise depth control now that your breathing cycle no longer alters your buoyancy.</p>
                   </li>
                   <li className="flex gap-3 text-left">
                     <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 bg-accent" />
