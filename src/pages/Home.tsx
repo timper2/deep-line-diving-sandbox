@@ -1,7 +1,9 @@
+import { useState } from 'react';
 import { ArrowRight, Compass, Gauge, LifeBuoy, Waves, Wind } from 'lucide-react';
 import { COURSES } from '@/data/courses';
 import type { NavigateFn } from '@/lib/useRouter';
 import CtaBanner from '@/components/CtaBanner';
+import LayoutTabs, { type LayoutId } from '@/components/LayoutTabs';
 
 interface HomeProps {
   navigate: NavigateFn;
@@ -26,6 +28,8 @@ const APPROACH = [
 ];
 
 export default function Home({ navigate }: HomeProps) {
+  const [activeLayout, setActiveLayout] = useState<LayoutId>('A');
+
   return (
     <div className="animate-fade-in">
       <section className="relative flex min-h-screen items-center overflow-hidden">
@@ -159,8 +163,11 @@ export default function Home({ navigate }: HomeProps) {
         </div>
       </section>
 
+      <LayoutTabs active={activeLayout} onChange={setActiveLayout} />
+
       <section
         id="classes"
+        hidden={activeLayout !== 'A'}
         aria-labelledby="classes-heading"
         className="border-t border-white/10 bg-slate-900/30"
       >
@@ -344,6 +351,7 @@ export default function Home({ navigate }: HomeProps) {
 
       <section
         id="classes-spec"
+        hidden={activeLayout !== 'B'}
         aria-labelledby="classes-spec-heading"
         className="border-t border-white/10 bg-slate-900/30"
       >
@@ -509,96 +517,9 @@ export default function Home({ navigate }: HomeProps) {
         </div>
       </section>
 
-      <section id="services" aria-labelledby="services-heading" className="border-t border-white/10">
-        <div className="mx-auto max-w-7xl container-px py-24 sm:py-32">
-          <header className="flex flex-col justify-between gap-4 sm:flex-row sm:items-end">
-            <div>
-              <p className="font-display text-sm font-semibold uppercase tracking-[0.25em] text-accent">
-                Guiding &amp; services
-              </p>
-              <h2
-                id="services-heading"
-                className="mt-4 font-display text-3xl font-bold tracking-tight text-white sm:text-4xl"
-              >
-                Cave guiding and technical mentoring
-              </h2>
-            </div>
-            <p className="max-w-md text-sm leading-relaxed text-slate-400">
-              Already certified? Dive North Florida&apos;s springs with a guide, or sharpen your
-              skills with one-on-one mentorship.
-            </p>
-          </header>
-
-          <ul className="mt-16 grid gap-8 sm:grid-cols-2">
-            <li>
-              <article
-                itemScope
-                itemType="https://schema.org/Service"
-                className="group flex h-full flex-col gap-3 rounded-2xl border border-white/10 bg-slate-900/40 p-8 transition-colors hover:border-accent/50"
-              >
-                <Compass className="h-6 w-6 text-accent" aria-hidden="true" />
-                <h3 itemProp="name" className="mt-2 font-display text-xl font-bold text-white">
-                  Cave Guiding
-                </h3>
-                <p className="text-xs font-semibold uppercase tracking-widest text-slate-500">
-                  Sites: Peacock, Ginnie and Cow Springs
-                </p>
-                <p itemProp="description" className="text-sm leading-relaxed text-slate-300">
-                  Guided cave excursions matched to your certification and comfort level, with full
-                  logistics coordination, site briefings and gas planning support.
-                </p>
-                <a
-                  href="/services"
-                  itemProp="url"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    navigate('services');
-                  }}
-                  className="mt-auto inline-flex items-center gap-1.5 pt-4 text-sm font-semibold text-accent"
-                >
-                  View cave guiding services
-                  <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" aria-hidden="true" />
-                </a>
-              </article>
-            </li>
-
-            <li>
-              <article
-                itemScope
-                itemType="https://schema.org/Service"
-                className="group flex h-full flex-col gap-3 rounded-2xl border border-white/10 bg-slate-900/40 p-8 transition-colors hover:border-accent/50"
-              >
-                <LifeBuoy className="h-6 w-6 text-accent" aria-hidden="true" />
-                <h3 itemProp="name" className="mt-2 font-display text-xl font-bold text-white">
-                  Technical Mentoring
-                </h3>
-                <p className="text-xs font-semibold uppercase tracking-widest text-slate-500">
-                  Focus: skill mastery and overhead progression
-                </p>
-                <p itemProp="description" className="text-sm leading-relaxed text-slate-300">
-                  One-on-one mentorship with video review, gear configuration tuning and trim
-                  workshops for divers progressing in overhead environments.
-                </p>
-                <a
-                  href="/services"
-                  itemProp="url"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    navigate('services');
-                  }}
-                  className="mt-auto inline-flex items-center gap-1.5 pt-4 text-sm font-semibold text-accent"
-                >
-                  View technical mentoring services
-                  <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" aria-hidden="true" />
-                </a>
-              </article>
-            </li>
-          </ul>
-        </div>
-      </section>
-
       <section
         id="classes-core"
+        hidden={activeLayout !== 'C'}
         aria-labelledby="classes-core-heading"
         className="border-t border-white/10 bg-slate-900/30"
       >
@@ -768,6 +689,94 @@ export default function Home({ navigate }: HomeProps) {
                   className="mt-auto inline-flex items-center gap-1.5 pt-4 text-sm font-semibold text-accent"
                 >
                   Explore rebreather diving classes
+                  <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" aria-hidden="true" />
+                </a>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="services" aria-labelledby="services-heading" className="border-t border-white/10">
+        <div className="mx-auto max-w-7xl container-px py-24 sm:py-32">
+          <header className="flex flex-col justify-between gap-4 sm:flex-row sm:items-end">
+            <div>
+              <p className="font-display text-sm font-semibold uppercase tracking-[0.25em] text-accent">
+                Guiding &amp; services
+              </p>
+              <h2
+                id="services-heading"
+                className="mt-4 font-display text-3xl font-bold tracking-tight text-white sm:text-4xl"
+              >
+                Cave guiding and technical mentoring
+              </h2>
+            </div>
+            <p className="max-w-md text-sm leading-relaxed text-slate-400">
+              Already certified? Dive North Florida&apos;s springs with a guide, or sharpen your
+              skills with one-on-one mentorship.
+            </p>
+          </header>
+
+          <ul className="mt-16 grid gap-8 sm:grid-cols-2">
+            <li>
+              <article
+                itemScope
+                itemType="https://schema.org/Service"
+                className="group flex h-full flex-col gap-3 rounded-2xl border border-white/10 bg-slate-900/40 p-8 transition-colors hover:border-accent/50"
+              >
+                <Compass className="h-6 w-6 text-accent" aria-hidden="true" />
+                <h3 itemProp="name" className="mt-2 font-display text-xl font-bold text-white">
+                  Cave Guiding
+                </h3>
+                <p className="text-xs font-semibold uppercase tracking-widest text-slate-500">
+                  Sites: Peacock, Ginnie and Cow Springs
+                </p>
+                <p itemProp="description" className="text-sm leading-relaxed text-slate-300">
+                  Guided cave excursions matched to your certification and comfort level, with full
+                  logistics coordination, site briefings and gas planning support.
+                </p>
+                <a
+                  href="/services"
+                  itemProp="url"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    navigate('services');
+                  }}
+                  className="mt-auto inline-flex items-center gap-1.5 pt-4 text-sm font-semibold text-accent"
+                >
+                  View cave guiding services
+                  <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" aria-hidden="true" />
+                </a>
+              </article>
+            </li>
+
+            <li>
+              <article
+                itemScope
+                itemType="https://schema.org/Service"
+                className="group flex h-full flex-col gap-3 rounded-2xl border border-white/10 bg-slate-900/40 p-8 transition-colors hover:border-accent/50"
+              >
+                <LifeBuoy className="h-6 w-6 text-accent" aria-hidden="true" />
+                <h3 itemProp="name" className="mt-2 font-display text-xl font-bold text-white">
+                  Technical Mentoring
+                </h3>
+                <p className="text-xs font-semibold uppercase tracking-widest text-slate-500">
+                  Focus: skill mastery and overhead progression
+                </p>
+                <p itemProp="description" className="text-sm leading-relaxed text-slate-300">
+                  One-on-one mentorship with video review, gear configuration tuning and trim
+                  workshops for divers progressing in overhead environments.
+                </p>
+                <a
+                  href="/services"
+                  itemProp="url"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    navigate('services');
+                  }}
+                  className="mt-auto inline-flex items-center gap-1.5 pt-4 text-sm font-semibold text-accent"
+                >
+                  View technical mentoring services
                   <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" aria-hidden="true" />
                 </a>
               </article>
