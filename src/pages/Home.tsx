@@ -597,6 +597,185 @@ export default function Home({ navigate }: HomeProps) {
         </div>
       </section>
 
+      <section
+        id="classes-core"
+        aria-labelledby="classes-core-heading"
+        className="border-t border-white/10 bg-slate-900/30"
+      >
+        <div className="mx-auto max-w-7xl container-px py-24 sm:py-32">
+          <p className="mb-10 inline-flex border border-white/15 px-3 py-1.5 font-mono text-xs font-semibold uppercase tracking-[0.2em] text-slate-300">
+            Layout option C: Synthesized core authority
+          </p>
+          <header className="flex flex-col justify-between gap-4 sm:flex-row sm:items-end">
+            <div>
+              <p className="font-display text-sm font-semibold uppercase tracking-[0.25em] text-accent">
+                Training paths
+              </p>
+              <h2
+                id="classes-core-heading"
+                className="mt-4 font-display text-3xl font-bold tracking-tight text-white sm:text-4xl"
+              >
+                Dive classes in Fort White, Florida
+              </h2>
+            </div>
+            <p className="max-w-md text-sm leading-relaxed text-slate-400">
+              Four certification pathways, from your first streamlined sidemount dive to
+              closed-circuit cave exploration. Each class has its own detailed page.
+            </p>
+          </header>
+
+          <ul className="mt-12 grid grid-cols-1 gap-4 sm:grid-cols-2">
+            <li>
+              <article
+                itemScope
+                itemType="https://schema.org/Course"
+                className="group flex h-full flex-col gap-3 rounded-2xl border border-white/10 bg-slate-900/40 p-5 transition-colors hover:border-accent/50"
+              >
+                <h3 itemProp="name" className="font-display text-xl font-bold text-white">
+                  Sidemount Diving
+                </h3>
+                <p className="text-left text-sm leading-relaxed text-slate-400">
+                  Streamlined equipment configuration paths from foundational sidemount setup through complex multi-tank cave and technical adjustments.
+                </p>
+                <ul itemProp="description" className="flex flex-col gap-2 text-sm leading-relaxed text-slate-300">
+                  <li className="flex gap-3 text-left">
+                    <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 bg-accent" />
+                    <p><span className="font-semibold text-white">In-Water Skill:</span> Perfecting stable horizontal trim and precise buoyancy control within a streamlined harness platform.</p>
+                  </li>
+                  <li className="flex gap-3 text-left">
+                    <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 bg-accent" />
+                    <p><span className="font-semibold text-white">Analytical Focus:</span> Developing clean system fluency and smooth independent tank management before moving into restrictive river and spring environments.</p>
+                  </li>
+                </ul>
+                <a
+                  href="/sidemount"
+                  itemProp="url"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    navigate('sidemount');
+                  }}
+                  className="mt-auto inline-flex items-center gap-1.5 pt-4 text-sm font-semibold text-accent"
+                >
+                  Explore sidemount diving classes
+                  <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" aria-hidden="true" />
+                </a>
+              </article>
+            </li>
+
+            <li>
+              <article
+                itemScope
+                itemType="https://schema.org/Course"
+                className="group flex h-full flex-col gap-3 rounded-2xl border border-white/10 bg-slate-900/40 p-5 transition-colors hover:border-accent/50"
+              >
+                <h3 itemProp="name" className="font-display text-xl font-bold text-white">
+                  Cave Diving
+                </h3>
+                <p className="text-left text-sm leading-relaxed text-slate-400">
+                  Overhead training progressions covering Cavern, Intro to Cave, and Full Cave certification boundaries across North Florida&apos;s local spring networks.
+                </p>
+                <ul itemProp="description" className="flex flex-col gap-2 text-sm leading-relaxed text-slate-300">
+                  <li className="flex gap-3 text-left">
+                    <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 bg-accent" />
+                    <p><span className="font-semibold text-white">In-Water Skill:</span> Maintaining immaculate spatial positioning and precise propulsion to protect fragile overhead structures.</p>
+                  </li>
+                  <li className="flex gap-3 text-left">
+                    <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 bg-accent" />
+                    <p><span className="font-semibold text-white">Analytical Focus:</span> Relying on strict team cross-checks, continuous guideline awareness, and sharp situational judgment inside the unforgiving systems of Florida Cave Country.</p>
+                  </li>
+                </ul>
+                <a
+                  href="/cave"
+                  itemProp="url"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    navigate('cave');
+                  }}
+                  className="mt-auto inline-flex items-center gap-1.5 pt-4 text-sm font-semibold text-accent"
+                >
+                  Explore cave diving classes
+                  <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" aria-hidden="true" />
+                </a>
+              </article>
+            </li>
+
+            <li>
+              <article
+                itemScope
+                itemType="https://schema.org/Course"
+                className="group flex h-full flex-col gap-3 rounded-2xl border border-white/10 bg-slate-900/40 p-5 transition-colors hover:border-accent/50"
+              >
+                <h3 itemProp="name" className="font-display text-xl font-bold text-white">
+                  Technical Diving
+                </h3>
+                <p className="text-left text-sm leading-relaxed text-slate-400">
+                  Extended-range, technical, and deep mixed-gas training tracks designed for managing increased physiological exposure safely.
+                </p>
+                <ul itemProp="description" className="flex flex-col gap-2 text-sm leading-relaxed text-slate-300">
+                  <li className="flex gap-3 text-left">
+                    <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 bg-accent" />
+                    <p><span className="font-semibold text-white">In-Water Skill:</span> Holding an exact depth profile and maintaining total environmental awareness while task-loaded.</p>
+                  </li>
+                  <li className="flex gap-3 text-left">
+                    <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 bg-accent" />
+                    <p><span className="font-semibold text-white">Analytical Focus:</span> Managing completely redundant equipment platforms and decompression profiles with strict procedural discipline before advancing to deep mixed-gas plans.</p>
+                  </li>
+                </ul>
+                <a
+                  href="/technical"
+                  itemProp="url"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    navigate('technical');
+                  }}
+                  className="mt-auto inline-flex items-center gap-1.5 pt-4 text-sm font-semibold text-accent"
+                >
+                  Explore technical diving classes
+                  <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" aria-hidden="true" />
+                </a>
+              </article>
+            </li>
+
+            <li>
+              <article
+                itemScope
+                itemType="https://schema.org/Course"
+                className="group flex h-full flex-col gap-3 rounded-2xl border border-white/10 bg-slate-900/40 p-5 transition-colors hover:border-accent/50"
+              >
+                <h3 itemProp="name" className="font-display text-xl font-bold text-white">
+                  Rebreather (CCR) Diving
+                </h3>
+                <p className="text-left text-sm leading-relaxed text-slate-400">
+                  Closed-circuit rebreather course modules focusing on unit-specific transitions, electronics monitoring, and loop management.
+                </p>
+                <ul itemProp="description" className="flex flex-col gap-2 text-sm leading-relaxed text-slate-300">
+                  <li className="flex gap-3 text-left">
+                    <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 bg-accent" />
+                    <p><span className="font-semibold text-white">In-Water Skill:</span> Mastering precise, hands-free depth control without relying on lung volume shifts for buoyancy.</p>
+                  </li>
+                  <li className="flex gap-3 text-left">
+                    <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 bg-accent" />
+                    <p><span className="font-semibold text-white">Analytical Focus:</span> Developing the methodical habits required to monitor closed-circuit readouts, execute checklists, and make calm diagnostic choices.</p>
+                  </li>
+                </ul>
+                <a
+                  href="/rebreather"
+                  itemProp="url"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    navigate('rebreather');
+                  }}
+                  className="mt-auto inline-flex items-center gap-1.5 pt-4 text-sm font-semibold text-accent"
+                >
+                  Explore rebreather diving classes
+                  <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" aria-hidden="true" />
+                </a>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
+
       <CtaBanner
         navigate={navigate}
         title="Not sure where to start?"
