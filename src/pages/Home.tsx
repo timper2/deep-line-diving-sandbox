@@ -390,20 +390,20 @@ export default function Home({ navigate }: HomeProps) {
                   <p className="border-b border-white/15 px-4 py-2 font-mono text-xs font-semibold uppercase tracking-[0.2em] text-accent">
                     [Dive profile]
                   </p>
-                  <dl className="divide-y divide-white/10 font-mono text-xs">
-                    <div className="grid grid-cols-[8.5rem_minmax(0,1fr)] items-baseline gap-x-4 px-4 py-3 text-left">
+                  <dl className="font-mono text-xs">
+                    <div className="grid grid-cols-[8.5rem_minmax(0,1fr)] items-baseline gap-x-4 border-b border-zinc-800 px-4 py-3 text-left">
                       <dt className="uppercase tracking-wider text-slate-500">Configuration</dt>
                       <dd className="text-slate-200">Sidemount or Backmount Doubles</dd>
                     </div>
-                    <div className="grid grid-cols-[8.5rem_minmax(0,1fr)] items-baseline gap-x-4 px-4 py-3 text-left">
+                    <div className="grid grid-cols-[8.5rem_minmax(0,1fr)] items-baseline gap-x-4 border-b border-zinc-800 px-4 py-3 text-left">
                       <dt className="uppercase tracking-wider text-slate-500">Operational Gas</dt>
                       <dd className="text-slate-200">Strict Thirds / EANx Management</dd>
                     </div>
-                    <div className="grid grid-cols-[8.5rem_minmax(0,1fr)] items-baseline gap-x-4 px-4 py-3 text-left">
+                    <div className="grid grid-cols-[8.5rem_minmax(0,1fr)] items-baseline gap-x-4 border-b border-zinc-800 px-4 py-3 text-left">
                       <dt className="uppercase tracking-wider text-slate-500">Core Protocols</dt>
                       <dd className="text-slate-200">Continuous Guideline / Team Cross-Checks</dd>
                     </div>
-                    <div className="grid grid-cols-[8.5rem_minmax(0,1fr)] items-baseline gap-x-4 px-4 py-3 text-left">
+                    <div className="grid grid-cols-[8.5rem_minmax(0,1fr)] items-baseline gap-x-4 border-b border-zinc-800 px-4 py-3 text-left">
                       <dt className="uppercase tracking-wider text-slate-500">Critical Drills</dt>
                       <dd className="text-slate-200">Silt Navigation / Valve &amp; Regulator Swaps</dd>
                     </div>
@@ -444,20 +444,20 @@ export default function Home({ navigate }: HomeProps) {
                   <p className="border-b border-white/15 px-4 py-2 font-mono text-xs font-semibold uppercase tracking-[0.2em] text-accent">
                     [Dive profile]
                   </p>
-                  <dl className="divide-y divide-white/10 font-mono text-xs">
-                    <div className="grid grid-cols-[8.5rem_minmax(0,1fr)] items-baseline gap-x-4 px-4 py-3 text-left">
+                  <dl className="font-mono text-xs">
+                    <div className="grid grid-cols-[8.5rem_minmax(0,1fr)] items-baseline gap-x-4 border-b border-zinc-800 px-4 py-3 text-left">
                       <dt className="uppercase tracking-wider text-slate-500">Configuration</dt>
                       <dd className="text-slate-200">Sidemount or Backmount Doubles</dd>
                     </div>
-                    <div className="grid grid-cols-[8.5rem_minmax(0,1fr)] items-baseline gap-x-4 px-4 py-3 text-left">
+                    <div className="grid grid-cols-[8.5rem_minmax(0,1fr)] items-baseline gap-x-4 border-b border-zinc-800 px-4 py-3 text-left">
                       <dt className="uppercase tracking-wider text-slate-500">Operational Gas</dt>
                       <dd className="text-slate-200">Strict Thirds / EANx Management</dd>
                     </div>
-                    <div className="grid grid-cols-[8.5rem_minmax(0,1fr)] items-baseline gap-x-4 px-4 py-3 text-left">
+                    <div className="grid grid-cols-[8.5rem_minmax(0,1fr)] items-baseline gap-x-4 border-b border-zinc-800 px-4 py-3 text-left">
                       <dt className="uppercase tracking-wider text-slate-500">Core Protocols</dt>
                       <dd className="text-slate-200">Continuous Guideline / Team Cross-Checks</dd>
                     </div>
-                    <div className="grid grid-cols-[8.5rem_minmax(0,1fr)] items-baseline gap-x-4 px-4 py-3 text-left">
+                    <div className="grid grid-cols-[8.5rem_minmax(0,1fr)] items-baseline gap-x-4 border-b border-zinc-800 px-4 py-3 text-left">
                       <dt className="uppercase tracking-wider text-slate-500">Critical Drills</dt>
                       <dd className="text-slate-200">Silt Navigation / Valve &amp; Regulator Swaps</dd>
                     </div>
@@ -498,20 +498,20 @@ export default function Home({ navigate }: HomeProps) {
                   <p className="border-b border-white/15 px-4 py-2 font-mono text-xs font-semibold uppercase tracking-[0.2em] text-accent">
                     [Dive profile]
                   </p>
-                  <dl className="divide-y divide-white/10 font-mono text-xs">
-                    <div className="grid grid-cols-[8.5rem_minmax(0,1fr)] items-baseline gap-x-4 px-4 py-3 text-left">
+                  <dl className="font-mono text-xs">
+                    <div className="grid grid-cols-[8.5rem_minmax(0,1fr)] items-baseline gap-x-4 border-b border-zinc-800 px-4 py-3 text-left">
                       <dt className="uppercase tracking-wider text-slate-500">Configuration</dt>
                       <dd className="text-slate-200">Sidemount or Backmount Doubles</dd>
                     </div>
-                    <div className="grid grid-cols-[8.5rem_minmax(0,1fr)] items-baseline gap-x-4 px-4 py-3 text-left">
+                    <div className="grid grid-cols-[8.5rem_minmax(0,1fr)] items-baseline gap-x-4 border-b border-zinc-800 px-4 py-3 text-left">
                       <dt className="uppercase tracking-wider text-slate-500">Operational Gas</dt>
                       <dd className="text-slate-200">Strict Thirds / EANx Management</dd>
                     </div>
-                    <div className="grid grid-cols-[8.5rem_minmax(0,1fr)] items-baseline gap-x-4 px-4 py-3 text-left">
+                    <div className="grid grid-cols-[8.5rem_minmax(0,1fr)] items-baseline gap-x-4 border-b border-zinc-800 px-4 py-3 text-left">
                       <dt className="uppercase tracking-wider text-slate-500">Core Protocols</dt>
                       <dd className="text-slate-200">Continuous Guideline / Team Cross-Checks</dd>
                     </div>
-                    <div className="grid grid-cols-[8.5rem_minmax(0,1fr)] items-baseline gap-x-4 px-4 py-3 text-left">
+                    <div className="grid grid-cols-[8.5rem_minmax(0,1fr)] items-baseline gap-x-4 border-b border-zinc-800 px-4 py-3 text-left">
                       <dt className="uppercase tracking-wider text-slate-500">Critical Drills</dt>
                       <dd className="text-slate-200">Silt Navigation / Valve &amp; Regulator Swaps</dd>
                     </div>
@@ -552,20 +552,20 @@ export default function Home({ navigate }: HomeProps) {
                   <p className="border-b border-white/15 px-4 py-2 font-mono text-xs font-semibold uppercase tracking-[0.2em] text-accent">
                     [Dive profile]
                   </p>
-                  <dl className="divide-y divide-white/10 font-mono text-xs">
-                    <div className="grid grid-cols-[8.5rem_minmax(0,1fr)] items-baseline gap-x-4 px-4 py-3 text-left">
+                  <dl className="font-mono text-xs">
+                    <div className="grid grid-cols-[8.5rem_minmax(0,1fr)] items-baseline gap-x-4 border-b border-zinc-800 px-4 py-3 text-left">
                       <dt className="uppercase tracking-wider text-slate-500">Configuration</dt>
                       <dd className="text-slate-200">Sidemount or Backmount Doubles</dd>
                     </div>
-                    <div className="grid grid-cols-[8.5rem_minmax(0,1fr)] items-baseline gap-x-4 px-4 py-3 text-left">
+                    <div className="grid grid-cols-[8.5rem_minmax(0,1fr)] items-baseline gap-x-4 border-b border-zinc-800 px-4 py-3 text-left">
                       <dt className="uppercase tracking-wider text-slate-500">Operational Gas</dt>
                       <dd className="text-slate-200">Strict Thirds / EANx Management</dd>
                     </div>
-                    <div className="grid grid-cols-[8.5rem_minmax(0,1fr)] items-baseline gap-x-4 px-4 py-3 text-left">
+                    <div className="grid grid-cols-[8.5rem_minmax(0,1fr)] items-baseline gap-x-4 border-b border-zinc-800 px-4 py-3 text-left">
                       <dt className="uppercase tracking-wider text-slate-500">Core Protocols</dt>
                       <dd className="text-slate-200">Continuous Guideline / Team Cross-Checks</dd>
                     </div>
-                    <div className="grid grid-cols-[8.5rem_minmax(0,1fr)] items-baseline gap-x-4 px-4 py-3 text-left">
+                    <div className="grid grid-cols-[8.5rem_minmax(0,1fr)] items-baseline gap-x-4 border-b border-zinc-800 px-4 py-3 text-left">
                       <dt className="uppercase tracking-wider text-slate-500">Critical Drills</dt>
                       <dd className="text-slate-200">Silt Navigation / Valve &amp; Regulator Swaps</dd>
                     </div>
