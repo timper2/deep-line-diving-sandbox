@@ -369,12 +369,12 @@ export default function Home({ navigate }: HomeProps) {
             </p>
           </header>
 
-          <ul className="mt-16 grid gap-8 sm:grid-cols-2">
+          <ul className="mt-16 grid grid-cols-1 gap-3 lg:grid-cols-4">
             <li>
               <article
                 itemScope
                 itemType="https://schema.org/Course"
-                className="group flex h-full flex-col gap-3 rounded-2xl border border-white/10 bg-slate-900/40 p-8 transition-colors hover:border-accent/50"
+                className="group flex h-full flex-col gap-3 rounded-2xl border border-white/10 bg-slate-900/40 p-5 transition-colors hover:border-accent/50"
               >
                 <h3 itemProp="name" className="font-display text-xl font-bold text-white">
                   Sidemount Diving
@@ -388,26 +388,26 @@ export default function Home({ navigate }: HomeProps) {
                 </p>
                 <div className="mt-3 border border-white/15">
                   <p className="border-b border-white/15 px-4 py-2 font-mono text-xs font-semibold uppercase tracking-[0.2em] text-accent">
-                    [Dive profile]
+                    [Training profile]
                   </p>
                   <dl className="font-mono text-xs">
-                    <div className="grid grid-cols-[8.5rem_minmax(0,1fr)] items-baseline gap-x-4 border-b border-zinc-800 px-4 py-3 text-left">
-                      <dt className="uppercase tracking-wider text-slate-500">Configuration</dt>
-                      <dd className="text-slate-200">Sidemount or Backmount Doubles</dd>
-                    </div>
-                    <div className="grid grid-cols-[8.5rem_minmax(0,1fr)] items-baseline gap-x-4 border-b border-zinc-800 px-4 py-3 text-left">
-                      <dt className="uppercase tracking-wider text-slate-500">Operational Gas</dt>
-                      <dd className="text-slate-200">Strict Thirds / EANx Management</dd>
-                    </div>
-                    <div className="grid grid-cols-[8.5rem_minmax(0,1fr)] items-baseline gap-x-4 border-b border-zinc-800 px-4 py-3 text-left">
-                      <dt className="uppercase tracking-wider text-slate-500">Core Protocols</dt>
-                      <dd className="text-slate-200">Continuous Guideline / Team Cross-Checks</dd>
-                    </div>
-                    <div className="grid grid-cols-[8.5rem_minmax(0,1fr)] items-baseline gap-x-4 border-b border-zinc-800 px-4 py-3 text-left">
-                      <dt className="uppercase tracking-wider text-slate-500">Critical Drills</dt>
-                      <dd className="text-slate-200">Silt Navigation / Valve &amp; Regulator Swaps</dd>
-                    </div>
-                  </dl>
+                      <div className="grid grid-cols-[6.5rem_minmax(0,1fr)] border-b border-zinc-800 text-left">
+                        <dt className="border-r border-zinc-800 px-3 py-3 uppercase leading-snug tracking-wider text-slate-500">System Platform</dt>
+                        <dd className="px-3 py-3 leading-snug text-slate-200">Open Circuit Sidemount Rig</dd>
+                      </div>
+                      <div className="grid grid-cols-[6.5rem_minmax(0,1fr)] border-b border-zinc-800 text-left">
+                        <dt className="border-r border-zinc-800 px-3 py-3 uppercase leading-snug tracking-wider text-slate-500">Gas Architecture</dt>
+                        <dd className="px-3 py-3 leading-snug text-slate-200">Nitrox / Environmental Balance</dd>
+                      </div>
+                      <div className="grid grid-cols-[6.5rem_minmax(0,1fr)] border-b border-zinc-800 text-left">
+                        <dt className="border-r border-zinc-800 px-3 py-3 uppercase leading-snug tracking-wider text-slate-500">Mission Parameters</dt>
+                        <dd className="px-3 py-3 leading-snug text-slate-200">Gas Matching / Twin System Redundancy</dd>
+                      </div>
+                      <div className="grid grid-cols-[6.5rem_minmax(0,1fr)] border-b border-zinc-800 text-left">
+                        <dt className="border-r border-zinc-800 px-3 py-3 uppercase leading-snug tracking-wider text-slate-500">Task Load Management</dt>
+                        <dd className="px-3 py-3 leading-snug text-slate-200">Valve Management / Reg Swaps</dd>
+                      </div>
+                    </dl>
                 </div>
                 <a
                   href="/sidemount"
@@ -428,7 +428,7 @@ export default function Home({ navigate }: HomeProps) {
               <article
                 itemScope
                 itemType="https://schema.org/Course"
-                className="group flex h-full flex-col gap-3 rounded-2xl border border-white/10 bg-slate-900/40 p-8 transition-colors hover:border-accent/50"
+                className="group flex h-full flex-col gap-3 rounded-2xl border border-white/10 bg-slate-900/40 p-5 transition-colors hover:border-accent/50"
               >
                 <h3 itemProp="name" className="font-display text-xl font-bold text-white">
                   Cave Diving
@@ -442,26 +442,26 @@ export default function Home({ navigate }: HomeProps) {
                 </p>
                 <div className="mt-3 border border-white/15">
                   <p className="border-b border-white/15 px-4 py-2 font-mono text-xs font-semibold uppercase tracking-[0.2em] text-accent">
-                    [Dive profile]
+                    [Training profile]
                   </p>
                   <dl className="font-mono text-xs">
-                    <div className="grid grid-cols-[8.5rem_minmax(0,1fr)] items-baseline gap-x-4 border-b border-zinc-800 px-4 py-3 text-left">
-                      <dt className="uppercase tracking-wider text-slate-500">Configuration</dt>
-                      <dd className="text-slate-200">Sidemount or Backmount Doubles</dd>
-                    </div>
-                    <div className="grid grid-cols-[8.5rem_minmax(0,1fr)] items-baseline gap-x-4 border-b border-zinc-800 px-4 py-3 text-left">
-                      <dt className="uppercase tracking-wider text-slate-500">Operational Gas</dt>
-                      <dd className="text-slate-200">Strict Thirds / EANx Management</dd>
-                    </div>
-                    <div className="grid grid-cols-[8.5rem_minmax(0,1fr)] items-baseline gap-x-4 border-b border-zinc-800 px-4 py-3 text-left">
-                      <dt className="uppercase tracking-wider text-slate-500">Core Protocols</dt>
-                      <dd className="text-slate-200">Continuous Guideline / Team Cross-Checks</dd>
-                    </div>
-                    <div className="grid grid-cols-[8.5rem_minmax(0,1fr)] items-baseline gap-x-4 border-b border-zinc-800 px-4 py-3 text-left">
-                      <dt className="uppercase tracking-wider text-slate-500">Critical Drills</dt>
-                      <dd className="text-slate-200">Silt Navigation / Valve &amp; Regulator Swaps</dd>
-                    </div>
-                  </dl>
+                      <div className="grid grid-cols-[6.5rem_minmax(0,1fr)] border-b border-zinc-800 text-left">
+                        <dt className="border-r border-zinc-800 px-3 py-3 uppercase leading-snug tracking-wider text-slate-500">System Platform</dt>
+                        <dd className="px-3 py-3 leading-snug text-slate-200">Sidemount or Backmount Doubles</dd>
+                      </div>
+                      <div className="grid grid-cols-[6.5rem_minmax(0,1fr)] border-b border-zinc-800 text-left">
+                        <dt className="border-r border-zinc-800 px-3 py-3 uppercase leading-snug tracking-wider text-slate-500">Gas Architecture</dt>
+                        <dd className="px-3 py-3 leading-snug text-slate-200">Strict Thirds / Reserve Management</dd>
+                      </div>
+                      <div className="grid grid-cols-[6.5rem_minmax(0,1fr)] border-b border-zinc-800 text-left">
+                        <dt className="border-r border-zinc-800 px-3 py-3 uppercase leading-snug tracking-wider text-slate-500">Mission Parameters</dt>
+                        <dd className="px-3 py-3 leading-snug text-slate-200">Continuous Guideline / Team Cross-Checks</dd>
+                      </div>
+                      <div className="grid grid-cols-[6.5rem_minmax(0,1fr)] border-b border-zinc-800 text-left">
+                        <dt className="border-r border-zinc-800 px-3 py-3 uppercase leading-snug tracking-wider text-slate-500">Task Load Management</dt>
+                        <dd className="px-3 py-3 leading-snug text-slate-200">Silt Navigation / Touch-Contact Drills</dd>
+                      </div>
+                    </dl>
                 </div>
                 <a
                   href="/cave"
@@ -482,7 +482,7 @@ export default function Home({ navigate }: HomeProps) {
               <article
                 itemScope
                 itemType="https://schema.org/Course"
-                className="group flex h-full flex-col gap-3 rounded-2xl border border-white/10 bg-slate-900/40 p-8 transition-colors hover:border-accent/50"
+                className="group flex h-full flex-col gap-3 rounded-2xl border border-white/10 bg-slate-900/40 p-5 transition-colors hover:border-accent/50"
               >
                 <h3 itemProp="name" className="font-display text-xl font-bold text-white">
                   Technical Diving
@@ -496,26 +496,26 @@ export default function Home({ navigate }: HomeProps) {
                 </p>
                 <div className="mt-3 border border-white/15">
                   <p className="border-b border-white/15 px-4 py-2 font-mono text-xs font-semibold uppercase tracking-[0.2em] text-accent">
-                    [Dive profile]
+                    [Training profile]
                   </p>
                   <dl className="font-mono text-xs">
-                    <div className="grid grid-cols-[8.5rem_minmax(0,1fr)] items-baseline gap-x-4 border-b border-zinc-800 px-4 py-3 text-left">
-                      <dt className="uppercase tracking-wider text-slate-500">Configuration</dt>
-                      <dd className="text-slate-200">Sidemount or Backmount Doubles</dd>
-                    </div>
-                    <div className="grid grid-cols-[8.5rem_minmax(0,1fr)] items-baseline gap-x-4 border-b border-zinc-800 px-4 py-3 text-left">
-                      <dt className="uppercase tracking-wider text-slate-500">Operational Gas</dt>
-                      <dd className="text-slate-200">Strict Thirds / EANx Management</dd>
-                    </div>
-                    <div className="grid grid-cols-[8.5rem_minmax(0,1fr)] items-baseline gap-x-4 border-b border-zinc-800 px-4 py-3 text-left">
-                      <dt className="uppercase tracking-wider text-slate-500">Core Protocols</dt>
-                      <dd className="text-slate-200">Continuous Guideline / Team Cross-Checks</dd>
-                    </div>
-                    <div className="grid grid-cols-[8.5rem_minmax(0,1fr)] items-baseline gap-x-4 border-b border-zinc-800 px-4 py-3 text-left">
-                      <dt className="uppercase tracking-wider text-slate-500">Critical Drills</dt>
-                      <dd className="text-slate-200">Silt Navigation / Valve &amp; Regulator Swaps</dd>
-                    </div>
-                  </dl>
+                      <div className="grid grid-cols-[6.5rem_minmax(0,1fr)] border-b border-zinc-800 text-left">
+                        <dt className="border-r border-zinc-800 px-3 py-3 uppercase leading-snug tracking-wider text-slate-500">System Platform</dt>
+                        <dd className="px-3 py-3 leading-snug text-slate-200">Double Cylinders + Stage Bottles</dd>
+                      </div>
+                      <div className="grid grid-cols-[6.5rem_minmax(0,1fr)] border-b border-zinc-800 text-left">
+                        <dt className="border-r border-zinc-800 px-3 py-3 uppercase leading-snug tracking-wider text-slate-500">Gas Architecture</dt>
+                        <dd className="px-3 py-3 leading-snug text-slate-200">Accelerated Deco / Trimix Transitions</dd>
+                      </div>
+                      <div className="grid grid-cols-[6.5rem_minmax(0,1fr)] border-b border-zinc-800 text-left">
+                        <dt className="border-r border-zinc-800 px-3 py-3 uppercase leading-snug tracking-wider text-slate-500">Mission Parameters</dt>
+                        <dd className="px-3 py-3 leading-snug text-slate-200">Isobaric Counter-Diffusion Prevention</dd>
+                      </div>
+                      <div className="grid grid-cols-[6.5rem_minmax(0,1fr)] border-b border-zinc-800 text-left">
+                        <dt className="border-r border-zinc-800 px-3 py-3 uppercase leading-snug tracking-wider text-slate-500">Task Load Management</dt>
+                        <dd className="px-3 py-3 leading-snug text-slate-200">Switch Diagnostics / Schedule Shifts</dd>
+                      </div>
+                    </dl>
                 </div>
                 <a
                   href="/technical"
@@ -536,7 +536,7 @@ export default function Home({ navigate }: HomeProps) {
               <article
                 itemScope
                 itemType="https://schema.org/Course"
-                className="group flex h-full flex-col gap-3 rounded-2xl border border-white/10 bg-slate-900/40 p-8 transition-colors hover:border-accent/50"
+                className="group flex h-full flex-col gap-3 rounded-2xl border border-white/10 bg-slate-900/40 p-5 transition-colors hover:border-accent/50"
               >
                 <h3 itemProp="name" className="font-display text-xl font-bold text-white">
                   Rebreather (CCR) Diving
@@ -550,26 +550,26 @@ export default function Home({ navigate }: HomeProps) {
                 </p>
                 <div className="mt-3 border border-white/15">
                   <p className="border-b border-white/15 px-4 py-2 font-mono text-xs font-semibold uppercase tracking-[0.2em] text-accent">
-                    [Dive profile]
+                    [Training profile]
                   </p>
                   <dl className="font-mono text-xs">
-                    <div className="grid grid-cols-[8.5rem_minmax(0,1fr)] items-baseline gap-x-4 border-b border-zinc-800 px-4 py-3 text-left">
-                      <dt className="uppercase tracking-wider text-slate-500">Configuration</dt>
-                      <dd className="text-slate-200">Sidemount or Backmount Doubles</dd>
-                    </div>
-                    <div className="grid grid-cols-[8.5rem_minmax(0,1fr)] items-baseline gap-x-4 border-b border-zinc-800 px-4 py-3 text-left">
-                      <dt className="uppercase tracking-wider text-slate-500">Operational Gas</dt>
-                      <dd className="text-slate-200">Strict Thirds / EANx Management</dd>
-                    </div>
-                    <div className="grid grid-cols-[8.5rem_minmax(0,1fr)] items-baseline gap-x-4 border-b border-zinc-800 px-4 py-3 text-left">
-                      <dt className="uppercase tracking-wider text-slate-500">Core Protocols</dt>
-                      <dd className="text-slate-200">Continuous Guideline / Team Cross-Checks</dd>
-                    </div>
-                    <div className="grid grid-cols-[8.5rem_minmax(0,1fr)] items-baseline gap-x-4 border-b border-zinc-800 px-4 py-3 text-left">
-                      <dt className="uppercase tracking-wider text-slate-500">Critical Drills</dt>
-                      <dd className="text-slate-200">Silt Navigation / Valve &amp; Regulator Swaps</dd>
-                    </div>
-                  </dl>
+                      <div className="grid grid-cols-[6.5rem_minmax(0,1fr)] border-b border-zinc-800 text-left">
+                        <dt className="border-r border-zinc-800 px-3 py-3 uppercase leading-snug tracking-wider text-slate-500">System Platform</dt>
+                        <dd className="px-3 py-3 leading-snug text-slate-200">Closed-Circuit Rebreather Loop</dd>
+                      </div>
+                      <div className="grid grid-cols-[6.5rem_minmax(0,1fr)] border-b border-zinc-800 text-left">
+                        <dt className="border-r border-zinc-800 px-3 py-3 uppercase leading-snug tracking-wider text-slate-500">Gas Architecture</dt>
+                        <dd className="px-3 py-3 leading-snug text-slate-200">Constant PO2 / Diluent Selection</dd>
+                      </div>
+                      <div className="grid grid-cols-[6.5rem_minmax(0,1fr)] border-b border-zinc-800 text-left">
+                        <dt className="border-r border-zinc-800 px-3 py-3 uppercase leading-snug tracking-wider text-slate-500">Mission Parameters</dt>
+                        <dd className="px-3 py-3 leading-snug text-slate-200">Pre-Dive Checklist / Cell Linearity</dd>
+                      </div>
+                      <div className="grid grid-cols-[6.5rem_minmax(0,1fr)] border-b border-zinc-800 text-left">
+                        <dt className="border-r border-zinc-800 px-3 py-3 uppercase leading-snug tracking-wider text-slate-500">Task Load Management</dt>
+                        <dd className="px-3 py-3 leading-snug text-slate-200">Loop Failures / Open-Circuit Bailouts</dd>
+                      </div>
+                    </dl>
                 </div>
                 <a
                   href="/rebreather"
