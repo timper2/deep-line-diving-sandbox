@@ -369,7 +369,7 @@ export default function Home({ navigate }: HomeProps) {
             </p>
           </header>
 
-          <ul className="mt-16 grid grid-cols-1 gap-3 lg:grid-cols-4">
+          <ul className="mt-12 grid grid-cols-1 gap-4 sm:grid-cols-2">
             <li>
               <article
                 itemScope
@@ -379,36 +379,16 @@ export default function Home({ navigate }: HomeProps) {
                 <h3 itemProp="name" className="font-display text-xl font-bold text-white">
                   Sidemount Diving
                 </h3>
-                <p className="text-xs font-semibold uppercase tracking-widest text-slate-500">
-                  Focus: trim, balance and gas redundancy
-                </p>
-                <p itemProp="description" className="text-sm leading-relaxed text-slate-300">
-                  Streamlined, balanced diving with independent side-mounted cylinders, from
-                  Sidemount Fundamentals through Cave-Ready Sidemount.
-                </p>
-                <div className="mt-3 border border-white/15">
-                  <p className="border-b border-white/15 px-4 py-2 font-mono text-xs font-semibold uppercase tracking-[0.2em] text-accent">
-                    [Training profile]
-                  </p>
-                  <dl className="font-mono text-xs">
-                      <div className="grid grid-cols-[6.5rem_minmax(0,1fr)] border-b border-zinc-800 text-left">
-                        <dt className="border-r border-zinc-800 px-3 py-3 uppercase leading-snug tracking-wider text-slate-500">System Platform</dt>
-                        <dd className="px-3 py-3 leading-snug text-slate-200">Open Circuit Sidemount Rig</dd>
-                      </div>
-                      <div className="grid grid-cols-[6.5rem_minmax(0,1fr)] border-b border-zinc-800 text-left">
-                        <dt className="border-r border-zinc-800 px-3 py-3 uppercase leading-snug tracking-wider text-slate-500">Gas Architecture</dt>
-                        <dd className="px-3 py-3 leading-snug text-slate-200">Nitrox / Environmental Balance</dd>
-                      </div>
-                      <div className="grid grid-cols-[6.5rem_minmax(0,1fr)] border-b border-zinc-800 text-left">
-                        <dt className="border-r border-zinc-800 px-3 py-3 uppercase leading-snug tracking-wider text-slate-500">Mission Parameters</dt>
-                        <dd className="px-3 py-3 leading-snug text-slate-200">Gas Matching / Twin System Redundancy</dd>
-                      </div>
-                      <div className="grid grid-cols-[6.5rem_minmax(0,1fr)] border-b border-zinc-800 text-left">
-                        <dt className="border-r border-zinc-800 px-3 py-3 uppercase leading-snug tracking-wider text-slate-500">Task Load Management</dt>
-                        <dd className="px-3 py-3 leading-snug text-slate-200">Valve Management / Reg Swaps</dd>
-                      </div>
-                    </dl>
-                </div>
+                <ul itemProp="description" className="flex flex-col gap-2 text-sm leading-relaxed text-slate-300">
+                  <li className="flex gap-3 text-left">
+                    <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 bg-accent" />
+                    <p><span className="font-semibold text-white">In-Water Skill:</span> Perfecting stable horizontal trim and precise buoyancy control within a streamlined harness platform.</p>
+                  </li>
+                  <li className="flex gap-3 text-left">
+                    <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 bg-accent" />
+                    <p><span className="font-semibold text-white">Analytical Focus:</span> Developing clean system fluency and smooth independent tank management before moving into restrictive river and spring environments.</p>
+                  </li>
+                </ul>
                 <a
                   href="/sidemount"
                   itemProp="url"
@@ -433,36 +413,16 @@ export default function Home({ navigate }: HomeProps) {
                 <h3 itemProp="name" className="font-display text-xl font-bold text-white">
                   Cave Diving
                 </h3>
-                <p className="text-xs font-semibold uppercase tracking-widest text-slate-500">
-                  Focus: guideline, failure management and conservation
-                </p>
-                <p itemProp="description" className="text-sm leading-relaxed text-slate-300">
-                  Disciplined overhead training in North Florida&apos;s springs, progressing from
-                  Cavern and Intro to Cave to Full Cave certification.
-                </p>
-                <div className="mt-3 border border-white/15">
-                  <p className="border-b border-white/15 px-4 py-2 font-mono text-xs font-semibold uppercase tracking-[0.2em] text-accent">
-                    [Training profile]
-                  </p>
-                  <dl className="font-mono text-xs">
-                      <div className="grid grid-cols-[6.5rem_minmax(0,1fr)] border-b border-zinc-800 text-left">
-                        <dt className="border-r border-zinc-800 px-3 py-3 uppercase leading-snug tracking-wider text-slate-500">System Platform</dt>
-                        <dd className="px-3 py-3 leading-snug text-slate-200">Sidemount or Backmount Doubles</dd>
-                      </div>
-                      <div className="grid grid-cols-[6.5rem_minmax(0,1fr)] border-b border-zinc-800 text-left">
-                        <dt className="border-r border-zinc-800 px-3 py-3 uppercase leading-snug tracking-wider text-slate-500">Gas Architecture</dt>
-                        <dd className="px-3 py-3 leading-snug text-slate-200">Strict Thirds / Reserve Management</dd>
-                      </div>
-                      <div className="grid grid-cols-[6.5rem_minmax(0,1fr)] border-b border-zinc-800 text-left">
-                        <dt className="border-r border-zinc-800 px-3 py-3 uppercase leading-snug tracking-wider text-slate-500">Mission Parameters</dt>
-                        <dd className="px-3 py-3 leading-snug text-slate-200">Continuous Guideline / Team Cross-Checks</dd>
-                      </div>
-                      <div className="grid grid-cols-[6.5rem_minmax(0,1fr)] border-b border-zinc-800 text-left">
-                        <dt className="border-r border-zinc-800 px-3 py-3 uppercase leading-snug tracking-wider text-slate-500">Task Load Management</dt>
-                        <dd className="px-3 py-3 leading-snug text-slate-200">Silt Navigation / Touch-Contact Drills</dd>
-                      </div>
-                    </dl>
-                </div>
+                <ul itemProp="description" className="flex flex-col gap-2 text-sm leading-relaxed text-slate-300">
+                  <li className="flex gap-3 text-left">
+                    <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 bg-accent" />
+                    <p><span className="font-semibold text-white">In-Water Skill:</span> Maintaining immaculate spatial positioning and precise propulsion to protect fragile overhead structures.</p>
+                  </li>
+                  <li className="flex gap-3 text-left">
+                    <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 bg-accent" />
+                    <p><span className="font-semibold text-white">Analytical Focus:</span> Relying on strict team cross-checks, continuous guideline awareness, and sharp situational judgment inside the unforgiving systems of Florida Cave Country.</p>
+                  </li>
+                </ul>
                 <a
                   href="/cave"
                   itemProp="url"
@@ -487,36 +447,16 @@ export default function Home({ navigate }: HomeProps) {
                 <h3 itemProp="name" className="font-display text-xl font-bold text-white">
                   Technical Diving
                 </h3>
-                <p className="text-xs font-semibold uppercase tracking-widest text-slate-500">
-                  Focus: decompression, mixed gas and team discipline
-                </p>
-                <p itemProp="description" className="text-sm leading-relaxed text-slate-300">
-                  Decompression procedures, gas management and extended-range planning across
-                  Nitrox, Trimix and Extended Range certifications.
-                </p>
-                <div className="mt-3 border border-white/15">
-                  <p className="border-b border-white/15 px-4 py-2 font-mono text-xs font-semibold uppercase tracking-[0.2em] text-accent">
-                    [Training profile]
-                  </p>
-                  <dl className="font-mono text-xs">
-                      <div className="grid grid-cols-[6.5rem_minmax(0,1fr)] border-b border-zinc-800 text-left">
-                        <dt className="border-r border-zinc-800 px-3 py-3 uppercase leading-snug tracking-wider text-slate-500">System Platform</dt>
-                        <dd className="px-3 py-3 leading-snug text-slate-200">Double Cylinders + Stage Bottles</dd>
-                      </div>
-                      <div className="grid grid-cols-[6.5rem_minmax(0,1fr)] border-b border-zinc-800 text-left">
-                        <dt className="border-r border-zinc-800 px-3 py-3 uppercase leading-snug tracking-wider text-slate-500">Gas Architecture</dt>
-                        <dd className="px-3 py-3 leading-snug text-slate-200">Accelerated Deco / Trimix Transitions</dd>
-                      </div>
-                      <div className="grid grid-cols-[6.5rem_minmax(0,1fr)] border-b border-zinc-800 text-left">
-                        <dt className="border-r border-zinc-800 px-3 py-3 uppercase leading-snug tracking-wider text-slate-500">Mission Parameters</dt>
-                        <dd className="px-3 py-3 leading-snug text-slate-200">Isobaric Counter-Diffusion Prevention</dd>
-                      </div>
-                      <div className="grid grid-cols-[6.5rem_minmax(0,1fr)] border-b border-zinc-800 text-left">
-                        <dt className="border-r border-zinc-800 px-3 py-3 uppercase leading-snug tracking-wider text-slate-500">Task Load Management</dt>
-                        <dd className="px-3 py-3 leading-snug text-slate-200">Switch Diagnostics / Schedule Shifts</dd>
-                      </div>
-                    </dl>
-                </div>
+                <ul itemProp="description" className="flex flex-col gap-2 text-sm leading-relaxed text-slate-300">
+                  <li className="flex gap-3 text-left">
+                    <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 bg-accent" />
+                    <p><span className="font-semibold text-white">In-Water Skill:</span> Holding an exact depth profile and maintaining total environmental awareness while task-loaded.</p>
+                  </li>
+                  <li className="flex gap-3 text-left">
+                    <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 bg-accent" />
+                    <p><span className="font-semibold text-white">Analytical Focus:</span> Managing completely redundant equipment platforms and decompression profiles with strict procedural discipline before advancing to deep mixed-gas plans.</p>
+                  </li>
+                </ul>
                 <a
                   href="/technical"
                   itemProp="url"
@@ -541,36 +481,16 @@ export default function Home({ navigate }: HomeProps) {
                 <h3 itemProp="name" className="font-display text-xl font-bold text-white">
                   Rebreather (CCR) Diving
                 </h3>
-                <p className="text-xs font-semibold uppercase tracking-widest text-slate-500">
-                  Focus: loop control, PO2 monitoring and bailout
-                </p>
-                <p itemProp="description" className="text-sm leading-relaxed text-slate-300">
-                  Closed-circuit training on the KISS Sidewinder and AP Inspiration, from CCR Air
-                  Diluent through CCR Mixed Gas and CCR Cave.
-                </p>
-                <div className="mt-3 border border-white/15">
-                  <p className="border-b border-white/15 px-4 py-2 font-mono text-xs font-semibold uppercase tracking-[0.2em] text-accent">
-                    [Training profile]
-                  </p>
-                  <dl className="font-mono text-xs">
-                      <div className="grid grid-cols-[6.5rem_minmax(0,1fr)] border-b border-zinc-800 text-left">
-                        <dt className="border-r border-zinc-800 px-3 py-3 uppercase leading-snug tracking-wider text-slate-500">System Platform</dt>
-                        <dd className="px-3 py-3 leading-snug text-slate-200">Closed-Circuit Rebreather Loop</dd>
-                      </div>
-                      <div className="grid grid-cols-[6.5rem_minmax(0,1fr)] border-b border-zinc-800 text-left">
-                        <dt className="border-r border-zinc-800 px-3 py-3 uppercase leading-snug tracking-wider text-slate-500">Gas Architecture</dt>
-                        <dd className="px-3 py-3 leading-snug text-slate-200">Constant PO2 / Diluent Selection</dd>
-                      </div>
-                      <div className="grid grid-cols-[6.5rem_minmax(0,1fr)] border-b border-zinc-800 text-left">
-                        <dt className="border-r border-zinc-800 px-3 py-3 uppercase leading-snug tracking-wider text-slate-500">Mission Parameters</dt>
-                        <dd className="px-3 py-3 leading-snug text-slate-200">Pre-Dive Checklist / Cell Linearity</dd>
-                      </div>
-                      <div className="grid grid-cols-[6.5rem_minmax(0,1fr)] border-b border-zinc-800 text-left">
-                        <dt className="border-r border-zinc-800 px-3 py-3 uppercase leading-snug tracking-wider text-slate-500">Task Load Management</dt>
-                        <dd className="px-3 py-3 leading-snug text-slate-200">Loop Failures / Open-Circuit Bailouts</dd>
-                      </div>
-                    </dl>
-                </div>
+                <ul itemProp="description" className="flex flex-col gap-2 text-sm leading-relaxed text-slate-300">
+                  <li className="flex gap-3 text-left">
+                    <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 bg-accent" />
+                    <p><span className="font-semibold text-white">In-Water Skill:</span> Mastering precise, hands-free depth control without relying on lung volume shifts for buoyancy.</p>
+                  </li>
+                  <li className="flex gap-3 text-left">
+                    <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 bg-accent" />
+                    <p><span className="font-semibold text-white">Analytical Focus:</span> Developing the methodical habits required to monitor closed-circuit readouts, execute checklists, and make calm diagnostic choices.</p>
+                  </li>
+                </ul>
                 <a
                   href="/rebreather"
                   itemProp="url"
