@@ -34,9 +34,9 @@ export default function Home({ navigate }: HomeProps) {
     <div className="animate-fade-in">
       <section className="relative flex min-h-screen items-center overflow-hidden">
         <img
-          src="https://images.pexels.com/photos/10519070/pexels-photo-10519070.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
-          alt="Diver exploring an underwater cave"
-          className="absolute inset-0 h-full w-full object-cover"
+          src="/images/heropicture.jpeg"
+          alt="Drysuit diver climbing the ladder of a dive boat"
+          className="absolute inset-0 h-full w-full object-cover object-[center_30%]"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/85 to-slate-950/40" />
         <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-slate-950/60" />
@@ -117,8 +117,8 @@ export default function Home({ navigate }: HomeProps) {
           <div className="relative">
             <div className="overflow-hidden rounded-3xl border border-white/10">
               <img
-                src="https://images.pexels.com/photos/35508959/pexels-photo-35508959.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
-                alt="Rebreather diver underwater"
+                src="/images/homepagefirstpicture.jpg"
+                alt="Diver swimming through a cave passage"
                 className="h-[30rem] w-full object-cover"
               />
             </div>
