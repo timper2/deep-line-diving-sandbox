@@ -19,8 +19,11 @@ export default function CoursePage({ content, navigate }: CoursePageProps) {
           style={{
             objectPosition: content.heroImagePosition,
             // Scale up with the tilt angle so rotated edges never expose empty corners on wide screens.
-            transform: content.heroImageRotate
-              ? `rotate(${content.heroImageRotate}deg) scale(${1 + Math.abs(content.heroImageRotate) * 0.04})`
+          transform:
+            content.heroImageRotate || content.heroImageShiftX
+              ? `translateX(${content.heroImageShiftX ?? 0}%) rotate(${content.heroImageRotate ?? 0}deg) scale(${
+                  1 + Math.abs(content.heroImageRotate ?? 0) * 0.04 + Math.abs(content.heroImageShiftX ?? 0) * 0.02
+                })`
               : undefined,
           }}
         />

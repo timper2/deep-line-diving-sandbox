@@ -25,6 +25,7 @@ export interface CourseContent {
   heroImage: string;
   heroImagePosition?: string;
   heroImageRotate?: number;
+  heroImageShiftX?: number;
   cardImage?: string;
   intro: string[];
   stats: CourseStat[];
@@ -42,7 +43,8 @@ export const COURSES: Record<'sidemount' | 'cave' | 'technical' | 'rebreather', 
     subtitle: 'Streamlined, balanced and self-sufficient diving with cylinders mounted at your sides.',
     heroImage: '/images/sidemount.JPG',
     heroImagePosition: 'center 22%',
-    heroImageRotate: -10,
+    heroImageRotate: -7.5,
+  heroImageShiftX: 4,
     cardImage:
       'https://images.pexels.com/photos/31493483/pexels-photo-31493483.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
     intro: [
