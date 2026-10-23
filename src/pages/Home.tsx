@@ -201,7 +201,7 @@ export default function Home({ navigate }: HomeProps) {
                 className="group flex h-full flex-col overflow-hidden rounded-2xl border border-white/10 bg-slate-900/40 transition-colors hover:border-accent/50"
               >
                 <img
-                  src={COURSES.sidemount.heroImage}
+                  src={COURSES.sidemount.cardImage ?? COURSES.sidemount.heroImage}
                   alt="Sidemount diver in trim with cylinders mounted at the hips"
                   className="h-52 w-full object-cover"
                 />
