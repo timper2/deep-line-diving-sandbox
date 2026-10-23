@@ -34,9 +34,9 @@ export default function Home({ navigate }: HomeProps) {
     <div className="animate-fade-in">
       <section className="relative flex min-h-screen items-center overflow-hidden">
         <img
-          src="https://images.pexels.com/photos/10519070/pexels-photo-10519070.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
-          alt="Diver exploring an underwater cave"
-          className="absolute inset-0 h-full w-full object-cover"
+          src="/images/heropicture.jpeg"
+          alt="Drysuit diver climbing the ladder of a dive boat"
+          className="absolute inset-0 h-full w-full object-cover object-[center_30%]"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/85 to-slate-950/40" />
         <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-slate-950/60" />
@@ -113,13 +113,13 @@ export default function Home({ navigate }: HomeProps) {
       </section>
 
       <section className="mx-auto max-w-7xl container-px py-20 sm:py-24">
-        <div className="grid items-center gap-12 lg:grid-cols-2">
+        <div className="grid items-center gap-12 md:grid-cols-2 md:items-stretch">
           <div className="relative">
-            <div className="overflow-hidden rounded-3xl border border-white/10">
+            <div className="h-full overflow-hidden rounded-3xl border border-white/10">
               <img
-                src="https://images.pexels.com/photos/35508959/pexels-photo-35508959.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
-                alt="Rebreather diver underwater"
-                className="h-[30rem] w-full object-cover"
+                src="/images/homepagefirstpicture.jpg"
+                alt="Diver swimming through a cave passage"
+                className="aspect-[4/5] w-full object-cover object-[55%_50%] md:aspect-auto md:h-full"
               />
             </div>
             <div className="absolute -bottom-6 -right-4 hidden rounded-2xl border border-white/10 bg-slate-900 p-5 shadow-xl sm:block">
@@ -150,7 +150,7 @@ export default function Home({ navigate }: HomeProps) {
                 closed-circuit, we build every skill deliberately until it holds up under pressure.
               </p>
             </div>
-            <div className="mt-8 grid gap-4 sm:grid-cols-3">
+            <div className="mt-8 grid gap-4 sm:grid-cols-3 md:grid-cols-1 lg:grid-cols-3">
               {APPROACH.map((a) => (
                 <div key={a.title} className="rounded-2xl border border-white/10 bg-slate-900/40 p-4">
                   <a.icon className="h-5 w-5 text-accent" />
@@ -201,7 +201,7 @@ export default function Home({ navigate }: HomeProps) {
                 className="group flex h-full flex-col overflow-hidden rounded-2xl border border-white/10 bg-slate-900/40 transition-colors hover:border-accent/50"
               >
                 <img
-                  src={COURSES.sidemount.heroImage}
+                  src={COURSES.sidemount.cardImage ?? COURSES.sidemount.heroImage}
                   alt="Sidemount diver in trim with cylinders mounted at the hips"
                   className="h-52 w-full object-cover"
                 />

@@ -23,6 +23,8 @@ export interface CourseContent {
   title: string;
   subtitle: string;
   heroImage: string;
+  heroImagePosition?: string;
+  cardImage?: string;
   intro: string[];
   stats: CourseStat[];
   pillars: CoursePillar[];
@@ -37,7 +39,9 @@ export const COURSES: Record<'sidemount' | 'cave' | 'technical' | 'rebreather', 
     eyebrow: 'Configuration mastery',
     title: 'Sidemount Diving',
     subtitle: 'Streamlined, balanced and self-sufficient diving with cylinders mounted at your sides.',
-    heroImage:
+    heroImage: '/images/sidemount.JPG',
+    heroImagePosition: 'center top',
+    cardImage:
       'https://images.pexels.com/photos/31493483/pexels-photo-31493483.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
     intro: [
       'Sidemount transforms how you move through the water. By carrying your cylinders alongside your body rather than on your back, you gain a lower profile, superb trim and independent access to every gas source you carry.',
