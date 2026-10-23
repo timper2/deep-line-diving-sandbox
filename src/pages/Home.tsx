@@ -113,13 +113,13 @@ export default function Home({ navigate }: HomeProps) {
       </section>
 
       <section className="mx-auto max-w-7xl container-px py-20 sm:py-24">
-        <div className="grid items-center gap-12 lg:grid-cols-2">
+        <div className="grid items-center gap-12 md:grid-cols-2 md:items-stretch">
           <div className="relative">
-            <div className="overflow-hidden rounded-3xl border border-white/10">
+            <div className="h-full overflow-hidden rounded-3xl border border-white/10">
               <img
                 src="/images/homepagefirstpicture.jpg"
                 alt="Diver swimming through a cave passage"
-                className="h-[30rem] w-full object-cover"
+                className="aspect-[4/5] w-full object-cover object-[55%_50%] md:aspect-auto md:h-full"
               />
             </div>
             <div className="absolute -bottom-6 -right-4 hidden rounded-2xl border border-white/10 bg-slate-900 p-5 shadow-xl sm:block">
@@ -150,7 +150,7 @@ export default function Home({ navigate }: HomeProps) {
                 closed-circuit, we build every skill deliberately until it holds up under pressure.
               </p>
             </div>
-            <div className="mt-8 grid gap-4 sm:grid-cols-3">
+            <div className="mt-8 grid gap-4 sm:grid-cols-3 md:grid-cols-1 lg:grid-cols-3">
               {APPROACH.map((a) => (
                 <div key={a.title} className="rounded-2xl border border-white/10 bg-slate-900/40 p-4">
                   <a.icon className="h-5 w-5 text-accent" />
