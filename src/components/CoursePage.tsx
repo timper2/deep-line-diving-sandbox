@@ -18,9 +18,9 @@ export default function CoursePage({ content, navigate }: CoursePageProps) {
           className="absolute inset-0 h-full w-full object-cover"
           style={{
             objectPosition: content.heroImagePosition,
-            // Scale up while rotated so the tilted edges never expose empty corners.
+            // Scale up with the tilt angle so rotated edges never expose empty corners on wide screens.
             transform: content.heroImageRotate
-              ? `rotate(${content.heroImageRotate}deg) scale(1.15)`
+              ? `rotate(${content.heroImageRotate}deg) scale(${1 + Math.abs(content.heroImageRotate) * 0.04})`
               : undefined,
           }}
         />
