@@ -1,1 +1,1 @@
-# deep-line-diving
+# Rimstone Technical Diving
