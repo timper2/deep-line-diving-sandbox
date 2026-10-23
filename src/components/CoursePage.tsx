@@ -16,7 +16,13 @@ export default function CoursePage({ content, navigate }: CoursePageProps) {
           src={content.heroImage}
           alt={content.title}
           className="absolute inset-0 h-full w-full object-cover"
-          style={content.heroImagePosition ? { objectPosition: content.heroImagePosition } : undefined}
+          style={{
+            objectPosition: content.heroImagePosition,
+            // Scale up while rotated so the tilted edges never expose empty corners.
+            transform: content.heroImageRotate
+              ? `rotate(${content.heroImageRotate}deg) scale(1.15)`
+              : undefined,
+          }}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/70 to-slate-950/40" />
         <div className="relative mx-auto w-full max-w-7xl container-px pb-16 pt-32">
