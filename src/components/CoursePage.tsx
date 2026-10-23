@@ -11,7 +11,11 @@ interface CoursePageProps {
 export default function CoursePage({ content, navigate }: CoursePageProps) {
   return (
     <div className="animate-fade-in">
-      <section className="relative flex min-h-[70vh] items-end overflow-hidden">
+      <section
+  className={`relative flex min-h-[70vh] items-end overflow-hidden ${
+  content.heroLockAspect ? 'md:aspect-[2/1] md:max-h-[85vh] md:min-h-0' : ''
+  }`}
+  >
         <img
           src={content.heroImage}
           alt={content.title}
