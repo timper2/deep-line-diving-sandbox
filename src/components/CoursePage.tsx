@@ -48,9 +48,10 @@ export default function CoursePage({ content, navigate }: CoursePageProps) {
   const hero = useElementSize<HTMLElement>();
   const rotate = content.heroImageRotate ?? 0;
   const shiftX = content.heroImageShiftX ?? 0;
+  const zoom = content.heroImageZoom ?? 1;
   const heroTransform =
-    rotate || shiftX
-      ? `translateX(${shiftX}%) rotate(${rotate}deg) scale(${minCoverScale(hero.width, hero.height, rotate, shiftX)})`
+    rotate || shiftX || zoom !== 1
+      ? `translateX(${shiftX}%) rotate(${rotate}deg) scale(${minCoverScale(hero.width, hero.height, rotate, shiftX) * zoom})`
       : undefined;
 
   return (
@@ -61,6 +62,15 @@ export default function CoursePage({ content, navigate }: CoursePageProps) {
   content.heroLockAspect ? 'w-full md:aspect-[2/1] md:max-h-[85vh] md:min-h-0' : ''
   }`}
   >
+        {zoom < 1 && (
+          <img
+            src={content.heroImage}
+            alt=""
+            aria-hidden="true"
+            className="absolute inset-0 h-full w-full scale-110 object-cover blur-2xl"
+            style={{ objectPosition: content.heroImagePosition }}
+          />
+        )}
         <img
           src={content.heroImage}
           alt={content.title}

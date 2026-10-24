@@ -26,6 +26,7 @@ export interface CourseContent {
   heroImagePosition?: string;
   heroImageRotate?: number;
   heroImageShiftX?: number;
+  heroImageZoom?: number;
  heroLockAspect?: boolean;
   cardImage?: string;
   intro: string[];
@@ -45,7 +46,8 @@ export const COURSES: Record<'sidemount' | 'cave' | 'technical' | 'rebreather', 
     heroImage: '/images/sidemount-enhanced.jpg',
     heroImagePosition: 'center 22%',
     heroImageRotate: -7.5,
-  heroImageShiftX: 4,
+    heroImageShiftX: 4,
+    heroImageZoom: 0.8,
  heroLockAspect: true,
     cardImage:
       'https://images.pexels.com/photos/31493483/pexels-photo-31493483.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
