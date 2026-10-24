@@ -1,3 +1,4 @@
+import { useLayoutEffect, useRef, useState } from 'react';
 import { ArrowRight, Check, ShieldCheck } from 'lucide-react';
 import type { CourseContent } from '@/data/courses';
 import type { NavigateFn } from '@/lib/useRouter';
@@ -8,10 +9,54 @@ interface CoursePageProps {
   navigate: NavigateFn;
 }
 
+// Smallest scale at which a rotated + shifted image still covers every corner of its W x H box.
+function minCoverScale(width: number, height: number, rotateDeg: number, shiftPct: number) {
+  if (!width || !height) return 1;
+  const theta = (rotateDeg * Math.PI) / 180;
+  const cos = Math.cos(theta);
+  const sin = Math.sin(theta);
+  const dx = (shiftPct / 100) * width;
+  let scale = 1;
+  for (const sx of [-1, 1]) {
+    for (const sy of [-1, 1]) {
+      const x = (sx * width) / 2 - dx;
+      const y = (sy * height) / 2;
+      const u = x * cos + y * sin;
+      const v = -x * sin + y * cos;
+      scale = Math.max(scale, Math.abs(u) / (width / 2), Math.abs(v) / (height / 2));
+    }
+  }
+  return scale * 1.01;
+}
+
+function useElementSize<T extends HTMLElement>() {
+  const ref = useRef<T>(null);
+  const [size, setSize] = useState({ width: 0, height: 0 });
+  useLayoutEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    const update = () => setSize({ width: el.clientWidth, height: el.clientHeight });
+    update();
+    const observer = new ResizeObserver(update);
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
+  return { ref, ...size };
+}
+
 export default function CoursePage({ content, navigate }: CoursePageProps) {
+  const hero = useElementSize<HTMLElement>();
+  const rotate = content.heroImageRotate ?? 0;
+  const shiftX = content.heroImageShiftX ?? 0;
+  const heroTransform =
+    rotate || shiftX
+      ? `translateX(${shiftX}%) rotate(${rotate}deg) scale(${minCoverScale(hero.width, hero.height, rotate, shiftX)})`
+      : undefined;
+
   return (
     <div className="animate-fade-in">
       <section
+  ref={hero.ref}
   className={`relative flex min-h-[70vh] items-end overflow-hidden ${
   content.heroLockAspect ? 'w-full md:aspect-[2/1] md:max-h-[85vh] md:min-h-0' : ''
   }`}
@@ -22,13 +67,7 @@ export default function CoursePage({ content, navigate }: CoursePageProps) {
           className="absolute inset-0 h-full w-full object-cover"
           style={{
             objectPosition: content.heroImagePosition,
-            // Scale up with the tilt angle so rotated edges never expose empty corners on wide screens.
-          transform:
-            content.heroImageRotate || content.heroImageShiftX
-              ? `translateX(${content.heroImageShiftX ?? 0}%) rotate(${content.heroImageRotate ?? 0}deg) scale(${
-                  1 + Math.abs(content.heroImageRotate ?? 0) * 0.04 + Math.abs(content.heroImageShiftX ?? 0) * 0.02
-                })`
-              : undefined,
+            transform: heroTransform,
           }}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/70 to-slate-950/40" />
