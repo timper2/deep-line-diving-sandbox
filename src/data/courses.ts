@@ -45,7 +45,7 @@ export const COURSES: Record<'sidemount' | 'cave' | 'technical' | 'rebreather', 
     subtitle: 'Streamlined, balanced and self-sufficient diving with cylinders mounted at your sides.',
     heroImage: '/images/sidemount-enhanced.jpg',
     heroImagePosition: 'center 22%',
-    heroImageZoom: 0.7,
+    heroImageZoom: 1,
  heroLockAspect: true,
     cardImage:
       'https://images.pexels.com/photos/31493483/pexels-photo-31493483.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
