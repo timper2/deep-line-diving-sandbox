@@ -374,8 +374,8 @@ points: [
         caption: 'Silent, bubble-free presence',
       },
       {
-        src: '/images/ccrsetup.heic',
-        caption: 'Dialing in the loop before the dive',
+        src: '/images/CCRPlanning.jpg',
+        caption: 'Planning the dive before entering the water',
       },
     ],
     prerequisites: ['Nitrox certification', 'Solid buoyancy and experience', 'Commitment to checklists', 'Medically fit to dive'],
