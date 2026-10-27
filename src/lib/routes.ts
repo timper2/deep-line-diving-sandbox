@@ -4,7 +4,7 @@ export type RouteId =
   | 'cave'
   | 'technical'
   | 'rebreather'
-  | 'tryout'
+  | 'demo'
   | 'contact'
   | 'services'
   | 'about';
@@ -23,7 +23,7 @@ export const ROUTES: RouteDef[] = [
   { id: 'cave', path: '/cave', label: 'Cave Diving', short: 'Cave' },
   { id: 'technical', path: '/technical', label: 'Technical Diving', short: 'Technical' },
   { id: 'rebreather', path: '/rebreather', label: 'Rebreather', short: 'CCR' },
-  { id: 'tryout', path: '/tryout', label: 'Tryout', short: 'Tryout' },
+  { id: 'demo', path: '/tryout', label: 'Demo', short: 'Demo' },
   { id: 'services', path: '/services', label: 'Services', short: 'Services' },
   { id: 'about', path: '/about', label: 'About', short: 'About' },
   { id: 'contact', path: '/contact', label: 'Contact', short: 'Contact' },
