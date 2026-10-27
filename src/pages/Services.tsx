@@ -11,7 +11,6 @@ const services = [
     items: [
       'Custom overhead guiding and logistics tailored precisely to your configuration and comfort level across North Florida spring networks and the deep cenote systems of the Riviera Maya.',
       'Full logistics coordination, site briefing, environmental gas planning, and international trip support.',
-    ],,
     ],
   },
   {
