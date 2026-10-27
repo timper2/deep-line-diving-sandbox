@@ -3,8 +3,25 @@ import type { RouteId } from '@/lib/routes';
 export interface CourseLevel {
   name: string;
   meta: string;
-  description: string;
+  agency?: string;
+  description?: string;
   points: string[];
+}
+
+export interface CoursePhase {
+  name: string;
+  description?: string;
+  points: string[];
+}
+
+export interface CourseModule {
+  heading?: string;
+  intro?: string;
+  title: string;
+  timeframe?: string;
+  subLabel?: string;
+  description?: string;
+  phases: CoursePhase[];
 }
 
 export interface CourseStat {
@@ -24,11 +41,19 @@ export interface CourseContent {
   subtitle: string;
   heroImage: string;
   heroImagePosition?: string;
+  heroImageRotate?: number;
+  heroImageShiftX?: number;
+  heroImageZoom?: number;
+ heroLockAspect?: boolean;
   cardImage?: string;
   intro: string[];
   stats: CourseStat[];
   pillars: CoursePillar[];
   levels: CourseLevel[];
+  levelsHeading?: string;
+  levelsIntro?: string;
+  levelsCompact?: boolean;
+  module?: CourseModule;
   gallery: { src: string; caption: string }[];
   prerequisites: string[];
 }
@@ -39,8 +64,10 @@ export const COURSES: Record<'sidemount' | 'cave' | 'technical' | 'rebreather', 
     eyebrow: 'Configuration mastery',
     title: 'Sidemount Diving',
     subtitle: 'Streamlined, balanced and self-sufficient diving with cylinders mounted at your sides.',
-    heroImage: '/images/sidemount.JPG',
+    heroImage: '/images/sidemount-enhanced.jpg',
     heroImagePosition: 'center 22%',
+    heroImageZoom: 1,
+ heroLockAspect: true,
     cardImage:
       'https://images.pexels.com/photos/31493483/pexels-photo-31493483.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
     intro: [
@@ -48,7 +75,7 @@ export const COURSES: Record<'sidemount' | 'cave' | 'technical' | 'rebreather', 
       'These courses build the fine motor skills and mindset that make sidemount feel effortless: valve drills, bungee routing, precise buoyancy and a fully redundant approach to gas management that carries directly into overhead and technical environments.',
     ],
     stats: [
-      { label: 'Format', value: 'Recreational to technical' },
+      { label: 'Format', value: 'Technical' },
       { label: 'Cylinders', value: '2 independent' },
       { label: 'Typical duration', value: '2 - 3 days' },
       { label: 'Min. certification', value: 'Open Water' },
@@ -67,22 +94,35 @@ export const COURSES: Record<'sidemount' | 'cave' | 'technical' | 'rebreather', 
         text: 'Learn to tune harness, bungees and clips so the system fits your body and the dive.',
       },
     ],
-    levels: [
-      {
-        name: 'Recreational Sidemount',
-        meta: 'Entry level · 2 days',
-        description:
-          'Your introduction to the configuration in open water, focused on comfort, balance and cylinder handling.',
-        points: ['Harness and bungee setup', 'Trim and buoyancy refinement', 'S-drills and gas switching', 'Cylinder handling at the surface and at depth'],
-      },
-      {
-        name: 'Advanced Sidemount',
-        meta: 'Progression · 2 - 3 days',
-        description:
-          'Refine the system for demanding dives, adding stages and preparing for overhead and technical progression.',
-        points: ['Stage and deco cylinder handling', 'Failure and shutdown drills', 'Restriction and no-mount practice', 'Team protocols and awareness'],
-      },
-    ],
+    levels: [],
+    module: {
+      title: 'Sidemount Platform Training',
+      timeframe: 'ESTIMATED TIMEFRAME: 3 DAYS',
+      phases: [
+        {
+          name: 'Phase 1: Platform Foundation',
+          description:
+            'Perfecting stable horizontal trim and exact buoyancy control while managing independent side-mounted cylinders.',
+          points: [
+            'Harness and bungee customization',
+            'Horizontal trim alignment and stability',
+            'Precision buoyancy control',
+            'Independent cylinder gas management',
+          ],
+        },
+        {
+          name: 'Phase 2: Technical Integration',
+          description:
+            'Moving the stabilized sidemount platform into demanding open water profiles and technical decompression planning.',
+          points: [
+            'Multi-stage and deco cylinder handling',
+            'Team gas-sharing protocols and awareness',
+            'Silt awareness and restriction management',
+            'Line tracking and failure drills',
+          ],
+        },
+      ],
+    },
     gallery: [
       {
         src: 'https://images.pexels.com/photos/7987177/pexels-photo-7987177.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
@@ -109,7 +149,7 @@ export const COURSES: Record<'sidemount' | 'cave' | 'technical' | 'rebreather', 
     stats: [
       { label: 'Environment', value: 'Full overhead' },
       { label: 'Gas rule', value: 'Rule of thirds' },
-      { label: 'Typical duration', value: '4 - 8 days' },
+      { label: 'Typical duration', value: '5 - 10 days' },
       { label: 'Min. certification', value: 'Nitrox + experience' },
     ],
     pillars: [
@@ -126,24 +166,33 @@ export const COURSES: Record<'sidemount' | 'cave' | 'technical' | 'rebreather', 
         text: 'Protect fragile cave formations with precise trim, propulsion and awareness.',
       },
     ],
+    levelsHeading: 'Training Track',
+    levelsIntro:
+      'The non-negotiable linear progression from foundational overhead control to complex cave navigation.',
     levels: [
       {
-        name: 'Cavern',
-        meta: 'Foundation · 2 days',
-        description: 'Stay within the light zone while learning the core overhead skills and guideline basics.',
-        points: ['Line following in the light zone', 'Non-silting propulsion techniques', 'Gas management fundamentals', 'Emergency procedures'],
+        name: 'Cavern Diver',
+        meta: 'ESTIMATED: 2-3 DAYS // THE FOUNDATION',
+        points: [
+          'The Focus: Transitioning into the overhead while mastering absolute buoyancy, horizontal trim, and non-silting propulsion.',
+          'Core Skills: Standard protocol baselines, primary and secondary reels, line-following mechanics, and basic emergency drills.',
+        ],
       },
       {
-        name: 'Intro to Cave',
-        meta: 'Progression · 2 - 3 days',
-        description: 'Move into the dark zone on a single continuous guideline with limited penetration.',
-        points: ['Primary and secondary reels', 'Lost line and lost buddy drills', 'Rule of thirds gas planning', 'Silt-out navigation'],
+        name: 'Intro to Cave Diver',
+        meta: 'ESTIMATED: 2-3 DAYS // THE PROGRESSION',
+        points: [
+          'The Focus: Moving past cavern boundaries into total darkness on a single, continuous safety guideline with limited penetration.',
+          'Core Skills: Navigating strict gas management, silt-out exit drills, team awareness, and touch-contact emergency communication.',
+        ],
       },
       {
-        name: 'Full Cave',
-        meta: 'Certification · 3 - 4 days',
-        description: 'Complex navigation, jumps and gaps for confident exploration of the cave system.',
-        points: ['Complex navigation and jumps', 'Stage cylinder deployment', 'Complex failure scenarios', 'Dive planning and mapping'],
+        name: 'Full Cave Diver',
+        meta: 'ESTIMATED: 4-5 DAYS // COMPLETE EMPOWERMENT',
+        points: [
+          'The Focus: Advanced environmental navigation across complex, branching cave systems with maximum operational freedom.',
+          'Core Skills: Managing complex jumps, gaps, circuit navigation, mapping protocols, and stage cylinder deployment.',
+        ],
       },
     ],
     gallery: [
@@ -189,24 +238,36 @@ export const COURSES: Record<'sidemount' | 'cave' | 'technical' | 'rebreather', 
         text: 'Operate as a coordinated team with clear communication and shared procedures.',
       },
     ],
+    levelsHeading: 'Training Track',
+    levelsIntro:
+      'A comprehensive open-circuit technical progression hub supporting your entire pathway from foundational double-tank stability through complex decompression profiles and mixed-gas trimix plans.',
     levels: [
       {
-        name: 'Intro to Tech',
-        meta: 'Foundation · 2 days',
-        description: 'Master the doubles or sidemount platform, trim and drills before adding decompression.',
-        points: ['Twinset or sidemount handling', 'Valve and shutdown drills', 'Refined trim and propulsion', 'Team awareness'],
+        name: 'Technical Foundations',
+        meta: 'ESTIMATED: 3 DAYS // LEVEL 1',
+        agency: 'PADI Tec Basics // TDI Intro to Tech',
+        points: [
+          'The Focus: Mastering your body positioning, clean horizontal trim, and equipment layout before introducing the task-loading of staged decompression.',
+          'The Standard: You leave certified to safely manage a redundant twinset platform, coordinate dual manifolds, and execute baseline technical dive profiles.',
+        ],
       },
       {
         name: 'Decompression Diver',
-        meta: 'Certification · 3 - 4 days',
-        description: 'Plan and execute staged decompression dives with a single decompression gas.',
-        points: ['Decompression theory and planning', 'Deco gas switching', 'Extended-range dive planning', 'Failure management with deco obligation'],
+        meta: 'ESTIMATED: 3-4 DAYS // LEVEL 2',
+        agency: 'PADI Tec 40, 45, 50 // TDI Advanced Nitrox & Decompression Procedures',
+        points: [
+          'The Focus: Advancing past recreational limits to safely plan and execute staged decompression profiles using a custom accelerated gas mix.',
+          'The Standard: You leave certified to manage multi-stage decompression cylinders, switch to accelerated gas mixtures, and handle team safety protocols under a deco obligation.',
+        ],
       },
       {
-        name: 'Trimix',
-        meta: 'Advanced · 4 - 5 days',
-        description: 'Add helium to manage narcosis and oxygen exposure on deeper dives.',
-        points: ['Helium-based gas planning', 'Managing narcosis and oxygen exposure', 'Multiple deco gases', 'Deep dive logistics'],
+        name: 'Mixed Gas & Trimix',
+        meta: 'ESTIMATED: 5-6 DAYS // LEVEL 3',
+        agency: 'PADI Tec 65 // Tec 100',
+        points: [
+          'The Focus: Adding Helium to your gas architecture to safely manage narcosis, mitigate oxygen exposure, and handle deep technical exposure limits.',
+          'The Standard: You leave certified to plan and execute deep, multi-stage technical profiles using custom normoxic and hypoxic Helium Trimix mixtures.',
+        ],
       },
     ],
     gallery: [
@@ -255,39 +316,54 @@ export const COURSES: Record<'sidemount' | 'cave' | 'technical' | 'rebreather', 
     levels: [
       {
         name: 'CCR Air Diluent',
-        meta: 'Foundation · 4 days',
-        description: 'Your entry into closed-circuit diving on either unit, mastering assembly, checklists and loop control with no decompression.',
-        points: ['Unit assembly and pre-dive checks', 'Diluent and oxygen management', 'Bail-out to open circuit', 'Buoyancy on a closed loop'],
+        meta: 'ESTIMATED: 8 DAYS // LEVEL 1 ENTRY',
+        description: 'Unit Focus: KISS Sidewinder & AP Inspiration Platforms. Industry Pathway: TDI Air Diluent / PADI Tec CCR Basics (Mod 1 No-Deco). Shifting completely away from open-circuit muscle memory to master real-time loop mechanics, unit assembly, and execution of pre-dive checklists with strict personal discipline.',
+        points: ['Unit assembly and strict pre-dive checklist execution',
+  'Real-time diluent and oxygen loop management metrics',
+  'Bail-out to open circuit safety protocols',
+  'Buoyancy and precise horizontal trim on a closed loop'],
       },
       {
         name: 'CCR Air Diluent Decompression',
-        meta: 'Progression · 2 - 3 days',
-        description: 'Add staged decompression to your CCR diving, planning and executing dives with a decompression obligation on the loop.',
-        points: ['Decompression planning on CCR', 'Deco gas and bail-out planning', 'Managing the loop through deco', 'Failure drills with a deco obligation'],
+        meta: 'ESTIMATED: 8 DAYS // TECH DIVER ENTRY',
+        description: 'Unit Focus: KISS Sidewinder & AP Inspiration Platforms. Industry Pathway: TDI Air Diluent Decompression / PADI Tec 40 CCR (Mod 1 Deco). Direct entry path for open-circuit technical divers or a clean upgrade track for Level 1 CCR divers looking to advance their loop operational skills.',
+        points: ['Advanced loop electronics tracking and monitoring',
+  'Planning and executing staged decompression obligations',
+  'Deco gas transitions and bail-out management protocols',
+  'Handling loop failure diagnostics under a decompression penalty'],
       },
       {
-        name: 'CCR Mod 1 - KISS Sidewinder',
-        meta: 'Sidemount CCR · 5 days',
-        description: 'Dedicated training on the chest-mounted KISS Sidewinder sidemount rebreather, focused on the unit-specific handling that makes it shine.',
-        points: ['Sidewinder assembly and routing', 'Sidemount CCR trim and handling', 'Scrubber and cell management', 'Failure drills specific to the unit'],
+        name: 'CCR Mixed Gas & Trimix',
+meta: 'ESTIMATED: 6 DAYS // LEVEL 2 PROGRESSION',
+description: 'Unit Focus: KISS Sidewinder & AP Inspiration Platforms. Industry Pathway: TDI Mixed Gas / PADI Tec 60 CCR (Mod 2). Advanced training for certified decompression rebreather divers looking to integrate Helium into their rebreather loop architecture.',
+points: [
+  'Trimix diluent planning and gas density control metrics',
+  'Managing multiple open-circuit technical bail-out logistics',
+  'Extended decompression profiling and oxygen exposure limits',
+  'Deep-water dive logistics and multi-stage execution profiles'
+],
       },
       {
-        name: 'CCR Mod 1 - AP Inspiration',
-        meta: 'Backmount CCR · 5 days',
-        description: 'Dedicated training on the AP Inspiration, building familiarity with its electronic control, integrated decompression and backmount profile.',
-        points: ['Inspiration assembly and setup', 'Electronics and controller management', 'Backmount CCR trim and handling', 'Unit-specific failure drills'],
+        name: 'CCR Cave Cross-Over',
+meta: 'ESTIMATED: 5 DAYS // OVERHEAD CROSS-OVER',
+description: 'Unit Focus: Open to any active CCR platform architecture. This intensive pathway is designed exclusively for certified, active Open Circuit Full Cave Divers looking to safely transition their established overhead navigation and air-sharing protocols onto a closed-circuit loop loop.',
+points: [
+  'Adapting open-circuit cave muscle memory to closed-circuit boundaries',
+  'Unit-specific overhead failure management and emergency loop safety rules',
+  'Complex rebreather bail-out mechanics and gas-matching execution profiles',
+  'TDI certified overhead crossing parameters across all local systems'
+],
       },
       {
-        name: 'CCR Mixed Gas',
-        meta: 'Advanced · 5 - 7 days',
-        description: 'Extend the rebreather into trimix territory for deep, long-duration diving beyond recreational depths.',
-        points: ['Trimix diluent planning', 'Extended decompression on CCR', 'Multiple bail-out strategies', 'Deep dive logistics'],
-      },
-      {
-        name: 'CCR Cave',
-        meta: 'Specialism · 4 - 5 days',
-        description: 'Apply your closed-circuit skills in the overhead environment, with cave-specific gas planning, line work and bail-out strategies on the loop.',
-        points: ['Cave gas planning on CCR', 'Line work and navigation on the loop', 'Overhead bail-out strategies', 'Cave-specific failure management'],
+        name: 'TDI CCR Cave Progression',
+meta: 'ESTIMATED: 10 DAYS // COMPLETE OVERHEAD TRACK',
+description: 'Unit Focus: Open to any active CCR platform architecture. Curriculum Pathway: TDI CCR Cavern // TDI CCR Intro to Cave // TDI CCR Full Cave. A comprehensive, non-negotiable linear progression for rebreather divers with no prior cave experience, built around developing strict survival habits in total darkness.',
+points: [
+  'Linear 3-course track from initial cavern limits to full cave navigation',
+  'Mastering real-time loop tracking safety boundaries under severe task-loading',
+  'Silt-out exit drills, touch-contact team routines, and emergency protocols',
+  'Complex route navigation managing jumps, gaps, and circuit planning'
+],
       },
     ],
     gallery: [

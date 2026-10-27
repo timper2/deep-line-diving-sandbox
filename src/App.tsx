@@ -22,7 +22,7 @@ function App() {
         return <CoursePage content={COURSES.technical} navigate={navigate} />;
       case 'rebreather':
         return <CoursePage content={COURSES.rebreather} navigate={navigate} />;
-      case 'tryout':
+      case 'demo':
         return <TryOut navigate={navigate} />;
       case 'services':
         return <Services navigate={navigate} />;

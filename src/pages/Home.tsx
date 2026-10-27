@@ -64,10 +64,10 @@ export default function Home({ navigate }: HomeProps) {
           </p>
           <div className="mt-9 flex animate-fade-up flex-wrap gap-4">
             <button
-              onClick={() => navigate('tryout')}
+              onClick={() => navigate('demo')}
               className="group inline-flex items-center gap-2 rounded-full bg-accent px-6 py-3 text-sm font-semibold text-slate-950 transition-colors hover:bg-accent-soft"
             >
-              Try a 1-day tech taster
+              Book a technical demo
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
             </button>
             <button
@@ -87,10 +87,10 @@ export default function Home({ navigate }: HomeProps) {
               About Rimstone
             </p>
             <p className="mt-4 text-lg leading-relaxed text-slate-300 sm:text-xl">
-              Led by Tim, a PADI Course Director and TDI Instructor in Fort White, Rimstone teaches
-              cave, sidemount, and CCR diving from nitrox and trimix through full cave and advanced
-              mixed-gas training. Every course is built around deliberate practice, KISS Sidewinder
-              expertise, and the belief that skill is built one dive at a time.
+              Led by Tim, a TDI Technical Instructor and PADI Technical Instructor Trainer, Rimstone delivers comprehensive training across the entire spectrum of open and closed circuit technical diving. Operating out of Fort White, Florida—the epicenter of Cave Country—our programs focus strictly on foundational stability, equipment fluency, and sharp analytical judgment.
+            </p>
+            <p className="mt-4 text-lg leading-relaxed text-slate-300 sm:text-xl">
+              Our training tracks support your entire progression: from your first steps into redundant technical setups and open-circuit decompression diving, through advanced mixed-gas trimix plans, to cave diving and unit-specific CCR transitions on the KISS Sidewinder and AP Inspiration platforms. We train thinking divers to excel in unforgiving environments, because in the end, skill is built one dive at a time.
             </p>
           </div>
         </div>
@@ -99,9 +99,9 @@ export default function Home({ navigate }: HomeProps) {
       <section className="border-b border-white/10 bg-slate-900/40">
         <div className="mx-auto grid max-w-7xl grid-cols-2 gap-y-8 container-px py-10 sm:grid-cols-4">
           {[
-            { value: 'KISS · AP · OC', label: 'Three platforms' },
+            { value: 'OC · KISS · AP', label: 'Three platforms' },
             { value: 'Active', label: 'Still in the water' },
-            { value: 'Full Cave', label: 'Certified explorer' },
+            { value: 'Cave · Trimix', label: 'OC & CCR CERTIFIED' },
             { value: '1:2', label: 'Instructor ratio' },
           ].map((s) => (
             <div key={s.label} className="text-center">
@@ -128,8 +128,8 @@ export default function Home({ navigate }: HomeProps) {
                   <Waves className="h-5 w-5 text-accent" />
                 </span>
                 <div>
-                  <p className="font-display text-sm font-semibold text-white">Silent running</p>
-                  <p className="text-xs text-slate-400">Bubble-free on the loop</p>
+                  <p className="font-display text-sm font-semibold text-white">KISS Sidewinder</p>
+                  <p className="text-xs text-slate-400">Closed Circuit Configuration</p>
                 </div>
               </div>
             </div>
@@ -143,11 +143,7 @@ export default function Home({ navigate }: HomeProps) {
             </h2>
             <div className="mt-6 space-y-5 text-base leading-relaxed text-slate-300">
               <p>
-                Built the way the cave builds — deposit by deposit, dive by dive.
-              </p>
-              <p>
-                Whether you are starting sidemount, pushing into cave, or stepping across to
-                closed-circuit, we build every skill deliberately until it holds up under pressure.
+                Whether you are starting sidemount, pushing into cave, or stepping across to closed-circuit, we build every skill deliberately until it holds up under pressure. Every course is built around deliberate practice and the belief that true skill is built one dive at a time, focusing entirely on true peer-to-peer performance and long-term diving confidence.
               </p>
             </div>
             <div className="mt-8 grid gap-4 sm:grid-cols-3 md:grid-cols-1 lg:grid-cols-3">
@@ -729,7 +725,7 @@ export default function Home({ navigate }: HomeProps) {
                   Cave Guiding
                 </h3>
                 <p className="text-xs font-semibold uppercase tracking-widest text-slate-500">
-                  Sites: Peacock, Ginnie and Cow Springs
+                  Sites: Florida Springs & Riviera Maya Cenotes
                 </p>
                 <p itemProp="description" className="text-sm leading-relaxed text-slate-300">
                   Guided cave excursions matched to your certification and comfort level, with full
@@ -765,7 +761,7 @@ export default function Home({ navigate }: HomeProps) {
                 </p>
                 <p itemProp="description" className="text-sm leading-relaxed text-slate-300">
                   One-on-one mentorship with video review, gear configuration tuning and trim
-                  workshops for divers progressing in overhead environments.
+                  workshops for divers progressing in technical configurations.
                 </p>
                 <a
                   href="/services"
@@ -788,7 +784,7 @@ export default function Home({ navigate }: HomeProps) {
       <CtaBanner
         navigate={navigate}
         title="Not sure where to start?"
-        text="Book a 1-day technical try-out and get hands-on with sidemount, doubles and closed-circuit configurations before you commit to a full course."
+        text="Book a 1-day technical demo and get hands-on with sidemount, doubles and closed-circuit configurations before you commit to a full course."
       />
     </div>
   );
