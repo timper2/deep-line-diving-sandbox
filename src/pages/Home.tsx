@@ -64,7 +64,7 @@ export default function Home({ navigate }: HomeProps) {
           </p>
           <div className="mt-9 flex animate-fade-up flex-wrap gap-4">
             <button
-              onClick={() => navigate('tryout')}
+              onClick={() => navigate('demo')}
               className="group inline-flex items-center gap-2 rounded-full bg-accent px-6 py-3 text-sm font-semibold text-slate-950 transition-colors hover:bg-accent-soft"
             >
               Book a technical demo
