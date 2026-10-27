@@ -129,7 +129,7 @@ export default function Home({ navigate }: HomeProps) {
                 </span>
                 <div>
                   <p className="font-display text-sm font-semibold text-white">KISS Sidewinder</p>
-                  <p className="text-xs text-slate-400">Closed Circuit configuration</p>
+                  <p className="text-xs text-slate-400">Closed Circuit Configuration</p>
                 </div>
               </div>
             </div>
