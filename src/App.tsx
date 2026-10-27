@@ -5,6 +5,7 @@ import Home from '@/pages/Home';
 import Services from '@/pages/Services';
 import TryOut from '@/pages/TryOut';
 import Contact from '@/pages/Contact';
+import About from '@/pages/About';
 import { COURSES } from '@/data/courses';
 import { useRouter } from '@/lib/useRouter';
 
@@ -21,12 +22,14 @@ function App() {
         return <CoursePage content={COURSES.technical} navigate={navigate} />;
       case 'rebreather':
         return <CoursePage content={COURSES.rebreather} navigate={navigate} />;
-      case 'tryout':
+      case 'demo':
         return <TryOut navigate={navigate} />;
       case 'services':
         return <Services navigate={navigate} />;
       case 'contact':
         return <Contact />;
+      case 'about':
+        return <About />;
       default:
         return <Home navigate={navigate} />;
     }

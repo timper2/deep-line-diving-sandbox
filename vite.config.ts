@@ -10,6 +10,11 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url)),
     },
   },
+  server: {
+    // The hosted preview supplies its own live-reload channel. Disable Vite's
+    // client-side websocket fallback, which cannot resolve the proxied preview URL.
+    hmr: false,
+  },
   optimizeDeps: {
     exclude: ['lucide-react'],
   },
