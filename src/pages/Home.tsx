@@ -725,7 +725,7 @@ export default function Home({ navigate }: HomeProps) {
                   Cave Guiding
                 </h3>
                 <p className="text-xs font-semibold uppercase tracking-widest text-slate-500">
-                  Sites: Peacock, Ginnie and Cow Springs
+                  Sites: Florida Springs & Riviera Maya Cenotes
                 </p>
                 <p itemProp="description" className="text-sm leading-relaxed text-slate-300">
                   Guided cave excursions matched to your certification and comfort level, with full
@@ -761,7 +761,7 @@ export default function Home({ navigate }: HomeProps) {
                 </p>
                 <p itemProp="description" className="text-sm leading-relaxed text-slate-300">
                   One-on-one mentorship with video review, gear configuration tuning and trim
-                  workshops for divers progressing in overhead environments.
+                  workshops for divers progressing in technical configurations.
                 </p>
                 <a
                   href="/services"
