@@ -185,6 +185,42 @@ export default function CoursePage({ content, navigate }: CoursePageProps) {
             </div>
           </div>
         )}
+        {content.levelsCompact ? (
+          <div className="mt-8 flex flex-col gap-4">
+            {content.levels.map((level) => (
+              <div
+                key={level.name}
+                className="rounded-2xl border border-white/10 bg-slate-900/40 px-6 py-5 text-left transition-colors hover:border-accent/40 sm:px-8"
+              >
+                <div className="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:gap-4">
+                  <h3 className="font-display text-lg font-semibold text-white">{level.name}</h3>
+                  <p className="text-xs font-semibold uppercase tracking-widest text-accent/80">
+                    {level.meta}
+                  </p>
+                </div>
+                {level.description && (
+                  <p className="mt-3 text-sm leading-relaxed text-slate-300">{level.description}</p>
+                )}
+                <ul className="mt-3 flex flex-col gap-2">
+                  {level.points.map((pt) => {
+                    const splitAt = pt.indexOf(': ');
+                    const label = splitAt > 0 && splitAt < 30 ? pt.slice(0, splitAt + 1) : null;
+                    const body = label ? pt.slice(splitAt + 2) : pt;
+                    return (
+                      <li key={pt} className="flex items-start gap-2 text-sm leading-relaxed text-slate-400">
+                        <Check className="mt-0.5 h-4 w-4 flex-shrink-0 text-accent" />
+                        <span>
+                          {label && <span className="font-semibold text-white">{label} </span>}
+                          {body}
+                        </span>
+                      </li>
+                    );
+                  })}
+                </ul>
+              </div>
+            ))}
+          </div>
+        ) : (
         <div className="mt-10 space-y-5">
           {content.levels.map((level, i) => (
             <div
@@ -220,6 +256,7 @@ export default function CoursePage({ content, navigate }: CoursePageProps) {
             </div>
           ))}
         </div>
+        )}
       </section>
 
       <section className="mx-auto max-w-7xl container-px pb-4">

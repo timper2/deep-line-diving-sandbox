@@ -51,6 +51,7 @@ export interface CourseContent {
   levels: CourseLevel[];
   levelsHeading?: string;
   levelsIntro?: string;
+  levelsCompact?: boolean;
   module?: CourseModule;
   gallery: { src: string; caption: string }[];
   prerequisites: string[];
@@ -236,24 +237,40 @@ export const COURSES: Record<'sidemount' | 'cave' | 'technical' | 'rebreather', 
         text: 'Operate as a coordinated team with clear communication and shared procedures.',
       },
     ],
+    levelsHeading: 'Training Track',
+    levelsIntro:
+      'A comprehensive open-circuit technical progression hub supporting your entire pathway from foundational double-tank stability through complex decompression profiles and mixed-gas trimix plans.',
+    levelsCompact: true,
     levels: [
       {
-        name: 'Intro to Tech',
-        meta: 'Foundation · 2 days',
-        description: 'Master the doubles or sidemount platform, trim and drills before adding decompression.',
-        points: ['Twinset or sidemount handling', 'Valve and shutdown drills', 'Refined trim and propulsion', 'Team awareness'],
+        name: '1. Technical Foundations',
+        meta: 'ESTIMATED: 2 DAYS // LEVEL 1',
+        description:
+          'The Progression: Mastering your body positioning, clean horizontal trim, and equipment layout before introducing the physical and mental task-loading of staged decompression.',
+        points: [
+          'Operational Capability: Certified to manage a redundant gear platform, coordinate twinset manifolds, and execute baseline technical dive plans safely.',
+          'SEO Reference: Maps natively to PADI Tec Basics and TDI Intro to Tech tracks.',
+        ],
       },
       {
-        name: 'Decompression Diver',
-        meta: 'Certification · 3 - 4 days',
-        description: 'Plan and execute staged decompression dives with a single decompression gas.',
-        points: ['Decompression theory and planning', 'Deco gas switching', 'Extended-range dive planning', 'Failure management with deco obligation'],
+        name: '2. Decompression Diver',
+        meta: 'ESTIMATED: 3-4 DAYS // LEVEL 2',
+        description:
+          'The Progression: Advancing past recreational limits to safely plan and execute staged decompression profiles using a custom accelerated gas mix.',
+        points: [
+          'Operational Capability: Certified to manage multi-stage decompression cylinders, switch to accelerated gas mixtures, and handle team safety protocols under a decompression obligation.',
+          'SEO Reference: Maps natively to PADI Tec 40 / Tec 45 / Tec 50 and TDI Advanced Nitrox / Decompression Procedures.',
+        ],
       },
       {
-        name: 'Trimix',
-        meta: 'Advanced · 4 - 5 days',
-        description: 'Add helium to manage narcosis and oxygen exposure on deeper dives.',
-        points: ['Helium-based gas planning', 'Managing narcosis and oxygen exposure', 'Multiple deco gases', 'Deep dive logistics'],
+        name: '3. Mixed Gas & Trimix',
+        meta: 'ESTIMATED: 4-5 DAYS // LEVEL 3',
+        description:
+          'The Progression: Adding Helium to your gas architecture to safely manage narcosis, mitigate oxygen exposure, and handle deep technical exposure limits.',
+        points: [
+          'Operational Capability: Certified to execute deep, multi-stage technical profiles using custom normoxic and hypoxic Helium Trimix mixtures.',
+          'SEO Reference: Exclusive training center for the PADI Tec 65 and PADI Tec 100 tracks.',
+        ],
       },
     ],
     gallery: [
