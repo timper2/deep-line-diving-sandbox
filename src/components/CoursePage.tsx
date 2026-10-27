@@ -115,7 +115,9 @@ export default function CoursePage({ content, navigate }: CoursePageProps) {
 
       <section className="mx-auto max-w-7xl container-px py-16 sm:py-20">
         <h2 className="font-display text-2xl font-bold tracking-tight text-white sm:text-3xl">
-          {content.module?.heading ? (
+          {content.levelsHeading ? (
+            content.levelsHeading
+          ) : content.module?.heading ? (
             content.module.heading
           ) : content.module ? (
             <>Training Track</>
@@ -124,7 +126,9 @@ export default function CoursePage({ content, navigate }: CoursePageProps) {
           )}
         </h2>
         <p className="mt-3 max-w-2xl text-base text-slate-400">
-          {content.module?.intro ? (
+          {content.levelsIntro ? (
+            content.levelsIntro
+          ) : content.module?.intro ? (
             content.module.intro
           ) : content.module ? (
             <>
@@ -185,7 +189,9 @@ export default function CoursePage({ content, navigate }: CoursePageProps) {
           {content.levels.map((level, i) => (
             <div
               key={level.name}
-              className="group grid gap-6 rounded-2xl border border-white/10 bg-slate-900/40 p-6 transition-colors hover:border-accent/40 sm:grid-cols-[auto_1fr] sm:p-8"
+              className={`group grid rounded-2xl border border-white/10 bg-slate-900/40 transition-colors hover:border-accent/40 sm:grid-cols-[auto_1fr] ${
+                level.description ? 'gap-6 p-6 sm:p-8' : 'gap-4 px-6 py-5 sm:gap-6 sm:px-8 sm:py-6'
+              }`}
             >
               <div className="flex items-start gap-4 sm:w-64">
                 <span className="grid h-11 w-11 flex-shrink-0 place-items-center rounded-full bg-accent/15 font-display text-base font-bold text-accent ring-1 ring-accent/40">
@@ -199,8 +205,10 @@ export default function CoursePage({ content, navigate }: CoursePageProps) {
                 </div>
               </div>
               <div>
-                <p className="text-sm leading-relaxed text-slate-300">{level.description}</p>
-                <ul className="mt-4 grid gap-2 sm:grid-cols-2">
+                {level.description && (
+                  <p className="text-sm leading-relaxed text-slate-300">{level.description}</p>
+                )}
+                <ul className={`grid gap-2 sm:grid-cols-2 ${level.description ? 'mt-4' : ''}`}>
                   {level.points.map((pt) => (
                     <li key={pt} className="flex items-start gap-2 text-sm text-slate-400">
                       <Check className="mt-0.5 h-4 w-4 flex-shrink-0 text-accent" />

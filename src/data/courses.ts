@@ -3,7 +3,7 @@ import type { RouteId } from '@/lib/routes';
 export interface CourseLevel {
   name: string;
   meta: string;
-  description: string;
+  description?: string;
   points: string[];
 }
 
@@ -49,6 +49,8 @@ export interface CourseContent {
   stats: CourseStat[];
   pillars: CoursePillar[];
   levels: CourseLevel[];
+  levelsHeading?: string;
+  levelsIntro?: string;
   module?: CourseModule;
   gallery: { src: string; caption: string }[];
   prerequisites: string[];
@@ -162,32 +164,35 @@ export const COURSES: Record<'sidemount' | 'cave' | 'technical' | 'rebreather', 
         text: 'Protect fragile cave formations with precise trim, propulsion and awareness.',
       },
     ],
-    levels: [],
-    module: {
-      heading: 'Training Track',
-      intro:
-        'A comprehensive overhead progression engineered around precision body position, meticulous safety baselines, and clear analytical judgment inside demanding cave environments.',
-      title: 'Cave Diving Training',
-      subLabel: 'THE ROAD TO ZERO-FLOW AND HIGH-FLOW OVERHEAD MASTERY',
-      description:
-        'A rigorous, discipline-focused training environment built around mastering continuous guideline execution, strict team cross-checks, and precise situational awareness across premier international networks.',
-      phases: [
-        {
-          name: 'Phase 1: Foundational Overhead Control',
-          points: [
-            'The Scope: Mastering horizontal trim, platform stability, and anti-silting propulsion techniques while learning core guideline basics.',
-            'Core Skills: Operating primary and secondary reels, establishing strict gas-matching rules, and maintaining positioning under initial task loading.',
-          ],
-        },
-        {
-          name: 'Phase 2: Full Environmental Navigation',
-          points: [
-            'The Scope: Transitioning into complete darkness, executing complex route navigation, and managing advanced team coordinates safely.',
-            'Core Skills: Handling complex jumps, gaps, and line tracking drills alongside advanced emergency protocols, silt-out navigation, and stage cylinder deployment.',
-          ],
-        },
-      ],
-    },
+    levelsHeading: 'Training Track',
+    levelsIntro:
+      'The non-negotiable linear progression from foundational overhead control to complex cave navigation.',
+    levels: [
+      {
+        name: 'Cavern Diver',
+        meta: 'ESTIMATED: 2-3 DAYS // THE FOUNDATION',
+        points: [
+          'The Focus: Transitioning into the overhead while mastering absolute buoyancy, horizontal trim, and non-silting propulsion.',
+          'Core Skills: Standard protocol baselines, primary and secondary reels, line-following mechanics, and basic emergency drills.',
+        ],
+      },
+      {
+        name: 'Intro to Cave Diver',
+        meta: 'ESTIMATED: 2-3 DAYS // THE PROGRESSION',
+        points: [
+          'The Focus: Moving past cavern boundaries into total darkness on a single, continuous safety guideline with limited penetration.',
+          'Core Skills: Navigating strict gas management, silt-out exit drills, team awareness, and touch-contact emergency communication.',
+        ],
+      },
+      {
+        name: 'Full Cave Diver',
+        meta: 'ESTIMATED: 4-5 DAYS // COMPLETE EMPOWERMENT',
+        points: [
+          'The Focus: Advanced environmental navigation across complex, branching cave systems with maximum operational freedom.',
+          'Core Skills: Managing complex jumps, gaps, circuit navigation, mapping protocols, and stage cylinder deployment.',
+        ],
+      },
+    ],
     gallery: [
       {
         src: 'https://images.pexels.com/photos/4821643/pexels-photo-4821643.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
