@@ -12,13 +12,19 @@ export function useRouter() {
   useEffect(() => {
     const onChange = () => setRoute(pathToRoute(currentPath()));
     window.addEventListener('hashchange', onChange);
-    return () => window.removeEventListener('hashchange', onChange);
+    window.addEventListener('popstate', onChange);
+    return () => {
+      window.removeEventListener('hashchange', onChange);
+      window.removeEventListener('popstate', onChange);
+    };
   }, []);
 
   const navigate = useCallback((id: RouteId) => {
     const path = routeToPath(id);
     if (currentPath() !== path) {
-      window.location.hash = path;
+      // pushState avoids hash-anchor handlers that treat "#/route" as a CSS selector.
+      window.history.pushState(null, '', `#${path}`);
+      setRoute(pathToRoute(path));
     }
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }, []);
