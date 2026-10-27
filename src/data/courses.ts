@@ -141,7 +141,7 @@ export const COURSES: Record<'sidemount' | 'cave' | 'technical' | 'rebreather', 
     stats: [
       { label: 'Environment', value: 'Full overhead' },
       { label: 'Gas rule', value: 'Rule of thirds' },
-      { label: 'Typical duration', value: '4 - 8 days' },
+      { label: 'Typical duration', value: '5 - 10 days' },
       { label: 'Min. certification', value: 'Nitrox + experience' },
     ],
     pillars: [
@@ -161,7 +161,7 @@ export const COURSES: Record<'sidemount' | 'cave' | 'technical' | 'rebreather', 
     levels: [
       {
         name: 'Cavern',
-        meta: 'Foundation · 2 days',
+        meta: 'Foundation · 2 - 3 days',
         description: 'Stay within the light zone while learning the core overhead skills and guideline basics.',
         points: ['Line following in the light zone', 'Non-silting propulsion techniques', 'Gas management fundamentals', 'Emergency procedures'],
       },
@@ -173,7 +173,7 @@ export const COURSES: Record<'sidemount' | 'cave' | 'technical' | 'rebreather', 
       },
       {
         name: 'Full Cave',
-        meta: 'Certification · 3 - 4 days',
+        meta: 'Certification · 4 - 5 days',
         description: 'Complex navigation, jumps and gaps for confident exploration of the cave system.',
         points: ['Complex navigation and jumps', 'Stage cylinder deployment', 'Complex failure scenarios', 'Dive planning and mapping'],
       },
