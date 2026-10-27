@@ -32,7 +32,7 @@ export default function Footer({ navigate }: FooterProps) {
               <span className="font-display text-lg font-bold tracking-tight">Rimstone Technical Diving</span>
             </div>
             <p className="mt-4 max-w-sm text-sm leading-relaxed text-slate-400">
-              A technical diving company. Cave, tec, and rebreather. Fort White, Florida.
+              Operating out of Fort White, Florida—the epicenter of Cave Country. Training thinking divers to excel in unforgiving environments.
             </p>
           </div>
 
@@ -102,17 +102,21 @@ export default function Footer({ navigate }: FooterProps) {
             <ul className="mt-4 space-y-3 text-sm text-slate-300">
               <li className="flex items-center gap-2.5">
                 <Mail className="h-4 w-4 text-accent" />
-                <a href="mailto:dive@deeplinediving.com" className="hover:text-accent">
-                  dive@deeplinediving.com
+                <a href="mailto:dive@rimstonediving.com" className="hover:text-accent">
+                  dive@rimstonediving.com
                 </a>
               </li>
               <li className="flex items-center gap-2.5">
                 <Phone className="h-4 w-4 text-accent" />
-                <span>+1 (555) 018-2277</span>
+                <span>+1 (206) 227-9715 (Call / Text)</span>
+              </li>
+              <li className="flex items-center gap-2.5">
+                <Phone className="h-4 w-4 text-accent" />
+                <span>+1 (206) 227-9715 (WhatsApp)</span>
               </li>
               <li className="flex items-center gap-2.5">
                 <MapPin className="h-4 w-4 text-accent" />
-                <span>High Springs, Florida</span>
+                <span>Fort White, Florida</span>
               </li>
             </ul>
           </div>
