@@ -374,8 +374,8 @@ points: [
         caption: 'Silent, bubble-free presence',
       },
       {
-        src: 'https://images.pexels.com/photos/13022664/pexels-photo-13022664.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-        caption: 'Preparing the unit dockside',
+        src: '/images/ccrsetup.heic',
+        caption: 'Dialing in the loop before the dive',
       },
     ],
     prerequisites: ['Nitrox certification', 'Solid buoyancy and experience', 'Commitment to checklists', 'Medically fit to dive'],
