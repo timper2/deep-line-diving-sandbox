@@ -7,7 +7,7 @@ interface FooterProps {
 }
 
 export default function Footer({ navigate }: FooterProps) {
-  const courseLinks: RouteId[] = ['sidemount', 'cave', 'technical', 'rebreather', 'tryout'];
+  const courseLinks: RouteId[] = ['sidemount', 'cave', 'technical', 'rebreather', 'demo'];
 
   return (
     <footer className="border-t border-white/10 bg-slate-950">
