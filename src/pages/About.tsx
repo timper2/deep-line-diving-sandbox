@@ -13,7 +13,7 @@ export default function About() {
         <div className="mt-10 grid gap-10 lg:grid-cols-[auto_1fr] lg:items-start">
           <div className="overflow-hidden rounded-2xl border border-white/10 bg-slate-900/40">
             <img
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/27A525C3-1B95-4DC0-B2DA-E6BB7797527E-1SsC4SUBzIrllfM9QSB6Om2cWqZL9d.jpeg"
+              src="/images/abouttim.jpeg"
               alt="Tim diving at the waterline in a cave"
               width="1408"
               height="1750"
