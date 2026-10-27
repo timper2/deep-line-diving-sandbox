@@ -125,11 +125,11 @@ export const COURSES: Record<'sidemount' | 'cave' | 'technical' | 'rebreather', 
     },
     gallery: [
       {
-        src: 'https://images.pexels.com/photos/7987177/pexels-photo-7987177.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+        src: '/images/sidemountJVC.jpg',
         caption: 'Balanced trim in open water',
       },
       {
-        src: 'https://images.pexels.com/photos/35541060/pexels-photo-35541060.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+        src: '/images/SMharnesssetup.jpeg',
         caption: 'Rigging the harness before a dive',
       },
     ],
