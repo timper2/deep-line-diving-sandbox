@@ -784,7 +784,7 @@ export default function Home({ navigate }: HomeProps) {
       <CtaBanner
         navigate={navigate}
         title="Not sure where to start?"
-        text="Book a 1-day technical try-out and get hands-on with sidemount, doubles and closed-circuit configurations before you commit to a full course."
+        text="Book a 1-day technical demo and get hands-on with sidemount, doubles and closed-circuit configurations before you commit to a full course."
       />
     </div>
   );
