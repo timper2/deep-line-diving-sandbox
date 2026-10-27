@@ -47,9 +47,7 @@ export default function Services({ navigate }: ServicesProps) {
             </h1>
 
             <p className="max-w-2xl text-lg leading-relaxed text-slate-300 sm:text-xl">
-              Whether you need an experienced guide or personalized technical
-              mentorship, I offer tailored services for divers pursuing
-              excellence in North Florida&apos;s premier cave systems.
+              Whether you need a custom environmental guide or precision hardware mentorship, I offer tailored services for technical and cave divers pursuing excellence across North Florida&apos;s spring networks, the deep cenotes of the Riviera Maya, and specialized open-water configurations.
             </p>
           </div>
         </div>
