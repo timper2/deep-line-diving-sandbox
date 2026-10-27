@@ -108,11 +108,7 @@ export default function Footer({ navigate }: FooterProps) {
               </li>
               <li className="flex items-center gap-2.5">
                 <Phone className="h-4 w-4 text-accent" />
-                <span>+1 (206) 227-9715 (Call / Text)</span>
-              </li>
-              <li className="flex items-center gap-2.5">
-                <Phone className="h-4 w-4 text-accent" />
-                <span>+1 (206) 227-9715 (WhatsApp)</span>
+                <span>+1 (206) 227-9715 (Call / Text / WhatsApp)</span>
               </li>
               <li className="flex items-center gap-2.5">
                 <MapPin className="h-4 w-4 text-accent" />
@@ -124,7 +120,6 @@ export default function Footer({ navigate }: FooterProps) {
 
         <div className="mt-12 flex flex-col items-center justify-between gap-3 border-t border-white/10 pt-6 text-xs text-slate-500 sm:flex-row">
           <p>&copy; {new Date().getFullYear()} Rimstone Technical Diving. All rights reserved.</p>
-          <p>Train deliberately. Dive safely.</p>
         </div>
       </div>
     </footer>
