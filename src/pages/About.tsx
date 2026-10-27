@@ -15,23 +15,18 @@ export default function About() {
             <Waves className="h-6 w-6" />
             <div>
               <p className="font-display text-sm font-semibold text-white">Tim</p>
-              <p className="text-xs text-slate-400">PADI Course Director · TDI Instructor Trainer</p>
+              <p className="text-xs text-slate-400">TDI Technical Instructor // PADI Technical Instructor Trainer</p>
             </div>
           </div>
           <div className="space-y-6 text-base leading-relaxed text-slate-300 sm:text-lg">
             <p>
-              Rimstone is led by Tim, a PADI Course Director and TDI Instructor Trainer
-              based in Fort White, Florida — in the heart of Florida&apos;s cave country.
+              Rimstone is led by Tim, a TDI Technical Instructor and PADI Technical Instructor Trainer based in Fort White, Florida—in the heart of Cave Country
             </p>
             <p>
-              Tim teaches the full range of technical and cave diving disciplines: cave, sidemount,
-              and closed-circuit rebreather (CCR) certification, with a particular focus on the KISS
-              Sidewinder platform. Instruction covers everything from nitrox and trimix through full
-              cave and advanced mixed-gas training.
+              Tim teaches a comprehensive range of technical and cave diving tracks, spanning open-circuit decompression configurations, sidemount platforms, and closed-circuit rebreather (CCR) systems, with a particular focus on the KISS Sidewinder and AP Inspiration architectures [21.3]. Instruction covers your entire progression from foundational double-tank stability and advanced nitrox gas planning to full cave diving and deep mixed-gas profiles [21.3].
             </p>
             <p>
-              An on-site O2 fill station supports every course. Whatever the discipline, the approach
-              stays the same: skill is built one dive at a time.
+              In the overhead world, a rimstone is a delicate, naturally occurring stone dam formed over thousands of years by slow, deliberate mineral deposits. It represents the exact baseline of our instructional philosophy: elite stability, structural resilience, and high-level technical capability are never rushed—they are built cleanly, piece by piece, one dive at a time [21.3].
             </p>
           </div>
         </div>
