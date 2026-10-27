@@ -317,7 +317,7 @@ export const COURSES: Record<'sidemount' | 'cave' | 'technical' | 'rebreather', 
       {
         name: 'CCR Air Diluent',
         meta: 'ESTIMATED: 8 DAYS // LEVEL 1 ENTRY',
-        description: 'Unit Focus: KISS Sidewinder & AP Inspiration Platforms (Mod 1 No-Deco). Shifting completely away from open-circuit muscle memory to master real-time loop mechanics, unit assembly, and execution of pre-dive checklists with strict personal discipline.',
+        description: 'Unit Focus: KISS Sidewinder & AP Inspiration Platforms. Industry Pathway: TDI Air Diluent / PADI Tec CCR Basics (Mod 1 No-Deco). Shifting completely away from open-circuit muscle memory to master real-time loop mechanics, unit assembly, and execution of pre-dive checklists with strict personal discipline.',
         points: ['Unit assembly and strict pre-dive checklist execution',
   'Real-time diluent and oxygen loop management metrics',
   'Bail-out to open circuit safety protocols',
@@ -326,7 +326,7 @@ export const COURSES: Record<'sidemount' | 'cave' | 'technical' | 'rebreather', 
       {
         name: 'CCR Air Diluent Decompression',
         meta: 'ESTIMATED: 8 DAYS // TECH DIVER ENTRY',
-        description: 'Unit Focus: KISS Sidewinder & AP Inspiration Platforms (Mod 1 Deco). Direct entry path for open-circuit technical divers or a clean upgrade track for Level 1 CCR divers looking to advance their loop operational skills.',
+        description: 'Unit Focus: KISS Sidewinder & AP Inspiration Platforms. Industry Pathway: TDI Air Diluent Decompression / PADI Tec 40 CCR (Mod 1 Deco). Direct entry path for open-circuit technical divers or a clean upgrade track for Level 1 CCR divers looking to advance their loop operational skills.',
         points: ['Advanced loop electronics tracking and monitoring',
   'Planning and executing staged decompression obligations',
   'Deco gas transitions and bail-out management protocols',
@@ -335,7 +335,7 @@ export const COURSES: Record<'sidemount' | 'cave' | 'technical' | 'rebreather', 
       {
         name: 'CCR Mixed Gas & Trimix',
 meta: 'ESTIMATED: 6 DAYS // LEVEL 2 PROGRESSION',
-description: 'Unit Focus: KISS Sidewinder & AP Inspiration Platforms (Mod 2). Advanced training for certified decompression rebreather divers looking to integrate Helium into their rebreather loop architecture.',
+description: 'Unit Focus: KISS Sidewinder & AP Inspiration Platforms. Industry Pathway: TDI Mixed Gas / PADI Tec 60 CCR (Mod 2). Advanced training for certified decompression rebreather divers looking to integrate Helium into their rebreather loop architecture.',
 points: [
   'Trimix diluent planning and gas density control metrics',
   'Managing multiple open-circuit technical bail-out logistics',
@@ -344,14 +344,25 @@ points: [
 ],
       },
       {
-        name: 'CCR Cave Diving',
-meta: 'ESTIMATED: 6-7 DAYS // LEVEL 3 SPECIALISM',
-description: 'Unit Focus: KISS Sidewinder & AP Inspiration Platforms. Elite environmental integration introducing your established closed-circuit loop habits directly into the overhead environment.',
+        name: 'CCR Cave Cross-Over',
+meta: 'ESTIMATED: 5 DAYS // OVERHEAD CROSS-OVER',
+description: 'Unit Focus: Open to any active CCR platform architecture. This intensive pathway is designed exclusively for certified, active Open Circuit Full Cave Divers looking to safely transition their established overhead navigation and air-sharing protocols onto a closed-circuit loop loop.',
 points: [
-  'Cave gas planning matrices and loop tracking safety boundaries',
-  'Complex route navigation, jumps, gaps, and circuit routines',
-  'Overhead bail-out profiles and gas-matching execution',
-  'Cave-specific loop failure management and emergency protocols'
+  'Adapting open-circuit cave muscle memory to closed-circuit boundaries',
+  'Unit-specific overhead failure management and emergency loop safety rules',
+  'Complex rebreather bail-out mechanics and gas-matching execution profiles',
+  'TDI certified overhead crossing parameters across all local systems'
+],
+      },
+      {
+        name: 'TDI CCR Cave Progression',
+meta: 'ESTIMATED: 10 DAYS // COMPLETE OVERHEAD TRACK',
+description: 'Unit Focus: Open to any active CCR platform architecture. Curriculum Pathway: TDI CCR Cavern // TDI CCR Intro to Cave // TDI CCR Full Cave. A comprehensive, non-negotiable linear progression for rebreather divers with no prior cave experience, built around developing strict survival habits in total darkness.',
+points: [
+  'Linear 3-course track from initial cavern limits to full cave navigation',
+  'Mastering real-time loop tracking safety boundaries under severe task-loading',
+  'Silt-out exit drills, touch-contact team routines, and emergency protocols',
+  'Complex route navigation managing jumps, gaps, and circuit planning'
 ],
       },
     ],
