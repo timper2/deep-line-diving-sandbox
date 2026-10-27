@@ -9,13 +9,17 @@ export interface CourseLevel {
 
 export interface CoursePhase {
   name: string;
-  description: string;
+  description?: string;
   points: string[];
 }
 
 export interface CourseModule {
+  heading?: string;
+  intro?: string;
   title: string;
-  timeframe: string;
+  timeframe?: string;
+  subLabel?: string;
+  description?: string;
   phases: CoursePhase[];
 }
 
@@ -158,26 +162,32 @@ export const COURSES: Record<'sidemount' | 'cave' | 'technical' | 'rebreather', 
         text: 'Protect fragile cave formations with precise trim, propulsion and awareness.',
       },
     ],
-    levels: [
-      {
-        name: 'Cavern',
-        meta: 'Foundation · 2 - 3 days',
-        description: 'Stay within the light zone while learning the core overhead skills and guideline basics.',
-        points: ['Line following in the light zone', 'Non-silting propulsion techniques', 'Gas management fundamentals', 'Emergency procedures'],
-      },
-      {
-        name: 'Intro to Cave',
-        meta: 'Progression · 2 - 3 days',
-        description: 'Move into the dark zone on a single continuous guideline with limited penetration.',
-        points: ['Primary and secondary reels', 'Lost line and lost buddy drills', 'Rule of thirds gas planning', 'Silt-out navigation'],
-      },
-      {
-        name: 'Full Cave',
-        meta: 'Certification · 4 - 5 days',
-        description: 'Complex navigation, jumps and gaps for confident exploration of the cave system.',
-        points: ['Complex navigation and jumps', 'Stage cylinder deployment', 'Complex failure scenarios', 'Dive planning and mapping'],
-      },
-    ],
+    levels: [],
+    module: {
+      heading: 'Training Track',
+      intro:
+        'A comprehensive overhead progression engineered around precision body position, meticulous safety baselines, and clear analytical judgment inside demanding cave environments.',
+      title: 'Cave Diving Training',
+      subLabel: 'THE ROAD TO ZERO-FLOW AND HIGH-FLOW OVERHEAD MASTERY',
+      description:
+        'A rigorous, discipline-focused training environment built around mastering continuous guideline execution, strict team cross-checks, and precise situational awareness across premier international networks.',
+      phases: [
+        {
+          name: 'Phase 1: Foundational Overhead Control',
+          points: [
+            'The Scope: Mastering horizontal trim, platform stability, and anti-silting propulsion techniques while learning core guideline basics.',
+            'Core Skills: Operating primary and secondary reels, establishing strict gas-matching rules, and maintaining positioning under initial task loading.',
+          ],
+        },
+        {
+          name: 'Phase 2: Full Environmental Navigation',
+          points: [
+            'The Scope: Transitioning into complete darkness, executing complex route navigation, and managing advanced team coordinates safely.',
+            'Core Skills: Handling complex jumps, gaps, and line tracking drills alongside advanced emergency protocols, silt-out navigation, and stage cylinder deployment.',
+          ],
+        },
+      ],
+    },
     gallery: [
       {
         src: 'https://images.pexels.com/photos/4821643/pexels-photo-4821643.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',

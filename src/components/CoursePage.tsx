@@ -115,14 +115,18 @@ export default function CoursePage({ content, navigate }: CoursePageProps) {
 
       <section className="mx-auto max-w-7xl container-px py-16 sm:py-20">
         <h2 className="font-display text-2xl font-bold tracking-tight text-white sm:text-3xl">
-          {content.module ? (
+          {content.module?.heading ? (
+            content.module.heading
+          ) : content.module ? (
             <>Training Track</>
           ) : (
             <>Course progression</>
           )}
         </h2>
         <p className="mt-3 max-w-2xl text-base text-slate-400">
-          {content.module ? (
+          {content.module?.intro ? (
+            content.module.intro
+          ) : content.module ? (
             <>
               A singular, comprehensive module designed to take you from initial harness
               configuration to complete technical system fluency.
@@ -139,21 +143,38 @@ export default function CoursePage({ content, navigate }: CoursePageProps) {
             <h3 className="font-display text-xl font-semibold text-white sm:text-2xl">
               {content.module.title}
             </h3>
-            <p className="mt-2 text-xs font-semibold uppercase tracking-widest text-accent/80">
-              {content.module.timeframe}
-            </p>
+            {(content.module.timeframe || content.module.subLabel) && (
+              <p className="mt-2 text-xs font-semibold uppercase tracking-widest text-accent/80">
+                {content.module.timeframe ?? content.module.subLabel}
+              </p>
+            )}
+            {content.module.description && (
+              <p className="mt-4 max-w-3xl text-sm leading-relaxed text-slate-300">
+                {content.module.description}
+              </p>
+            )}
             <div className="mt-8 grid gap-10 border-t border-white/10 pt-8 md:grid-cols-2 md:gap-12">
               {content.module.phases.map((phase) => (
                 <div key={phase.name}>
                   <h4 className="font-display text-lg font-semibold text-white">{phase.name}</h4>
-                  <p className="mt-3 text-sm leading-relaxed text-slate-300">{phase.description}</p>
+                  {phase.description && (
+                    <p className="mt-3 text-sm leading-relaxed text-slate-300">{phase.description}</p>
+                  )}
                   <ul className="mt-5 flex flex-col gap-3">
-                    {phase.points.map((pt) => (
-                      <li key={pt} className="flex items-start gap-2 text-sm text-slate-400">
-                        <Check className="mt-0.5 h-4 w-4 flex-shrink-0 text-accent" />
-                        <span>{pt}</span>
-                      </li>
-                    ))}
+                    {phase.points.map((pt) => {
+                      const splitAt = pt.indexOf(': ');
+                      const label = splitAt > 0 && splitAt < 20 ? pt.slice(0, splitAt + 1) : null;
+                      const body = label ? pt.slice(splitAt + 2) : pt;
+                      return (
+                        <li key={pt} className="flex items-start gap-2 text-sm leading-relaxed text-slate-400">
+                          <Check className="mt-0.5 h-4 w-4 flex-shrink-0 text-accent" />
+                          <span>
+                            {label && <span className="font-semibold text-white">{label} </span>}
+                            {body}
+                          </span>
+                        </li>
+                      );
+                    })}
                   </ul>
                 </div>
               ))}
