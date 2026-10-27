@@ -15,7 +15,12 @@ export default function About() {
             <img
               src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/27A525C3-1B95-4DC0-B2DA-E6BB7797527E-1SsC4SUBzIrllfM9QSB6Om2cWqZL9d.jpeg"
               alt="Tim diving at the waterline in a cave"
-              className="h-72 w-full object-cover lg:h-auto lg:min-h-72 lg:w-64"
+              width="1408"
+              height="1750"
+              loading="eager"
+              fetchPriority="high"
+              decoding="async"
+              className="block h-72 w-full object-cover lg:h-80 lg:w-64"
             />
             <div className="flex items-center gap-3 p-5 text-accent">
               <Waves className="h-6 w-6" />
