@@ -13,14 +13,14 @@ export default function About() {
         <div className="mt-10 grid gap-10 lg:grid-cols-[auto_1fr] lg:items-start">
           <div className="overflow-hidden rounded-2xl border border-white/10 bg-slate-900/40">
             <img
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/27A525C3-1B95-4DC0-B2DA-E6BB7797527E-1SsC4SUBzIrllfM9QSB6Om2cWqZL9d.jpeg"
+              src="/images/abouttim.jpeg"
               alt="Tim diving at the waterline in a cave"
               width="1408"
               height="1750"
               loading="eager"
               fetchPriority="high"
               decoding="async"
-              className="block h-72 w-full object-cover lg:h-80 lg:w-64"
+              className="block h-80 w-full object-cover"
             />
             <div className="flex items-center gap-3 p-5 text-accent">
               <Waves className="h-6 w-6" />

@@ -141,7 +141,7 @@ export const COURSES: Record<'sidemount' | 'cave' | 'technical' | 'rebreather', 
     title: 'Cave Diving',
     subtitle: 'Explore the flooded passages beyond the light with disciplined training and unshakeable procedures.',
     heroImage:
-      'https://images.pexels.com/photos/10519073/pexels-photo-10519073.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+      '/images/CCRTim.jpeg',
     intro: [
       'Cave diving is the most demanding and most rewarding form of diving. There is no direct route to the surface, so every skill, every piece of gear and every decision must be deliberate and redundant.',
       'Training progresses in careful stages. You build line-handling, navigation, gas planning and failure management until moving calmly through an overhead environment becomes second nature.',
@@ -213,7 +213,7 @@ export const COURSES: Record<'sidemount' | 'cave' | 'technical' | 'rebreather', 
     title: 'Technical Diving',
     subtitle: 'Extend your range with decompression, mixed gases and the discipline that makes deep dives repeatable.',
     heroImage:
-      'https://images.pexels.com/photos/32293259/pexels-photo-32293259.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+      '/images/doubles.jpeg',
     intro: [
       'Technical diving opens up depths, wrecks and durations that lie beyond recreational limits. It demands planned decompression, multiple gases and a team that operates with precision.',
       'These courses build the planning, gas management and problem-solving skills that let you treat a demanding dive as a series of controlled, rehearsed steps rather than a gamble.',
@@ -368,7 +368,7 @@ points: [
     ],
     gallery: [
       {
-        src: 'https://images.pexels.com/photos/73759/sea-ocean-water-light-73759.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+        src: '/images/CCRJVC.jpeg',
         caption: 'Silent, bubble-free presence',
       },
       {
