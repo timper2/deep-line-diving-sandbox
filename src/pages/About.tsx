@@ -20,7 +20,7 @@ export default function About() {
               loading="eager"
               fetchPriority="high"
               decoding="async"
-              className="block h-72 w-full object-cover lg:h-80 lg:w-64"
+              className="block h-80 w-full object-cover"
             />
             <div className="flex items-center gap-3 p-5 text-accent">
               <Waves className="h-6 w-6" />
