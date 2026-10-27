@@ -143,11 +143,7 @@ export default function Home({ navigate }: HomeProps) {
             </h2>
             <div className="mt-6 space-y-5 text-base leading-relaxed text-slate-300">
               <p>
-                Built the way the cave builds — deposit by deposit, dive by dive.
-              </p>
-              <p>
-                Whether you are starting sidemount, pushing into cave, or stepping across to
-                closed-circuit, we build every skill deliberately until it holds up under pressure.
+                Whether you are starting sidemount, pushing into cave, or stepping across to closed-circuit, we build every skill deliberately until it holds up under pressure. Every course is built around deliberate practice and the belief that true skill is built one dive at a time, focusing entirely on true peer-to-peer performance and long-term diving confidence.
               </p>
             </div>
             <div className="mt-8 grid gap-4 sm:grid-cols-3 md:grid-cols-1 lg:grid-cols-3">
