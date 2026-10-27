@@ -99,7 +99,7 @@ export default function Home({ navigate }: HomeProps) {
       <section className="border-b border-white/10 bg-slate-900/40">
         <div className="mx-auto grid max-w-7xl grid-cols-2 gap-y-8 container-px py-10 sm:grid-cols-4">
           {[
-            { value: 'KISS · AP · OC', label: 'Three platforms' },
+            { value: 'OC · KISS · AP', label: 'Three platforms' },
             { value: 'Active', label: 'Still in the water' },
             { value: 'Cave · Trimix', label: 'OC & CCR CERTIFIED' },
             { value: '1:2', label: 'Instructor ratio' },
