@@ -101,7 +101,7 @@ export default function Home({ navigate }: HomeProps) {
           {[
             { value: 'KISS · AP · OC', label: 'Three platforms' },
             { value: 'Active', label: 'Still in the water' },
-            { value: 'Full Cave', label: 'Certified explorer' },
+            { value: 'Cave · Trimix', label: 'OC & CCR CERTIFIED' },
             { value: '1:2', label: 'Instructor ratio' },
           ].map((s) => (
             <div key={s.label} className="text-center">
