@@ -54,7 +54,7 @@ export const COURSES: Record<'sidemount' | 'cave' | 'technical' | 'rebreather', 
       'These courses build the fine motor skills and mindset that make sidemount feel effortless: valve drills, bungee routing, precise buoyancy and a fully redundant approach to gas management that carries directly into overhead and technical environments.',
     ],
     stats: [
-      { label: 'Format', value: 'Recreational to technical' },
+      { label: 'Format', value: 'Technical' },
       { label: 'Cylinders', value: '2 independent' },
       { label: 'Typical duration', value: '2 - 3 days' },
       { label: 'Min. certification', value: 'Open Water' },
@@ -75,18 +75,18 @@ export const COURSES: Record<'sidemount' | 'cave' | 'technical' | 'rebreather', 
     ],
     levels: [
       {
-        name: 'Recreational Sidemount',
+        name: 'System Fluency & Core Stability',
         meta: 'Entry level · 2 days',
         description:
-          'Your introduction to the configuration in open water, focused on comfort, balance and cylinder handling.',
-        points: ['Harness and bungee setup', 'Trim and buoyancy refinement', 'S-drills and gas switching', 'Cylinder handling at the surface and at depth'],
+          'Perfecting stable horizontal trim and exact buoyancy control while managing independent side-mounted cylinders.',
+        points: ['Harness and bungee setup', 'Trim and buoyancy refinement', 'S-drills and gas switching', 'Cylinder handling at the surface and at depth', 'Valve manipulation & clean regulator routing', 'Independent cylinder gas management', 'Platform trim alignment and stability'],
       },
       {
-        name: 'Advanced Sidemount',
+        name: 'Environmental & Technical Integration',
         meta: 'Progression · 2 - 3 days',
         description:
-          'Refine the system for demanding dives, adding stages and preparing for overhead and technical progression.',
-        points: ['Stage and deco cylinder handling', 'Failure and shutdown drills', 'Restriction and no-mount practice', 'Team protocols and awareness'],
+          'Moving the stabilized sidemount platform into demanding open water profiles and technical decompression planning.',
+        points: ['Stage and deco cylinder handling', 'Advanced team gas-sharing protocols', 'Failure and shutdown drills', 'Silt awareness & restriction management', 'Team protocols and awareness'],
       },
     ],
     gallery: [
