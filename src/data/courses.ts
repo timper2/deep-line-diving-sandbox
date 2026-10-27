@@ -89,7 +89,7 @@ export const COURSES: Record<'sidemount' | 'cave' | 'technical' | 'rebreather', 
     levels: [],
     module: {
       title: 'Sidemount Platform Training',
-      timeframe: 'ESTIMATED TIMEFRAME: 3 - 4 DAYS',
+      timeframe: 'ESTIMATED TIMEFRAME: 3 DAYS',
       phases: [
         {
           name: 'Phase 1: Platform Foundation',

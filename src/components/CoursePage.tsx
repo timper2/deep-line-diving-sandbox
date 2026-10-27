@@ -115,11 +115,24 @@ export default function CoursePage({ content, navigate }: CoursePageProps) {
 
       <section className="mx-auto max-w-7xl container-px py-16 sm:py-20">
         <h2 className="font-display text-2xl font-bold tracking-tight text-white sm:text-3xl">
-          Course progression
+          {content.module ? (
+            <>Training Track</>
+          ) : (
+            <>Course progression</>
+          )}
         </h2>
         <p className="mt-3 max-w-2xl text-base text-slate-400">
-          Training is delivered in stages, so you can progress at a pace that keeps every skill
-          solid before moving deeper.
+          {content.module ? (
+            <>
+              A singular, comprehensive module designed to take you from initial harness
+              configuration to complete technical system fluency.
+            </>
+          ) : (
+            <>
+              Training is delivered in stages, so you can progress at a pace that keeps every skill
+              solid before moving deeper.
+            </>
+          )}
         </p>
         {content.module && (
           <div className="mt-10 rounded-2xl border border-white/10 bg-slate-900/40 p-6 text-left sm:p-10">
