@@ -238,6 +238,9 @@ export default function CoursePage({ content, navigate }: CoursePageProps) {
                   <p className="mt-1 text-xs uppercase tracking-widest text-accent/80">
                     {level.meta}
                   </p>
+                  {level.agency && (
+                    <p className="mt-1 text-xs leading-relaxed text-slate-500">{level.agency}</p>
+                  )}
                 </div>
               </div>
               <div>
