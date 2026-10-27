@@ -9,16 +9,17 @@ const services = [
     icon: Compass,
     title: 'Cave Guiding',
     items: [
-      "Guided cave diving excursions tailored to your comfort level across North Florida's springs, including Peacock, Ginnie, and Cow Springs.",
-      'Full logistics coordination, site briefing, and gas planning support.',
+      'Custom overhead guiding and logistics tailored precisely to your configuration and comfort level across North Florida spring networks and the deep cenote systems of the Riviera Maya.',
+      'Full logistics coordination, site briefing, environmental gas planning, and international trip support.',
+    ],,
     ],
   },
   {
     icon: LifeBuoy,
     title: 'Mentoring',
     items: [
-      'One-on-one technical diving mentorship focusing on skill mastery, situational awareness, and overhead environment progression.',
-      'Personalized video review, gear configuration optimization, and posture workshops.',
+      'One-on-one technical diving mentorship focusing on skill mastery, platform configuration tuning, and trim workshops for divers progressing across any technical configuration.',
+      'Personalized video review, propulsion technique adjustment, and custom gear optimization tailored to your exact anatomy.',
     ],
   },
 ];
