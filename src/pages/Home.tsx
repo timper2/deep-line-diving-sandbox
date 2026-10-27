@@ -87,10 +87,20 @@ export default function Home({ navigate }: HomeProps) {
               About Rimstone
             </p>
             <p className="mt-4 text-lg leading-relaxed text-slate-300 sm:text-xl">
-              Led by Tim, a PADI Course Director and TDI Instructor in Fort White, Rimstone teaches
-              cave, sidemount, and CCR diving from nitrox and trimix through full cave and advanced
-              mixed-gas training. Every course is built around deliberate practice, KISS Sidewinder
-              expertise, and the belief that skill is built one dive at a time.
+              <p className="text-xl md:text-2xl font-light text-zinc-100 leading-relaxed mb-8">
+  Led by a <span className="text-white font-normal">TDI Technical Instructor</span> and <span className="text-white font-normal">PADI Technical Instructor Trainer</span>, Rimstone delivers comprehensive training across the entire spectrum of open and closed circuit technical diving [21.3]. Operating out of Fort White, Florida—the epicenter of <span className="text-[#00A3E0]">Cave Country</span>—our programs focus strictly on foundational stability, equipment fluency, and sharp analytical judgment.
+</p>
+
+<p className="text-base text-zinc-400 leading-relaxed border-l-2 border-zinc-800 pl-4 mt-6">
+  Our training tracks support your entire progression: from your first steps into 
+  <span className="text-zinc-200"> redundant technical setups</span> and 
+  <span className="text-zinc-200"> open-circuit decompression diving</span>, through advanced 
+  <span className="text-zinc-200"> mixed-gas trimix plans</span>, to 
+  <span className="text-zinc-200"> cave diving</span> and unit-specific CCR transitions on the 
+  <span className="text-zinc-200"> KISS Sidewinder</span> and 
+  <span className="text-zinc-200"> AP Inspiration</span> platforms. We train thinking divers to excel in unforgiving environments, because in the end, skill is built one dive at a time.
+</p>
+
             </p>
           </div>
         </div>
