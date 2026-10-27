@@ -128,8 +128,8 @@ export default function Home({ navigate }: HomeProps) {
                   <Waves className="h-5 w-5 text-accent" />
                 </span>
                 <div>
-                  <p className="font-display text-sm font-semibold text-white">Silent running</p>
-                  <p className="text-xs text-slate-400">Bubble-free on the loop</p>
+                  <p className="font-display text-sm font-semibold text-white">KISS Sidewinder</p>
+                  <p className="text-xs text-slate-400">Closed Circuit configuration</p>
                 </div>
               </div>
             </div>
