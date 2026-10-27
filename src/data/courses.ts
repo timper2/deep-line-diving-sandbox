@@ -287,8 +287,7 @@ export const COURSES: Record<'sidemount' | 'cave' | 'technical' | 'rebreather', 
     eyebrow: 'Closed-circuit diving',
     title: 'Rebreather Courses',
     subtitle: 'Closed-circuit training from your first loop dive to mixed-gas exploration, on the KISS Sidewinder and AP Inspiration.',
-    heroImage:
-      'https://images.pexels.com/photos/2408692/pexels-photo-2408692.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    heroImage: '/images/CCRHeader.jpeg',
     heroImageZoom: 0.72,
     heroImagePosition: 'center 50%',
     intro: [
