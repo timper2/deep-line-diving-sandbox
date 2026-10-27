@@ -244,7 +244,7 @@ export const COURSES: Record<'sidemount' | 'cave' | 'technical' | 'rebreather', 
     levels: [
       {
         name: 'Technical Foundations',
-        meta: 'ESTIMATED: 2 DAYS // LEVEL 1',
+        meta: 'ESTIMATED: 3 DAYS // LEVEL 1',
         agency: 'PADI Tec Basics // TDI Intro to Tech',
         points: [
           'The Focus: Mastering your body positioning, clean horizontal trim, and equipment layout before introducing the task-loading of staged decompression.',
@@ -262,7 +262,7 @@ export const COURSES: Record<'sidemount' | 'cave' | 'technical' | 'rebreather', 
       },
       {
         name: 'Mixed Gas & Trimix',
-        meta: 'ESTIMATED: 4-5 DAYS // LEVEL 3',
+        meta: 'ESTIMATED: 5-6 DAYS // LEVEL 3',
         agency: 'PADI Tec 65 // Tec 100',
         points: [
           'The Focus: Adding Helium to your gas architecture to safely manage narcosis, mitigate oxygen exposure, and handle deep technical exposure limits.',
