@@ -141,7 +141,7 @@ export const COURSES: Record<'sidemount' | 'cave' | 'technical' | 'rebreather', 
     title: 'Cave Diving',
     subtitle: 'Explore the flooded passages beyond the light with disciplined training and unshakeable procedures.',
     heroImage:
-      '/images/CCRTim.jpeg',
+      '/images/cavediversentrance.jpg',
     intro: [
       'Cave diving is the most demanding and most rewarding form of diving. There is no direct route to the surface, so every skill, every piece of gear and every decision must be deliberate and redundant.',
       'Training progresses in careful stages. You build line-handling, navigation, gas planning and failure management until moving calmly through an overhead environment becomes second nature.',
@@ -197,12 +197,12 @@ export const COURSES: Record<'sidemount' | 'cave' | 'technical' | 'rebreather', 
     ],
     gallery: [
       {
-        src: 'https://images.pexels.com/photos/4821643/pexels-photo-4821643.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+        src: '/images/cavedivers.jpg',
         caption: 'Navigating a flooded passage',
       },
       {
-        src: 'https://images.pexels.com/photos/10519046/pexels-photo-10519046.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-        caption: 'Light beams through a cavern',
+        src: '/images/CCRTim.jpeg',
+        caption: 'Entering the cave: where preparation meets the unknown',
       },
     ],
     prerequisites: ['Nitrox certification recommended', 'Solid buoyancy and trim', 'Logged open-water experience', 'Medically fit to dive'],
@@ -374,8 +374,8 @@ points: [
         caption: 'Silent, bubble-free presence',
       },
       {
-        src: 'https://images.pexels.com/photos/13022664/pexels-photo-13022664.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-        caption: 'Preparing the unit dockside',
+        src: '/images/CCRPlanning.jpg',
+        caption: 'Planning the dive before entering the water',
       },
     ],
     prerequisites: ['Nitrox certification', 'Solid buoyancy and experience', 'Commitment to checklists', 'Medically fit to dive'],
