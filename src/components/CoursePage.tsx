@@ -8,12 +8,7 @@ interface CoursePageProps {
   navigate: NavigateFn;
 }
 
-// Zoomed-out photos are feathered into the page background so no hard edge or bar shows.
-const ZOOM_FEATHER_MASK = 'radial-gradient(ellipse 50% 50% at center, #000 70%, transparent 100%)';
-
 export default function CoursePage({ content, navigate }: CoursePageProps) {
-  const zoom = content.heroImageZoom ?? 1;
-  const zoomedOut = zoom < 1;
 
   return (
     <div className="animate-fade-in">
@@ -28,9 +23,6 @@ export default function CoursePage({ content, navigate }: CoursePageProps) {
           className="absolute inset-0 h-full w-full object-cover"
           style={{
             objectPosition: content.heroImagePosition,
-            transform: zoomedOut ? `scale(${zoom})` : undefined,
-            maskImage: zoomedOut ? ZOOM_FEATHER_MASK : undefined,
-            WebkitMaskImage: zoomedOut ? ZOOM_FEATHER_MASK : undefined,
           }}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/70 to-slate-950/40" />
