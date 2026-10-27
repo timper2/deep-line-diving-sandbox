@@ -125,11 +125,11 @@ export const COURSES: Record<'sidemount' | 'cave' | 'technical' | 'rebreather', 
     },
     gallery: [
       {
-        src: 'https://images.pexels.com/photos/7987177/pexels-photo-7987177.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+        src: '/images/sidemountJVC.jpg',
         caption: 'Balanced trim in open water',
       },
       {
-        src: 'https://images.pexels.com/photos/35541060/pexels-photo-35541060.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+        src: '/images/SMharnesssetup.jpeg',
         caption: 'Rigging the harness before a dive',
       },
     ],
@@ -287,10 +287,7 @@ export const COURSES: Record<'sidemount' | 'cave' | 'technical' | 'rebreather', 
     eyebrow: 'Closed-circuit diving',
     title: 'Rebreather Courses',
     subtitle: 'Closed-circuit training from your first loop dive to mixed-gas exploration, on the KISS Sidewinder and AP Inspiration.',
-    heroImage:
-      'https://images.pexels.com/photos/2408692/pexels-photo-2408692.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-    heroImageZoom: 0.72,
-    heroImagePosition: 'center 50%',
+    heroImage: '/images/CCRHeader.jpeg',
     intro: [
       'A closed-circuit rebreather recycles your breathing gas, removing carbon dioxide and adding oxygen so almost nothing is wasted. The result is dramatically longer dives, warm moist gas and near-silent, bubble-free presence in the water.',
       'Rebreather training is a progression in its own right, independent of any overhead environment. You start with the fundamentals of the loop and build through decompression and mixed-gas diving, with cave-specific CCR work as an later specialism for those who want it. I teach on both the KISS Sidewinder and the AP Inspiration, so you train on the unit you intend to dive.',

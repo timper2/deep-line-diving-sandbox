@@ -28,7 +28,7 @@ const APPROACH = [
 ];
 
 export default function Home({ navigate }: HomeProps) {
-  const [activeLayout, setActiveLayout] = useState<LayoutId>('A');
+  const [activeLayout, setActiveLayout] = useState<LayoutId>('C');
 
   return (
     <div className="animate-fade-in">
