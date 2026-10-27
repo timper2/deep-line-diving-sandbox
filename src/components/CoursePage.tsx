@@ -121,6 +121,32 @@ export default function CoursePage({ content, navigate }: CoursePageProps) {
           Training is delivered in stages, so you can progress at a pace that keeps every skill
           solid before moving deeper.
         </p>
+        {content.module && (
+          <div className="mt-10 rounded-2xl border border-white/10 bg-slate-900/40 p-6 text-left sm:p-10">
+            <h3 className="font-display text-xl font-semibold text-white sm:text-2xl">
+              {content.module.title}
+            </h3>
+            <p className="mt-2 text-xs font-semibold uppercase tracking-widest text-accent/80">
+              {content.module.timeframe}
+            </p>
+            <div className="mt-8 grid gap-10 border-t border-white/10 pt-8 md:grid-cols-2 md:gap-12">
+              {content.module.phases.map((phase) => (
+                <div key={phase.name}>
+                  <h4 className="font-display text-lg font-semibold text-white">{phase.name}</h4>
+                  <p className="mt-3 text-sm leading-relaxed text-slate-300">{phase.description}</p>
+                  <ul className="mt-5 flex flex-col gap-3">
+                    {phase.points.map((pt) => (
+                      <li key={pt} className="flex items-start gap-2 text-sm text-slate-400">
+                        <Check className="mt-0.5 h-4 w-4 flex-shrink-0 text-accent" />
+                        <span>{pt}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
         <div className="mt-10 space-y-5">
           {content.levels.map((level, i) => (
             <div

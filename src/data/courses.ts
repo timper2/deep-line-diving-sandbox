@@ -7,6 +7,18 @@ export interface CourseLevel {
   points: string[];
 }
 
+export interface CoursePhase {
+  name: string;
+  description: string;
+  points: string[];
+}
+
+export interface CourseModule {
+  title: string;
+  timeframe: string;
+  phases: CoursePhase[];
+}
+
 export interface CourseStat {
   label: string;
   value: string;
@@ -33,6 +45,7 @@ export interface CourseContent {
   stats: CourseStat[];
   pillars: CoursePillar[];
   levels: CourseLevel[];
+  module?: CourseModule;
   gallery: { src: string; caption: string }[];
   prerequisites: string[];
 }
@@ -73,22 +86,35 @@ export const COURSES: Record<'sidemount' | 'cave' | 'technical' | 'rebreather', 
         text: 'Learn to tune harness, bungees and clips so the system fits your body and the dive.',
       },
     ],
-    levels: [
-      {
-        name: 'System Fluency & Core Stability',
-        meta: 'Entry level · 2 days',
-        description:
-          'Perfecting stable horizontal trim and exact buoyancy control while managing independent side-mounted cylinders.',
-        points: ['Harness and bungee setup', 'Trim and buoyancy refinement', 'S-drills and gas switching', 'Cylinder handling at the surface and at depth', 'Valve manipulation & clean regulator routing', 'Independent cylinder gas management', 'Platform trim alignment and stability'],
-      },
-      {
-        name: 'Environmental & Technical Integration',
-        meta: 'Progression · 2 - 3 days',
-        description:
-          'Moving the stabilized sidemount platform into demanding open water profiles and technical decompression planning.',
-        points: ['Stage and deco cylinder handling', 'Advanced team gas-sharing protocols', 'Failure and shutdown drills', 'Silt awareness & restriction management', 'Team protocols and awareness'],
-      },
-    ],
+    levels: [],
+    module: {
+      title: 'Sidemount Platform Training',
+      timeframe: 'ESTIMATED TIMEFRAME: 3 - 4 DAYS',
+      phases: [
+        {
+          name: 'Phase 1: Platform Foundation',
+          description:
+            'Perfecting stable horizontal trim and exact buoyancy control while managing independent side-mounted cylinders.',
+          points: [
+            'Harness and bungee customization',
+            'Horizontal trim alignment and stability',
+            'Precision buoyancy control',
+            'Independent cylinder gas management',
+          ],
+        },
+        {
+          name: 'Phase 2: Technical Integration',
+          description:
+            'Moving the stabilized sidemount platform into demanding open water profiles and technical decompression planning.',
+          points: [
+            'Multi-stage and deco cylinder handling',
+            'Team gas-sharing protocols and awareness',
+            'Silt awareness and restriction management',
+            'Line tracking and failure drills',
+          ],
+        },
+      ],
+    },
     gallery: [
       {
         src: 'https://images.pexels.com/photos/7987177/pexels-photo-7987177.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
